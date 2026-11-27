@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-<title>§ 24. Власна освітня траєкторія і самоосвіта | Тренажер «Навігатор ризиків»</title>
+<title>§ 24. Особистий і соціальний добробут | Тренажер «Навігатор ризиків»</title>
 <style>
 :root{--primary:#1e3a8a;--primary-dark:#1e2a5e;--primary-light:#3b5ccc;--accent:#2563eb;--success:#16a34a;--danger:#dc2626;--warning:#f59e0b;--bg:#f1f5f9;--card:#fff;--text:#1e293b;--text-muted:#64748b;--border:#e2e8f0}
 *{margin:0;padding:0;box-sizing:border-box}
@@ -79,7 +79,7 @@ body{font-family:system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;background
 .key-point{background:linear-gradient(135deg,#fef3c7,#fde68a);border:2px solid #fbbf24;border-radius:12px;padding:16px;margin:16px 0;text-align:center;font-weight:600;color:#78350f}
 .situation-layout{display:grid;grid-template-columns:1fr 1.2fr;gap:24px;margin:24px 0;align-items:start}
 .situation-illustration-left{background:linear-gradient(135deg,#eff6ff,#dbeafe);border:2px solid #93c5fd;border-radius:12px;padding:20px;text-align:center;display:flex;flex-direction:column;justify-content:center;align-items:center;min-height:240px}
-.situation-img{max-width:100%;height:auto;max-height:280px;object-fit:contain;border-radius:12px;margin-bottom:12px;display:block;margin-left:auto;margin-right:auto;box-shadow:0 4px 12px rgba(30,58,138,.1)}
+.situation-img{max-width:100%;height:auto;max-height:200px;object-fit:contain;border-radius:8px;margin-bottom:12px;display:block;margin-left:auto;margin-right:auto}
 .situation-caption{font-size:13px;color:var(--text-muted);font-style:italic;margin-top:8px}
 .question-highlight{background:linear-gradient(135deg,#fef3c7,#fde68a);border:3px solid #f59e0b;border-radius:16px;padding:20px 24px;margin-bottom:20px;text-align:center;box-shadow:0 4px 16px rgba(245,158,11,.15);position:relative;overflow:hidden}
 .question-highlight-icon{font-size:48px;margin-bottom:8px;display:block}
@@ -99,7 +99,7 @@ body{font-family:system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;background
 .option.correct .option-radio,.option.correct .option-checkbox{border-color:var(--success);background:var(--success)}
 .option.correct .option-radio::after,.option.correct .option-checkbox::after{content:'✓';color:#fff;font-size:14px}
 .option.incorrect .option-radio,.option.incorrect .option-checkbox{border-color:var(--danger);background:var(--danger)}
-.option.incorrect .option-radio::after,.option.incorrect .option-checkbox::after{content:'';color:#fff;font-size:14px}
+.option.incorrect .option-radio::after,.option.incorrect .option-checkbox::after{content:'✕';color:#fff;font-size:14px}
 .option-text{flex:1}
 .option-label{font-weight:600;margin-bottom:4px}
 .feedback{padding:16px;border-radius:12px;margin:16px 0;animation:fadeIn .3s}
@@ -128,6 +128,27 @@ body{font-family:system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;background
 .img-wrapper .img-fallback .img-fallback-text{font-size:13px;font-weight:600;color:var(--text-muted);text-align:center;padding:0 12px}
 .img-wrapper.img-failed img{display:none}
 .img-wrapper.img-failed .img-fallback{display:flex}
+.step7-header{background:linear-gradient(135deg,#f59e0b,#d97706);color:#fff;padding:32px;border-radius:16px;margin-bottom:24px;text-align:center;box-shadow:0 4px 16px rgba(245,158,11,.3)}
+.step7-header h2{font-size:28px;font-weight:800;margin-bottom:8px}
+.stats-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:20px;margin-bottom:24px}
+.stat-card{background:#fff;padding:20px;border-radius:12px;box-shadow:0 4px 12px rgba(30,58,138,.08);text-align:center}
+.stat-value{font-size:32px;font-weight:800;color:var(--primary)}
+.stat-label{font-size:14px;color:var(--text-muted);margin-top:4px}
+.progress-circle-container{display:flex;justify-content:center;align-items:center;margin:24px 0}
+.progress-circle{width:180px;height:180px;border-radius:50%;background:conic-gradient(var(--success) 0%,var(--bg) 0%);display:flex;justify-content:center;align-items:center;transition:background 1s;box-shadow:0 4px 16px rgba(30,58,138,.1)}
+.progress-circle-inner{width:140px;height:140px;background:#fff;border-radius:50%;display:flex;flex-direction:column;justify-content:center;align-items:center}
+.circle-percentage{font-size:40px;font-weight:800;color:var(--primary)}
+.circle-label{font-size:14px;color:var(--text-muted)}
+.level-badge{display:inline-flex;align-items:center;gap:12px;background:linear-gradient(135deg,#eff6ff,#dbeafe);border:2px solid #bfdbfe;padding:16px 24px;border-radius:12px;margin:16px 0}
+.level-badge-icon{font-size:40px}
+.level-badge-title{font-size:18px;font-weight:700;color:var(--primary)}
+.level-badge-desc{font-size:14px;color:var(--text-muted)}
+.skill-eval{margin-bottom:20px;padding-bottom:16px;border-bottom:1px solid var(--border)}
+.skill-eval:last-child{border-bottom:none;margin-bottom:0;padding-bottom:0}
+.skill-title{font-weight:600;font-size:16px}
+.star-rating{display:flex;gap:8px;margin-top:8px}
+.star{font-size:24px;cursor:pointer;color:var(--border);transition:color .2s}
+.star:hover,.star.active{color:var(--warning)}
 .theory-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px;margin:20px 0}
 .theory-block{position:relative;background:#fff;border-radius:16px;padding:22px;border:2px solid var(--border);transition:all .35s cubic-bezier(.4,0,.2,1);box-shadow:0 2px 8px rgba(0,0,0,.05);overflow:hidden;display:flex;gap:16px;align-items:flex-start}
 .theory-block::before{content:'';position:absolute;top:0;left:0;width:6px;height:100%;background:var(--block-accent,var(--accent));transition:width .3s}
@@ -154,71 +175,106 @@ body{font-family:system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;background
 .block-cyan h4{color:#155e75}
 .block-indigo{--block-accent:#4f46e5;--block-bg:#e0e7ff}
 .block-indigo h4{color:#3730a3}
-.block-teal{--block-accent:#0d9488;--block-bg:#ccfbf1}
-.block-teal h4{color:#115e59}
-.block-amber{--block-accent:#d97706;--block-bg:#fef3c7}
-.block-amber h4{color:#92400e}
-.goal-builder{background:#fff;border:2px solid var(--border);border-radius:14px;padding:20px;margin:16px 0}
-.goal-builder-row{display:grid;grid-template-columns:1fr 2fr;gap:12px;align-items:center;margin-bottom:12px;padding:12px;background:var(--bg);border-radius:10px}
-.goal-builder-label{font-weight:600;color:var(--primary);font-size:14px;display:flex;align-items:center;gap:8px}
-.goal-builder-input{width:100%;padding:10px 12px;border:2px solid var(--border);border-radius:8px;font-size:14px;background:#fff;transition:all .2s}
-.goal-builder-input:focus{outline:none;border-color:var(--accent)}
-.goal-builder-select{width:100%;padding:10px 12px;border:2px solid var(--border);border-radius:8px;font-size:14px;background:#fff;cursor:pointer}
-.goal-builder-select:focus{outline:none;border-color:var(--accent)}
-.goal-preview{background:linear-gradient(135deg,#dbeafe,#bfdbfe);border:2px solid #93c5fd;border-radius:12px;padding:16px;margin-top:16px;font-size:14px;line-height:1.7}
-.goal-preview-title{font-weight:700;color:var(--primary);margin-bottom:8px;display:flex;align-items:center;gap:8px}
-.sort-container{background:#fff;border:2px solid var(--border);border-radius:14px;padding:20px;margin:16px 0}
-.sort-bank{display:flex;flex-direction:column;gap:8px;margin-bottom:16px}
-.sort-item{padding:14px 16px;background:var(--bg);border:2px solid var(--border);border-radius:10px;cursor:grab;display:flex;align-items:center;gap:12px;transition:all .2s;user-select:none}
-.sort-item:hover{border-color:var(--accent);background:#eff6ff}
-.sort-item.dragging{opacity:.5;cursor:grabbing}
-.sort-item-number{width:28px;height:28px;border-radius:50%;background:var(--accent);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:13px;flex-shrink:0}
-.sort-item-text{flex:1;font-size:14px;font-weight:500}
-.sort-item.correct{background:#dcfce7;border-color:var(--success)}
-.sort-item.incorrect{background:#fee2e2;border-color:var(--danger)}
-.sort-arrows{display:flex;flex-direction:column;gap:4px}
-.sort-arrow{background:var(--accent);color:#fff;border:none;width:28px;height:28px;border-radius:6px;cursor:pointer;font-size:14px;display:flex;align-items:center;justify-content:center;transition:all .2s}
-.sort-arrow:hover{background:#1d4ed8}
-.sort-arrow:disabled{opacity:.3;cursor:not-allowed}
-.balance-wheel-container{background:#fff;border:2px solid var(--border);border-radius:16px;padding:24px;margin:16px 0;box-shadow:0 4px 16px rgba(30,58,138,.08)}
-.wheel-app-layout{display:grid;grid-template-columns:1.1fr 1fr;gap:24px;align-items:start}
-.wheel-canvas-wrap{position:relative;background:linear-gradient(135deg,#f8fafc,#eef2ff);border:2px solid var(--border);border-radius:16px;padding:16px;display:flex;flex-direction:column;align-items:center;justify-content:center}
-.wheel-canvas-wrap canvas{max-width:100%;height:auto;display:block;filter:drop-shadow(0 8px 24px rgba(30,58,138,.12))}
-.wheel-tooltip{position:absolute;background:rgba(30,41,59,.95);color:#fff;padding:8px 14px;border-radius:8px;font-size:13px;font-weight:600;pointer-events:none;opacity:0;transition:opacity .2s;z-index:10;border:1px solid var(--warning);white-space:nowrap}
-.wheel-controls{display:flex;flex-direction:column;gap:8px}
-.wheel-controls-title{font-weight:700;color:var(--primary);font-size:15px;margin-bottom:8px;display:flex;align-items:center;gap:8px;padding-bottom:8px;border-bottom:2px solid var(--border)}
-.wheel-slider-row{display:grid;grid-template-columns:32px 1fr 36px;gap:10px;align-items:center;padding:10px 12px;background:var(--bg);border-radius:10px;transition:all .2s;border:2px solid transparent}
-.wheel-slider-row:hover{border-color:var(--accent);background:#eff6ff}
-.wheel-slider-icon{font-size:22px;text-align:center}
-.wheel-slider-input{-webkit-appearance:none;appearance:none;width:100%;height:6px;border-radius:3px;background:var(--border);outline:none;cursor:pointer}
-.wheel-slider-input::-webkit-slider-thumb{-webkit-appearance:none;appearance:none;width:20px;height:20px;border-radius:50%;background:var(--accent);cursor:pointer;box-shadow:0 2px 8px rgba(37,99,235,.4);transition:transform .2s}
-.wheel-slider-input::-webkit-slider-thumb:hover{transform:scale(1.2)}
-.wheel-slider-input::-moz-range-thumb{width:20px;height:20px;border-radius:50%;background:var(--accent);cursor:pointer;border:none;box-shadow:0 2px 8px rgba(37,99,235,.4)}
-.wheel-slider-value{font-weight:700;color:var(--accent);font-size:16px;text-align:center}
-.wheel-btn-row{display:flex;gap:8px;margin-top:12px;flex-wrap:wrap}
-.wheel-btn{flex:1;min-width:100px;padding:10px 12px;border:none;border-radius:10px;font-weight:600;font-size:13px;cursor:pointer;transition:all .2s;display:inline-flex;align-items:center;justify-content:center;gap:6px}
-.wheel-btn-random{background:linear-gradient(135deg,#6366f1,#8b5cf6);color:#fff}
-.wheel-btn-ideal{background:linear-gradient(135deg,#06b6d4,#3b82f6);color:#fff}
-.wheel-btn-reset{background:linear-gradient(135deg,#f59e0b,#ef4444);color:#fff}
-.wheel-btn:hover{transform:translateY(-2px);box-shadow:0 4px 12px rgba(0,0,0,.15)}
-.wheel-stats{background:linear-gradient(135deg,#fef3c7,#fde68a);border:2px solid #fbbf24;border-radius:12px;padding:16px;margin-top:16px}
-.wheel-stats-title{font-weight:700;color:#78350f;margin-bottom:10px;display:flex;align-items:center;gap:8px;font-size:14px}
-.wheel-stats-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
-.wheel-stat-item{background:#fff;padding:10px;border-radius:8px;text-align:center}
-.wheel-stat-label{font-size:11px;color:var(--text-muted);margin-bottom:4px}
-.wheel-stat-value{font-weight:700;color:var(--primary);font-size:15px}
-.wheel-balance-bar{height:10px;background:var(--border);border-radius:5px;overflow:hidden;margin-top:12px}
-.wheel-balance-fill{height:100%;border-radius:5px;transition:width .5s,background .5s}
-.wheel-balance-label{text-align:center;margin-top:8px;font-size:13px;font-weight:600;color:#78350f}
-.category-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin:16px 0}
-.category-card{background:#fff;border:2px solid var(--border);border-radius:12px;padding:16px;cursor:pointer;transition:all .2s;text-align:center}
-.category-card:hover{border-color:var(--accent);transform:translateY(-3px);box-shadow:0 6px 16px rgba(30,58,138,.1)}
-.category-card.selected{border-color:var(--warning);background:#fef3c7}
-.category-card.correct{border-color:var(--success);background:#dcfce7}
-.category-card.incorrect{border-color:var(--danger);background:#fee2e2}
-.category-card-icon{font-size:36px;margin-bottom:8px}
-.category-card-title{font-weight:700;color:var(--primary);font-size:14px;margin-bottom:4px}
-.category-card-desc{font-size:12px;color:var(--text-muted)}
+.research-header{background:linear-gradient(135deg,#eff6ff,#dbeafe);border:2px solid #93c5fd;border-radius:16px;padding:20px;margin:16px 0;display:flex;align-items:center;gap:16px}
+.research-header-icon{font-size:48px;flex-shrink:0}
+.research-header-content{flex:1}
+.research-header-title{font-size:18px;font-weight:700;color:var(--primary);margin-bottom:4px}
+.research-header-sub{font-size:14px;color:var(--text-muted)}
+.research-cards-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;margin:20px 0}
+.research-card{background:#fff;border-radius:16px;padding:20px;border:2px solid var(--border);position:relative;overflow:hidden;transition:all .35s cubic-bezier(.4,0,.2,1);box-shadow:0 2px 8px rgba(0,0,0,.05)}
+.research-card::before{content:'';position:absolute;top:0;left:0;right:0;height:4px;background:var(--card-color,var(--accent))}
+.research-card:hover{transform:translateY(-6px);box-shadow:0 12px 28px rgba(0,0,0,.12);border-color:var(--card-color,var(--accent))}
+.research-card-top{display:flex;align-items:center;gap:12px;margin-bottom:14px}
+.research-card-icon{width:48px;height:48px;border-radius:12px;background:var(--card-bg,#eff6ff);display:flex;align-items:center;justify-content:center;font-size:24px;flex-shrink:0}
+.research-card-title{font-size:14px;font-weight:600;color:var(--text);line-height:1.3;flex:1}
+.research-card-score{display:flex;align-items:baseline;gap:4px;margin-bottom:10px}
+.research-card-number{font-size:36px;font-weight:800;color:var(--card-color,var(--primary));line-height:1}
+.research-card-max{font-size:16px;font-weight:600;color:var(--text-muted)}
+.research-card-bar{height:10px;background:var(--bg);border-radius:5px;overflow:hidden;margin-bottom:10px}
+.research-card-bar-fill{height:100%;background:linear-gradient(90deg,var(--card-color,#3b82f6),var(--card-color-light,#60a5fa));border-radius:5px;transition:width 1s ease-out;animation:barGrow 1.2s ease-out}
+@keyframes barGrow{from{width:0!important}}
+.research-card-note{font-size:12px;font-weight:600;color:var(--card-color,var(--text-muted));padding:6px 10px;background:var(--card-bg,#eff6ff);border-radius:8px;display:inline-block}
+.research-card.card-high{--card-color:#16a34a;--card-color-light:#4ade80;--card-bg:#dcfce7}
+.research-card.card-mid{--card-color:#f59e0b;--card-color-light:#fbbf24;--card-bg:#fef3c7}
+.research-card.card-low{--card-color:#ea580c;--card-color-light:#fb923c;--card-bg:#ffedd5}
+.research-card.card-alert{--card-color:#dc2626;--card-color-light:#f87171;--card-bg:#fee2e2}
+.research-questions{background:linear-gradient(135deg,#fef3c7,#fde68a);border:2px solid #fbbf24;border-radius:16px;padding:20px;margin:20px 0}
+.research-questions-title{font-size:16px;font-weight:700;color:#78350f;margin-bottom:14px;display:flex;align-items:center;gap:10px}
+.research-question-block{background:#fff;border-radius:12px;padding:18px;margin-bottom:16px;border-left:4px solid #f59e0b;box-shadow:0 2px 6px rgba(0,0,0,.04)}
+.research-question-block:last-child{margin-bottom:0}
+.research-question-header{display:flex;align-items:center;gap:12px;margin-bottom:14px}
+.research-question-num{width:32px;height:32px;border-radius:50%;background:#f59e0b;color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:14px;flex-shrink:0}
+.research-question-text{font-size:15px;font-weight:600;color:var(--text);line-height:1.4}
+.research-question-text small{display:block;font-size:12px;font-weight:500;color:var(--text-muted);margin-top:4px;font-style:italic}
+.research-question-options{display:grid;gap:8px;margin-top:8px}
+.research-question-options .option{padding:12px 14px;font-size:14px}
+.research-question-options .option-label{font-size:14px;font-weight:500}
+.impact-block{background:#fff;border-radius:14px;padding:20px;border:2px solid var(--border);margin:16px 0}
+.impact-row{display:grid;grid-template-columns:80px 1fr;gap:16px;align-items:center;padding:12px;background:var(--bg);border-radius:10px;margin-bottom:10px}
+.impact-icon{font-size:36px;text-align:center}
+.impact-content h4{color:var(--primary);margin-bottom:4px;font-size:15px}
+.impact-content p{font-size:14px;color:var(--text)}
+.three-zone-container{display:grid;grid-template-columns:1fr;gap:16px;margin:16px 0}
+.three-zone-bank{background:#fff;border:2px solid var(--border);border-radius:12px;padding:16px}
+.three-zone-bank h4{color:var(--primary);font-size:15px;margin-bottom:12px}
+.three-zone-items{display:flex;flex-wrap:wrap;gap:8px}
+.tz-item{padding:10px 14px;background:var(--bg);border:2px solid var(--border);border-radius:8px;cursor:pointer;font-size:13px;font-weight:500;transition:all .2s;user-select:none}
+.tz-item:hover{border-color:var(--accent)}
+.tz-item.selected{border-color:var(--warning);background:#fef3c7;box-shadow:0 0 0 3px rgba(245,158,11,.3)}
+.tz-item.placed{opacity:.5;cursor:default}
+.three-zone-targets{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.tz-target{background:#fff;border:2px dashed var(--border);border-radius:12px;padding:12px;min-height:140px;transition:all .2s}
+.tz-target.drag-over{border-color:var(--accent);background:#eff6ff}
+.tz-target-header{padding:8px;border-radius:8px;text-align:center;font-weight:700;font-size:13px;margin-bottom:10px;color:#fff}
+.tz-target-header.zone-a{background:linear-gradient(135deg,#f59e0b,#d97706)}
+.tz-target-header.zone-b{background:linear-gradient(135deg,#ec4899,#be185d)}
+.tz-target-header.zone-c{background:linear-gradient(135deg,#8b5cf6,#6d28d9)}
+.tz-target-items{display:flex;flex-direction:column;gap:6px}
+.tz-placed{padding:8px 10px;background:var(--bg);border-radius:6px;font-size:12px;display:flex;justify-content:space-between;align-items:center;gap:6px}
+.tz-remove{background:none;border:none;color:var(--danger);cursor:pointer;font-size:14px;font-weight:700}
+.sorting-container{background:#fff;border:2px solid var(--border);border-radius:14px;padding:20px;margin:16px 0}
+.sorting-zones{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:16px}
+.sorting-zone{background:var(--bg);border:2px dashed var(--border);border-radius:12px;padding:14px;min-height:180px;transition:all .2s}
+.sorting-zone.drag-over{border-color:var(--accent);background:#eff6ff}
+.sorting-zone-header{padding:8px;border-radius:8px;text-align:center;font-weight:700;font-size:14px;margin-bottom:10px;color:#fff}
+.sorting-zone-header.zone-pers{background:linear-gradient(135deg,#3b82f6,#2563eb)}
+.sorting-zone-header.zone-soc{background:linear-gradient(135deg,#10b981,#059669)}
+.sorting-zone-items{display:flex;flex-direction:column;gap:6px;min-height:100px}
+.sorting-item{background:#fff;padding:10px 12px;border:2px solid var(--border);border-radius:8px;cursor:grab;font-size:13px;font-weight:500;display:flex;align-items:center;gap:8px;transition:all .2s;user-select:none}
+.sorting-item:hover{border-color:var(--accent)}
+.sorting-item.dragging{opacity:.5}
+.sorting-item.correct{background:#dcfce7;border-color:var(--success)}
+.sorting-item.incorrect{background:#fee2e2;border-color:var(--danger)}
+.sorting-icon{font-size:18px}
+.yn-grid{display:grid;gap:12px;margin:16px 0}
+.yn-row{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:10px;align-items:center;padding:12px;background:var(--bg);border-radius:10px}
+.yn-label{font-size:14px;font-weight:500}
+.yn-btn{padding:10px;border:2px solid var(--border);border-radius:8px;background:#fff;cursor:pointer;font-weight:600;font-size:14px;transition:all .2s;text-align:center}
+.yn-btn:hover{border-color:var(--accent)}
+.yn-btn.selected-yes{background:#dcfce7;border-color:var(--success);color:#166534}
+.yn-btn.selected-no{background:#fee2e2;border-color:var(--danger);color:#991b1b}
+.yn-btn.correct{box-shadow:0 0 0 3px rgba(22,163,74,.3)}
+.yn-btn.incorrect{box-shadow:0 0 0 3px rgba(220,38,38,.3)}
+.myth-row{background:#fff;border:2px solid var(--border);border-radius:12px;padding:16px;margin-bottom:12px}
+.myth-statement{font-size:15px;font-style:italic;color:var(--text);margin-bottom:12px;padding:12px;background:var(--bg);border-radius:8px;border-left:4px solid var(--warning)}
+.myth-buttons{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.myth-btn{padding:14px;border:2px solid var(--border);border-radius:10px;background:#fff;cursor:pointer;font-weight:700;font-size:15px;transition:all .2s;display:flex;align-items:center;justify-content:center;gap:8px}
+.myth-btn:hover{border-color:var(--accent)}
+.myth-btn.myth-selected{background:#fee2e2;border-color:var(--danger);color:#991b1b}
+.myth-btn.truth-selected{background:#dcfce7;border-color:var(--success);color:#166534}
+.myth-btn.correct{box-shadow:0 0 0 3px rgba(22,163,74,.4)}
+.myth-btn.incorrect{box-shadow:0 0 0 3px rgba(220,38,38,.4)}
+.myth-feedback{margin-top:10px;padding:10px;border-radius:8px;font-size:13px;display:none}
+.myth-feedback.visible{display:block;animation:fadeIn .3s}
+.slider-container{background:#fff;border:2px solid var(--border);border-radius:14px;padding:20px;margin:16px 0}
+.slider-scenario{background:var(--bg);padding:14px;border-radius:10px;margin-bottom:16px;font-size:14px;line-height:1.5}
+.slider-labels{display:flex;justify-content:space-between;font-size:12px;color:var(--text-muted);margin-bottom:8px;font-weight:600}
+.slider-input{width:100%;height:8px;border-radius:4px;background:linear-gradient(90deg,#fee2e2 0%,#fef3c7 50%,#dcfce7 100%);outline:none;-webkit-appearance:none;appearance:none;cursor:pointer}
+.slider-input::-webkit-slider-thumb{-webkit-appearance:none;width:24px;height:24px;border-radius:50%;background:var(--accent);cursor:pointer;box-shadow:0 2px 6px rgba(0,0,0,.2)}
+.slider-input::-moz-range-thumb{width:24px;height:24px;border-radius:50%;background:var(--accent);cursor:pointer;border:none;box-shadow:0 2px 6px rgba(0,0,0,.2)}
+.slider-value{text-align:center;margin-top:12px;font-size:24px;font-weight:800;color:var(--primary)}
+.slider-answer{margin-top:12px;padding:12px;border-radius:10px;font-size:14px;text-align:center;display:none}
+.slider-answer.visible{display:block;animation:fadeIn .3s}
 .fill-blanks-container{background:#fff;border:2px solid var(--border);border-radius:14px;padding:20px;margin:16px 0}
 .fill-blanks-text{font-size:15px;line-height:2;color:var(--text)}
 .fill-blank{display:inline-block;min-width:120px;border-bottom:2px dashed var(--accent);padding:2px 8px;margin:0 4px;font-weight:600;color:var(--accent);text-align:center;cursor:pointer;transition:all .2s}
@@ -230,37 +286,8 @@ body{font-family:system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;background
 .fill-word:hover{border-color:var(--accent);background:#eff6ff}
 .fill-word.used{opacity:.4;cursor:not-allowed;text-decoration:line-through}
 .fill-word.active{border-color:var(--warning);background:#fef3c7}
-.yn-grid{display:grid;gap:12px;margin:16px 0}
-.yn-row{background:var(--bg);padding:16px;border-radius:12px}
-.yn-question{font-weight:600;margin-bottom:12px;font-size:14px}
-.yn-buttons{display:grid;grid-template-columns:1fr 1fr;gap:8px}
-.yn-btn{padding:12px;border:2px solid var(--border);border-radius:8px;cursor:pointer;font-weight:600;text-align:center;transition:all .2s;background:#fff}
-.yn-btn:hover{border-color:var(--accent)}
-.yn-btn.selected-yes{background:#dcfce7;border-color:var(--success);color:#166534}
-.yn-btn.selected-no{background:#fee2e2;border-color:var(--danger);color:#991b1b}
-.yn-btn.correct{background:#dcfce7;border-color:var(--success)}
-.yn-btn.incorrect{background:#fee2e2;border-color:var(--danger)}
-.step6-header{background:linear-gradient(135deg,#f59e0b,#d97706);color:#fff;padding:32px;border-radius:16px;margin-bottom:24px;text-align:center;box-shadow:0 4px 16px rgba(245,158,11,.3)}
-.step6-header h2{font-size:28px;font-weight:800;margin-bottom:8px}
-.stats-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:20px;margin-bottom:24px}
-.stat-card{background:#fff;padding:20px;border-radius:12px;box-shadow:0 4px 12px rgba(30,58,138,.08);text-align:center}
-.stat-value{font-size:32px;font-weight:800;color:var(--primary)}
-.stat-label{font-size:14px;color:var(--text-muted);margin-top:4px}
-.progress-circle-container{display:flex;justify-content:center;align-items:center;margin:24px 0}
-.progress-circle{width:180px;height:180px;border-radius:50%;background:conic-gradient(var(--success) 0%,var(--bg) 0%);display:flex;justify-content:center;align-items:center;transition:background 1s;box-shadow:0 4px 16px rgba(30,58,138,.1)}
-.progress-circle-inner{width:140px;height:140px;background:#fff;border-radius:50%;display:flex;flex-direction:column;justify-content:center;align-items:center}
-.circle-percentage{font-size:40px;font-weight:800;color:var(--primary)}
-.circle-label{font-size:14px;color:var(--text-muted)}
-.level-badge{display:inline-flex;align-items:center;gap:12px;background:linear-gradient(135deg,#eff6ff,#dbeafe);border:2px solid #bfdbfe;padding:16px 24px;border-radius:12px;margin:16px 0}
-.level-badge-icon{font-size:40px}
-.level-badge-title{font-size:18px;font-weight:700;color:var(--primary)}
-.level-badge-desc{font-size:14px;color:var(--text-muted)}
-.skill-eval{margin-bottom:20px;padding-bottom:16px;border-bottom:1px solid var(--border)}
-.skill-eval:last-child{border-bottom:none;margin-bottom:0;padding-bottom:0}
-.skill-title{font-weight:600;font-size:16px}
-.star-rating{display:flex;gap:8px;margin-top:8px}
-.star{font-size:24px;cursor:pointer;color:var(--border);transition:color .2s}
-.star:hover,.star.active{color:var(--warning)}
+.dnd-reset-btn{margin-top:12px;padding:8px 16px;background:var(--bg);border:1px solid var(--border);border-radius:8px;cursor:pointer;font-size:14px;font-weight:600;color:var(--text);transition:all .2s}
+.dnd-reset-btn:hover{background:#e2e8f0}
 @media(max-width:968px){
 .hero-unified{grid-template-columns:1fr}
 .hero-illustration{border-bottom:2px dashed var(--accent);min-height:300px}
@@ -268,8 +295,12 @@ body{font-family:system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;background
 .progress-widget{display:none!important}
 .situation-layout{grid-template-columns:1fr}
 .theory-grid{grid-template-columns:1fr}
-.goal-builder-row{grid-template-columns:1fr}
-.wheel-app-layout{grid-template-columns:1fr}
+.three-zone-targets{grid-template-columns:1fr}
+.sorting-zones{grid-template-columns:1fr}
+.yn-row{grid-template-columns:1fr;gap:6px}
+.yn-label{text-align:center}
+.research-cards-grid{grid-template-columns:1fr}
+.research-header{flex-direction:column;text-align:center}
 }
 @media(max-width:768px){
 .header{padding:16px;border-radius:0 0 12px 12px}
@@ -278,47 +309,50 @@ body{font-family:system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;background
 .container{padding:20px 16px}
 .card{padding:20px}
 .navigation .btn{width:100%;min-width:100%}
+.myth-buttons{grid-template-columns:1fr}
 .theory-block{padding:16px;gap:12px}
 .theory-block-icon{width:48px;height:48px;font-size:24px}
-.category-grid{grid-template-columns:1fr}
-.yn-buttons{grid-template-columns:1fr}
-.wheel-stats-grid{grid-template-columns:1fr}
 }
 @media(max-width:480px){
 .step-title{font-size:18px}
 .card h2{font-size:18px}
 .question-highlight{padding:16px}
 .question-highlight-sub{font-size:13px}
+.research-card{padding:16px}
+.research-card-number{font-size:28px}
+.research-question-block{padding:14px}
+.research-question-text{font-size:14px}
 }
 </style>
 </head>
 <body>
 <div class="top-progress-bar"><div class="top-progress-fill" id="topProgressBar"></div></div>
 <div class="progress-widget" id="progressWidget" onclick="showProgressModal()" tabindex="0" role="button" aria-label="Прогрес">
-<div class="progress-widget-header"><span class="progress-widget-title">📊 Прогрес</span><span class="progress-widget-percentage" id="widgetPercentage">0%</span></div>
-<div style="font-size:10px;color:var(--text-muted);margin-bottom:6px">Виконано: <strong id="widgetTasks">0/13</strong></div>
+<div class="progress-widget-header"><span class="progress-widget-title">Прогрес</span><span class="progress-widget-percentage" id="widgetPercentage">0%</span></div>
+<div style="font-size:10px;color:var(--text-muted);margin-bottom:6px">Виконано: <strong id="widgetTasks">0/16</strong></div>
 <div class="progress-widget-mini-map" id="widgetMiniMap"></div>
 </div>
 <div class="toast-container" id="toastContainer"></div>
 <header class="header">
 <div class="header-content">
-<h1 id="headerTitle">📚 § 24. Власна освітня траєкторія і самоосвіта</h1>
+<h1 id="headerTitle">🌟 § 24. Особистий і соціальний добробут</h1>
 <div class="header-buttons">
-<button class="btn btn-secondary" onclick="goToMainPage()">🏠 До змісту</button>
+<button class="btn btn-secondary" onclick="goToMainPage()">← До змісту</button>
 <button class="btn btn-secondary" onclick="showProgressModal()">📊 Прогрес</button>
 <button class="btn btn-secondary" onclick="showHelpModal()">❓ Як працювати?</button>
 </div>
 </div>
 </header>
-<main class="container" id="mainPage">
+<!-- ГОЛОВНА -->
+<main class="container hidden" id="mainPage">
 <div class="hero-unified">
 <div class="hero-illustration">
-<div class="hero-illustration-title">📚 § 24. Власна освітня траєкторія і самоосвіта</div>
+<div class="hero-illustration-title">🌟 § 24. Особистий і соціальний добробут</div>
 <div class="img-wrapper">
-<img src="https://res.cloudinary.com/dmydvhkzr/image/upload/v1792516085/24-1_slvhgo.png" alt="Освітня траєкторія" onerror="this.parentElement.classList.add('img-failed')">
-<div class="img-fallback"><div></div><div class="img-fallback-text">📸 Місце для ілюстрації: підліток із компасом/картою, що символізує побудову власного освітнього шляху</div></div>
+<img src="https://res.cloudinary.com/dmydvhkzr/image/upload/v1792349263/22-1_ywan9a.png" alt="Особистий і соціальний добробут" onerror="this.parentElement.classList.add('img-failed')">
+<div class="img-fallback">🌟<div class="img-fallback-text">Зображення не завантажилось</div></div>
 </div>
-<p class="situation-caption">💬 «Освіта — це не підготовка до життя; освіта і є саме життя.» — Джон Дьюї</p>
+<p class="situation-caption">Добробут людини визначається не лише тим, що вона має, а й тим, як вона живе.</p>
 </div>
 <div class="hero-navigation">
 <h2>🧭 Навігація по кроках</h2>
@@ -327,1092 +361,1042 @@ body{font-family:system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;background
 </div>
 </div>
 <div class="info-blocks">
-<div class="card" style="margin:0"><h3> У цьому параграфі ти:</h3>
+<div class="card" style="margin:0"><h3>📚 У цьому параграфі ти:</h3>
 <ul class="feature-list">
-<li data-icon="📜">навчишся визначати освітні цілі та планувати власну освітню траєкторію;</li>
-<li data-icon="🔗">проаналізуєш, як освітній вибір пов'язаний з особистими цінностями й добробутом;</li>
-<li data-icon="🧠">з'ясуєш значення самоосвіти для особистісного та професійного розвитку;</li>
-<li data-icon="⚖️">навчишся дотримуватися балансу між навчанням, працею та відпочинком;</li>
-<li data-icon="⭐">складеш власний проєкт самоосвіти.</li>
+<li data-icon="💡">дізнаєшся, що таке добробут і якість життя;</li>
+<li data-icon="🔗">з'ясуєш, як пов'язані особистий і суспільний добробут;</li>
+<li data-icon="🧭">проаналізуєш, як цінності впливають на добробут;</li>
+<li data-icon="🇺🇦">зрозумієш роль національних цінностей, громадянської активності й оборонної свідомості;</li>
+<li data-icon="⭐">оціниш свій внесок у добробут громади.</li>
 </ul></div>
 <div class="card" style="margin:0"><h3>📋 Що ти робитимеш?</h3>
 <ul class="feature-list">
-<li data-icon="✅">Аналізуватимеш життєві ситуації</li>
-<li data-icon="🎯">Обиратимеш найкращу освітню ціль</li>
-<li data-icon="🗂️">Сортуватимеш кроки планування</li>
-<li data-icon="📚">Класифікуватимеш способи самоосвіти</li>
-<li data-icon="🎡">Налаштовуватимеш інтерактивне колесо балансу</li>
-<li data-icon="⭐">Оціниш свої вміння за рівнями</li>
+<li data-icon="✅">Аналізуватимеш ситуації з підручника</li>
+<li data-icon="🔀">Сортуватимеш складові добробуту</li>
+<li data-icon="🎚️">Оцінюватимеш вплив цінностей</li>
+<li data-icon="🧩">Заповнюватимеш пропуски в тексті</li>
+<li data-icon="⭐">Оціниш свої вміння</li>
 </ul></div>
 </div>
-<div class="tip-card">💡 <strong>Пам'ятай:</strong> Освітня траєкторія — це твій особистий шлях. Вона може змінюватися залежно від нових інтересів, обставин і досвіду. Головне — рухатися вперед!</div>
+<div class="tip-card">💡 <strong>Пам'ятай:</strong> Особистий і суспільний добробут не існують окремо. Добробут кожної людини залежить від розвитку суспільства, а добробут суспільства — від відповідальних дій його громадян.</div>
 </main>
+<!-- КРОК 1 - СТАРТОВЕ ЗАВДАННЯ -->
 <main class="container hidden" id="step1Page">
-<div class="step-header"><h2 class="step-title"> Крок 1. Стартове завдання</h2></div>
+<div class="step-header"><h2 class="step-title">🎯 Крок 1. Стартове завдання</h2></div>
 <section class="card">
 <div class="question-highlight">
-<div><strong>📌 Ситуація:</strong> Артем хоче покращити англійську мову, але не знає, з чого почати. Він обирає онлайн-курс, складає план занять і щотижня перевіряє свій прогрес у мобільному застосунку.</div>
+<span class="question-highlight-icon">🤔</span>
+<div class="question-highlight-sub">Соціологічне опитування показало, що люди по-різному відповідають на запитання: «Що означає жити добре?» Одні називають високі доходи, інші — здоров'я, безпеку, цікаву роботу, міцну родину або можливість навчатися й розвиватися.</div>
 </div>
-<div class="situation-layout">
-<div class="situation-illustration-left">
+<div class="situation-illustration-left" style="margin-bottom:20px">
 <div class="img-wrapper">
-<img src="https://res.cloudinary.com/dmydvhkzr/image/upload/v1792516085/24-2_nxyfei.png" alt="Артем вивчає англійську" class="situation-img" onerror="this.parentElement.classList.add('img-failed')">
-<div class="img-fallback"><div>📱</div><div class="img-fallback-text"> Місце для ілюстрації: підліток із телефоном/ноутбуком, де відкритий додаток для вивчення мови</div></div>
+<img src="https://res.cloudinary.com/dmydvhkzr/image/upload/v1792349263/22-2_dxvqgu.png" alt="Соціологічне опитування" class="situation-img" onerror="this.parentElement.classList.add('img-failed')">
+<div class="img-fallback">🤔<div class="img-fallback-text">Зображення не завантажилось</div></div>
 </div>
-<p class="situation-caption">Артем сам обрав курс, склав план і відстежує прогрес</p>
 </div>
-<div>
 <div class="feedback feedback-info mb-24">
-<strong>📌 Запитання:</strong> Які дії Артема є ключовими для успішного навчання?
+<strong>📌 Запитання:</strong> Що найбільше впливає на добробут людини та чому люди по-різному розуміють добре життя?
 </div>
 <div class="task-options" id="s1t1">
 <div class="option" data-correct="false" onclick="sel(this,'s1t1')" tabindex="0" role="button">
 <div class="option-radio"></div>
 <div class="option-text">
-<div class="option-label">😐 Головне — просто записатися на курс, а результат прийде сам собою</div>
+<div class="option-label">😐 Усі люди мають однакове уявлення про добре життя, тому відповіді не відрізняються</div>
 </div>
 </div>
 <div class="option" data-correct="true" onclick="sel(this,'s1t1')" tabindex="0" role="button">
 <div class="option-radio"></div>
 <div class="option-text">
-<div class="option-label">💡 Артем визначив ціль, обрав спосіб навчання, склав план і регулярно перевіряє свій прогрес — це робить навчання ефективним</div>
+<div class="option-label">💡 Відповіді відрізняються, бо добробут — це комплексне поняття, яке включає матеріальний стан, здоров'я, безпеку, освіту, соціальні зв'язки та задоволеність життям. У кожної людини свої пріоритети й життєві обставини</div>
 </div>
 </div>
 <div class="option" data-correct="false" onclick="sel(this,'s1t1')" tabindex="0" role="button">
 <div class="option-radio"></div>
 <div class="option-text">
-<div class="option-label">💻 Достатньо лише завантажити мобільний застосунок — він сам усьому навчить</div>
+<div class="option-label">💰 Найважливіше — це лише високі доходи, бо гроші вирішують усі проблеми</div>
 </div>
 </div>
 </div>
 <div id="s1t1f" class="feedback" style="display:none"></div>
-</div>
-</div>
 <div class="navigation">
-<button class="btn btn-secondary" onclick="goToMainPage()">🏠 До змісту</button>
-<button class="btn btn-primary" onclick="chk('s1t1','step1_task1')">✅ Перевірити</button>
-<button class="btn btn-success" onclick="goToStep(2)">➡️ Далі: Крок 2</button>
+<button class="btn btn-secondary" onclick="goToMainPage()">← До змісту</button>
+<button class="btn btn-primary" onclick="chk('s1t1','step1_task1')">✓ Перевірити</button>
+<button class="btn btn-success" onclick="goToStep(2)">Далі: Крок 2 →</button>
 </div>
 </section>
 </main>
+<!-- КРОК 2 - ЯКІСТЬ ЖИТТЯ І ДОБРОБУТ -->
 <main class="container hidden" id="step2Page">
-<div class="step-header"><div class="step-header-top"><h2 class="step-title">🎯 Крок 2. Освітні цілі</h2><span class="step-badge">📝 3 завдання</span></div></div>
+<div class="step-header"><div class="step-header-top"><h2 class="step-title">📊 Крок 2. Якість життя і добробут</h2><span class="step-badge">3 завдання</span></div></div>
 <section class="card" id="s2Theory">
 <h2>📖 Теоретичний блок</h2>
-<div class="theory-compact">
-<h4>🎯 Що таке освітня ціль?</h4>
-<p><strong>Освітня ціль</strong> — це чітко визначений результат, якого людина прагне досягти завдяки навчанню. Вона допомагає обирати потрібні знання, способи навчання та послідовність дій.</p>
+<div class="theory-compact" style="background:linear-gradient(135deg,#dbeafe,#bfdbfe);border-color:#93c5fd">
+<h4 style="color:#1e40af">🌟 Що таке добробут?</h4>
+<p><strong>Добробут</strong> — це загальний стан життя людини, за якого вона може задовольняти свої потреби, почуватися захищено, реалізовувати здібності та будувати плани на майбутнє.</p>
+<p><strong>Якість життя</strong> — один із найважливіших показників добробуту. Вона характеризує, наскільки сприятливими є умови життя людини та наскільки вона задоволена своїм життям.</p>
 </div>
-<h3 style="margin:24px 0 16px;color:var(--primary)">🧭 Що впливає на вибір освітньої цілі?</h3>
+<h3 style="margin:24px 0 16px;color:var(--primary)">🧩 Складові добробуту</h3>
 <div class="theory-grid">
-<div class="theory-block block-blue">
-<div class="theory-block-icon">❤️</div>
+<div class="theory-block block-red">
+<div class="theory-block-icon">🛡️</div>
 <div class="theory-block-content">
-<h4>Інтереси та здібності</h4>
-<p>Що мені подобається і що добре вдається.</p>
-</div>
-</div>
-<div class="theory-block block-green">
-<div class="theory-block-icon">🔍</div>
-<div class="theory-block-content">
-<h4>Потреби</h4>
-<p>Чого саме мені потрібно навчитися для розвитку.</p>
+<h4>Безпека</h4>
+<p>Особиста й громадська безпека; захист прав людини; рівень злочинності.</p>
 </div>
 </div>
 <div class="theory-block block-orange">
-<div class="theory-block-icon">💎</div>
+<div class="theory-block-icon">💰</div>
 <div class="theory-block-content">
-<h4>Особисті цінності</h4>
-<p>Що для мене справді важливо в житті.</p>
+<h4>Матеріальний добробут</h4>
+<p>Рівень доходів; купівельна спроможність; житлові умови; економічна стабільність.</p>
 </div>
 </div>
 <div class="theory-block block-purple">
-<div class="theory-block-icon">🌐</div>
+<div class="theory-block-icon">🎓</div>
 <div class="theory-block-content">
-<h4>Освітні можливості</h4>
-<p>Де і як я можу навчатися — курси, школи, онлайн-платформи.</p>
-</div>
-</div>
-</div>
-<div class="key-point">💡 <strong>Важливо!</strong> Освітня ціль перетворює бажання на конкретний напрям дій. Вона має відповідати цінностям, інтересам, потребам і можливостям людини.</div>
-<div class="navigation"><button class="btn btn-secondary" onclick="goToMainPage()"> До змісту</button><button class="btn btn-primary" onclick="showS2('s2t1')">➡️ Далі: Завдання 1</button></div>
-</section>
-<section class="card hidden" id="s2t1">
-<h2>📝 Завдання 1. Аналіз ситуації</h2>
-<div class="feedback feedback-warning mb-24">
-<strong>📌 Ситуація:</strong> Олена мріє стати фахівчинею з кібербезпеки. Вона цікавиться інформатикою, любить розв'язувати логічні задачі та добре володіє комп'ютером. Під час профорієнтаційного заходу Олена дізналася, що для цієї професії також потрібні знання англійської мови, основ програмування та безпечної роботи з даними. Вона вирішила визначити, чого саме має навчитися протягом найближчих шести місяців.
-</div>
-<div class="situation-layout">
-<div class="situation-illustration-left">
-<div class="img-wrapper">
-<img src="https://res.cloudinary.com/dmydvhkzr/image/upload/v1792516091/24-3_p6st89.png" alt="Олена - кібербезпека" class="situation-img" onerror="this.parentElement.classList.add('img-failed')">
-<div class="img-fallback"><div>🔐</div><div class="img-fallback-text">📸 Місце для ілюстрації: дівчина за комп'ютером із замком/щитом безпеки на екрані</div></div>
-</div>
-</div>
-<div>
-<div class="feedback feedback-info mb-24">
-<strong>📌 Запитання:</strong> Які фактори вплинули на освітню ціль Олени?
-</div>
-<div class="task-options" id="s2t1">
-<div class="option" data-correct="false" onclick="tog(this)" tabindex="0">
-<div class="option-checkbox"></div>
-<div class="option-text"><div class="option-label">😐 Тільки поради батьків та учителів</div></div>
-</div>
-<div class="option" data-correct="true" onclick="tog(this)" tabindex="0">
-<div class="option-checkbox"></div>
-<div class="option-text"><div class="option-label">💡 Її інтереси (інформатика, логічні задачі) та здібності (робота з комп'ютером)</div></div>
-</div>
-<div class="option" data-correct="true" onclick="tog(this)" tabindex="0">
-<div class="option-checkbox"></div>
-<div class="option-text"><div class="option-label">🎯 Потреби професії (англійська, програмування, безпека даних)</div></div>
-</div>
-<div class="option" data-correct="true" onclick="tog(this)" tabindex="0">
-<div class="option-checkbox"></div>
-<div class="option-text"><div class="option-label">🔍 Інформація з профорієнтаційного заходу</div></div>
-</div>
-<div class="option" data-correct="false" onclick="tog(this)" tabindex="0">
-<div class="option-checkbox"></div>
-<div class="option-text"><div class="option-label">💰 Бажання швидко заробити гроші</div></div>
-</div>
-</div>
-<div id="s2t1f" class="feedback" style="display:none"></div>
-</div>
-</div>
-<div class="navigation"><button class="btn btn-secondary" onclick="showS2('s2Theory')">⬅️ Назад</button><button class="btn btn-primary" onclick="chkMulti('s2t1','s2t1f',3,'step2_task1')">✅ Перевірити</button><button class="btn btn-success" onclick="showS2('s2t2')">➡️ Далі</button></div>
-</section>
-<section class="card hidden" id="s2t2">
-<h2>🎯 Завдання 2. Обери найкраще формулювання освітньої цілі</h2>
-<div class="feedback feedback-warning mb-24">
-<strong>📌 Ситуація:</strong> Данило мріє вести власний науковий блог. Він хоче навчитися монтувати відео, щоб створювати цікаві пізнавальні ролики. Допоможи йому обрати <strong>найкраще формулювання освітньої цілі</strong> — конкретне, реалістичне та вимірюване.
-</div>
-<div class="situation-layout">
-<div class="situation-illustration-left">
-<div class="img-wrapper">
-<img src="https://res.cloudinary.com/dmydvhkzr/image/upload/v1792516085/24-2_nxyfei.png" alt="Данило - відеоблог" class="situation-img" onerror="this.parentElement.classList.add('img-failed')">
-<div class="img-fallback"><div>🎬</div><div class="img-fallback-text">📸 Підліток за комп'ютером монтує відео для блогу</div></div>
-</div>
-</div>
-<div>
-<div class="feedback feedback-info mb-24">
-<strong>📌 Запитання:</strong> Яке формулювання є правильно сформульованою освітньою ціллю?
-</div>
-<div class="task-options" id="s2t2">
-<div class="option" data-correct="false" onclick="sel(this,'s2t2')" tabindex="0">
-<div class="option-radio"></div>
-<div class="option-text">
-<div class="option-label">😐 «Хочу навчитися монтувати відео»</div>
-</div>
-</div>
-<div class="option" data-correct="true" onclick="sel(this,'s2t2')" tabindex="0">
-<div class="option-radio"></div>
-<div class="option-text">
-<div class="option-label">💡 «Протягом 2 місяців опаную основи монтажу в DaVinci Resolve, щоб створити 3 власні відео для блогу»</div>
-</div>
-</div>
-<div class="option" data-correct="false" onclick="sel(this,'s2t2')" tabindex="0">
-<div class="option-radio"></div>
-<div class="option-text">
-<div class="option-label">⚠️ «За тиждень стану професійним відеомонтажером»</div>
-</div>
-</div>
-<div class="option" data-correct="false" onclick="sel(this,'s2t2')" tabindex="0">
-<div class="option-radio"></div>
-<div class="option-text">
-<div class="option-label">😐 «Колись навчуся монтувати відео, коли буде час і натхнення»</div>
-</div>
-</div>
-<div id="s2t2f" class="feedback" style="display:none"></div>
-</div>
-</div>
-<div class="tip-card">💡 <strong>Пам'ятай:</strong> Правильно сформульована ціль відповідає на питання: <em>чого саме?</em>, <em>навіщо?</em>, <em>за який час?</em> та <em>як перевірю результат?</em></div>
-<div class="navigation"><button class="btn btn-secondary" onclick="showS2('s2t1')">⬅️ Назад</button><button class="btn btn-primary" onclick="chk('s2t2','step2_task2')">✅ Перевірити</button><button class="btn btn-success" onclick="showS2('s2t3')">➡️ Далі</button></div>
-</section>
-<section class="card hidden" id="s2t3">
-<h2>✅❌ Завдання 3. Так чи Ні?</h2>
-<div class="feedback feedback-warning mb-24">
-<strong>📌 Інструкція:</strong> Для кожного твердження обери — чи воно правильне. Натисни «Так» або «Ні».
-</div>
-<div class="yn-grid" id="ynGrid2">
-<div class="yn-row">
-<div class="yn-question">📝 «Хочу краще знати англійську мову» — це добре сформульована освітня ціль.</div>
-<div class="yn-buttons">
-<button class="yn-btn" onclick="ynSelV2(this,'s2t3_1','yes')">Так</button>
-<button class="yn-btn" onclick="ynSelV2(this,'s2t3_1','no')">Ні</button>
-</div>
-</div>
-<div class="yn-row">
-<div class="yn-question">📝 Освітня ціль має відповідати інтересам, потребам і можливостям людини.</div>
-<div class="yn-buttons">
-<button class="yn-btn" onclick="ynSelV2(this,'s2t3_2','yes')">Так</button>
-<button class="yn-btn" onclick="ynSelV2(this,'s2t3_2','no')">Ні</button>
-</div>
-</div>
-<div class="yn-row">
-<div class="yn-question">📝 «За тиждень навчуся досконало працювати в графічному редакторі» — реалістична ціль.</div>
-<div class="yn-buttons">
-<button class="yn-btn" onclick="ynSelV2(this,'s2t3_3','yes')">Так</button>
-<button class="yn-btn" onclick="ynSelV2(this,'s2t3_3','no')">Ні</button>
-</div>
-</div>
-<div class="yn-row">
-<div class="yn-question">📝 Освітня траєкторія може змінюватися залежно від нового досвіду.</div>
-<div class="yn-buttons">
-<button class="yn-btn" onclick="ynSelV2(this,'s2t3_4','yes')">Так</button>
-<button class="yn-btn" onclick="ynSelV2(this,'s2t3_4','no')">Ні</button>
-</div>
-</div>
-</div>
-<div id="s2t3f" class="feedback" style="display:none"></div>
-<div class="navigation"><button class="btn btn-secondary" onclick="showS2('s2t2')">⬅️ Назад</button><button class="btn btn-primary" onclick="chkYnV2('ynGrid2',4,'s2t3f','step2_task3')">✅ Перевірити</button><button class="btn btn-success" onclick="goToStep(3)">➡️ Далі: Крок 3</button></div>
-</section>
-</main>
-<main class="container hidden" id="step3Page">
-<div class="step-header"><div class="step-header-top"><h2 class="step-title">🗺️ Крок 3. Освітня траєкторія</h2><span class="step-badge">📝 2 завдання</span></div></div>
-<section class="card" id="s3Theory">
-<h2>📖 Теоретичний блок</h2>
-<div class="theory-compact" style="background:linear-gradient(135deg,#dcfce7,#bbf7d0);border-color:#86efac">
-<h4 style="color:#166534">️ Що таке освітня траєкторія?</h4>
-<p><strong>Освітня траєкторія</strong> — це індивідуальний шлях навчання, який людина будує відповідно до своїх інтересів, здібностей, цінностей, потреб і майбутніх планів.</p>
-</div>
-<h3 style="margin:24px 0 16px;color:var(--primary)"> Складові планування власного шляху:</h3>
-<div class="theory-grid">
-<div class="theory-block block-blue">
-<div class="theory-block-icon">🎯</div>
-<div class="theory-block-content">
-<h4>Освітня ціль</h4>
-<p>Чого я хочу досягти? Конкретний вимірюваний результат.</p>
-</div>
-</div>
-<div class="theory-block block-purple">
-<div class="theory-block-icon">💎</div>
-<div class="theory-block-content">
-<h4>Пріоритети</h4>
-<p>Що для мене зараз найважливіше? Куди спрямувати сили.</p>
-</div>
-</div>
-<div class="theory-block block-orange">
-<div class="theory-block-icon">🔍</div>
-<div class="theory-block-content">
-<h4>Потреби</h4>
-<p>Яких знань і вмінь мені бракує для розвитку.</p>
+<h4>Освіта</h4>
+<p>Доступ до освіти; рівень знань; можливості навчання впродовж життя.</p>
 </div>
 </div>
 <div class="theory-block block-green">
-<div class="theory-block-icon">🌐</div>
+<div class="theory-block-icon">🏥</div>
 <div class="theory-block-content">
-<h4>Освітні можливості</h4>
-<p>Де і як я можу навчатися — курси, школи, ментори.</p>
-</div>
-</div>
-<div class="theory-block block-pink">
-<div class="theory-block-icon">🧩</div>
-<div class="theory-block-content">
-<h4>Мої ресурси</h4>
-<p>Хто або що мені допоможе — люди, інструменти, час.</p>
+<h4>Здоров'я</h4>
+<p>Доступ до медицини; тривалість життя; фізичний і психічний добробут.</p>
 </div>
 </div>
 <div class="theory-block block-cyan">
-<div class="theory-block-icon">👣</div>
+<div class="theory-block-icon">🌳</div>
 <div class="theory-block-content">
-<h4>Дії</h4>
-<p>Які конкретні кроки я зроблю для досягнення мети.</p>
+<h4>Довкілля</h4>
+<p>Чисте повітря й вода; стан природного середовища; рівень забруднення.</p>
+</div>
+</div>
+<div class="theory-block block-pink">
+<div class="theory-block-icon">🤝</div>
+<div class="theory-block-content">
+<h4>Соціальні зв'язки</h4>
+<p>Підтримка близьких; довіра в суспільстві; взаємодопомога.</p>
 </div>
 </div>
 </div>
-<div class="key-point">💡 <strong>Важливо!</strong> Освітня траєкторія може змінюватися. Новий досвід, обставини або інтереси допомагають уточнювати мету, способи навчання та подальші дії.</div>
-<div class="navigation"><button class="btn btn-secondary" onclick="goToMainPage()">🏠 До змісту</button><button class="btn btn-primary" onclick="showS3('s3t1')">➡️ Далі: Завдання 1</button></div>
+<div class="key-point">💡 <strong>Важливо!</strong> Добробут впливає на задоволеність життям, відчуття його сенсу, щастя та внутрішньої рівноваги.</div>
+<div class="navigation"><button class="btn btn-secondary" onclick="goToMainPage()">← До змісту</button><button class="btn btn-primary" onclick="showS2('s2t1')">Далі: Завдання 1 →</button></div>
 </section>
-<section class="card hidden" id="s3t1">
-<h2>📖 Завдання 1. Аналіз траєкторії Марії</h2>
-<div class="feedback feedback-warning mb-24">
-<strong>📌 Ситуація:</strong> Марія мріє створювати сучасні протези. Вона визначила освітню мету — протягом шести місяців опанувати основи 3D-моделювання. Для цього Марія обрала онлайн-курс, консультації вчителя інформатики та щотижневі практичні заняття. Результатом її навчання має стати власна 3D-модель протеза.
+<section class="card hidden" id="s2t1">
+<h2>🔀 Завдання 1. Сортування: складові добробуту</h2>
+<div class="feedback feedback-warning mb-24"><strong>📌 Інструкція:</strong> Розподіли складові на дві групи: «Внутрішні (особисті)» та «Зовнішні (суспільні)». Натисни на картку → потім на зону.</div>
+<div class="sorting-container">
+<div class="sorting-zones">
+<div class="sorting-zone" data-zone="pers" onclick="placeSort(this,'s2t1')">
+<div class="sorting-zone-header zone-pers">👤 Особисті складові</div>
+<div class="sorting-zone-items" id="sortPers"></div>
 </div>
-<div class="situation-layout">
-<div class="situation-illustration-left">
-<div class="img-wrapper">
-<img src="https://res.cloudinary.com/dmydvhkzr/image/upload/v1792516092/24-4_venhi6.png" alt="Марія - 3D-моделювання" class="situation-img" onerror="this.parentElement.classList.add('img-failed')">
-<div class="img-fallback"><div>🦾</div><div class="img-fallback-text">📸 Місце для ілюстрації: дівчина за комп'ютером із 3D-моделлю протеза на екрані</div></div>
-</div>
-</div>
-<div>
-<div class="feedback feedback-info mb-24">
-<strong>📌 Запитання:</strong> Які складові освітньої траєкторії Марії описано в ситуації?
-</div>
-<div class="task-options" id="s3t1">
-<div class="option" data-correct="true" onclick="tog(this)" tabindex="0">
-<div class="option-checkbox"></div>
-<div class="option-text"><div class="option-label">💡Освітня ціль — опанувати основи 3D-моделювання за 6 місяців</div></div>
-</div>
-<div class="option" data-correct="true" onclick="tog(this)" tabindex="0">
-<div class="option-checkbox"></div>
-<div class="option-text"><div class="option-label">🌐 Освітні можливості — онлайн-курс, консультації вчителя</div></div>
-</div>
-<div class="option" data-correct="true" onclick="tog(this)" tabindex="0">
-<div class="option-checkbox"></div>
-<div class="option-text"><div class="option-label">👣 Дії — щотижневі практичні заняття</div></div>
-</div>
-<div class="option" data-correct="true" onclick="tog(this)" tabindex="0">
-<div class="option-checkbox"></div>
-<div class="option-text"><div class="option-label">📊 Результат — власна 3D-модель протеза як критерій досягнення</div></div>
-</div>
-<div class="option" data-correct="false" onclick="tog(this)" tabindex="0">
-<div class="option-checkbox"></div>
-<div class="option-text"><div class="option-label">😐 У ситуації не описано жодної складової траєкторії</div></div>
+<div class="sorting-zone" data-zone="soc" onclick="placeSort(this,'s2t1')">
+<div class="sorting-zone-header zone-soc">🏛️ Суспільні складові</div>
+<div class="sorting-zone-items" id="sortSoc"></div>
 </div>
 </div>
-<div id="s3t1f" class="feedback" style="display:none"></div>
+<div style="margin-top:16px;background:#fff;border:2px solid var(--border);border-radius:12px;padding:14px">
+<h4 style="color:var(--primary);font-size:14px;margin-bottom:10px">📋 Складові (натисни → зона)</h4>
+<div class="three-zone-items" id="sortBank2"></div>
+<button class="dnd-reset-btn" onclick="resetSort('s2t1')">🔄 Перемішати</button>
 </div>
 </div>
-<div class="navigation"><button class="btn btn-secondary" onclick="showS3('s3Theory')">⬅️ Назад</button><button class="btn btn-primary" onclick="chkMulti('s3t1','s3t1f',4,'step3_task1')">✅ Перевірити</button><button class="btn btn-success" onclick="showS3('s3t2')">️ Далі</button></div>
+<div id="s2t1f" class="feedback" style="display:none"></div>
+<div class="navigation"><button class="btn btn-secondary" onclick="showS2('s2Theory')">← Назад</button><button class="btn btn-primary" onclick="chkSort('s2t1',{s1:'pers',s2:'soc',s3:'pers',s4:'soc',s5:'pers',s6:'soc'},'step2_task1')">✓ Перевірити</button><button class="btn btn-success" onclick="showS2('s2t2')">Далі →</button></div>
 </section>
-<section class="card hidden" id="s3t2">
-<h2>🔢 Завдання 2. Правильний порядок планування</h2>
-<div class="feedback feedback-warning mb-24">
-<strong>📌 Інструкція:</strong> Розташуй кроки побудови освітньої траєкторії у правильному порядку — від першого до останнього. Використовуй стрілки ↑ ↓ для переміщення.
-</div>
-<div class="sort-container">
-<div class="sort-bank" id="sortBank">
-<div class="sort-item" data-correct="3">
-<div class="sort-item-number">?</div>
-<div class="sort-item-text">🌐 Визначити освітні можливості (де і як навчатися)</div>
-<div class="sort-arrows"><button class="sort-arrow" onclick="moveSort(this,-1)">↑</button><button class="sort-arrow" onclick="moveSort(this,1)">↓</button></div>
-</div>
-<div class="sort-item" data-correct="1">
-<div class="sort-item-number">?</div>
-<div class="sort-item-text">🎯 Сформулювати освітню ціль (чого хочу досягти)</div>
-<div class="sort-arrows"><button class="sort-arrow" onclick="moveSort(this,-1)">↑</button><button class="sort-arrow" onclick="moveSort(this,1)">↓</button></div>
-</div>
-<div class="sort-item" data-correct="5">
-<div class="sort-item-number">?</div>
-<div class="sort-item-text">📊 Визначити критерії перевірки результату</div>
-<div class="sort-arrows"><button class="sort-arrow" onclick="moveSort(this,-1)">↑</button><button class="sort-arrow" onclick="moveSort(this,1)">↓</button></div>
-</div>
-<div class="sort-item" data-correct="2">
-<div class="sort-item-number">?</div>
-<div class="sort-item-text">📈 Визначити пріоритети та потреби</div>
-<div class="sort-arrows"><button class="sort-arrow" onclick="moveSort(this,-1)">↑</button><button class="sort-arrow" onclick="moveSort(this,1)">↓</button></div>
-</div>
-<div class="sort-item" data-correct="4">
-<div class="sort-item-number">?</div>
-<div class="sort-item-text">👣 Скласти план конкретних дій</div>
-<div class="sort-arrows"><button class="sort-arrow" onclick="moveSort(this,-1)">↑</button><button class="sort-arrow" onclick="moveSort(this,1)">↓</button></div>
+<section class="card hidden" id="s2t2">
+<h2>📊 Завдання 2. Аналіз дослідження добробуту українців (2024)</h2>
+<div class="research-header">
+<div class="research-header-icon">📈</div>
+<div class="research-header-content">
+<div class="research-header-title">Результати дослідження КМІС та Social Value Ukraine</div>
+<div class="research-header-sub">Середні оцінки показників добробуту українців за 10-бальною шкалою (0 — найнижча, 10 — найвища)</div>
 </div>
 </div>
+<div class="research-cards-grid">
+<div class="research-card card-high">
+<div class="research-card-top">
+<div class="research-card-icon">📈</div>
+<div class="research-card-title">Задоволеність життям</div>
 </div>
-<div id="s3t2f" class="feedback" style="display:none"></div>
-<div class="navigation"><button class="btn btn-secondary" onclick="showS3('s3t1')">️ Назад</button><button class="btn btn-primary" onclick="chkSort()">✅ Перевірити порядок</button><button class="btn btn-success" onclick="goToStep(4)">➡️ Далі: Крок 4</button></div>
+<div class="research-card-score">
+<span class="research-card-number">6,9</span>
+<span class="research-card-max">/ 10</span>
+</div>
+<div class="research-card-bar"><div class="research-card-bar-fill" style="width:69%"></div></div>
+<div class="research-card-note">🏆 Найвищий показник</div>
+</div>
+<div class="research-card card-mid">
+<div class="research-card-top">
+<div class="research-card-icon">💡</div>
+<div class="research-card-title">Відчуття, що життя має сенс</div>
+</div>
+<div class="research-card-score">
+<span class="research-card-number">5,6</span>
+<span class="research-card-max">/ 10</span>
+</div>
+<div class="research-card-bar"><div class="research-card-bar-fill" style="width:56%"></div></div>
+<div class="research-card-note">📊 Середній показник</div>
+</div>
+<div class="research-card card-low">
+<div class="research-card-top">
+<div class="research-card-icon">😊</div>
+<div class="research-card-title">Відчуття щастя</div>
+</div>
+<div class="research-card-score">
+<span class="research-card-number">5,1</span>
+<span class="research-card-max">/ 10</span>
+</div>
+<div class="research-card-bar"><div class="research-card-bar-fill" style="width:51%"></div></div>
+<div class="research-card-note">📉 Нижче середнього</div>
+</div>
+<div class="research-card card-alert">
+<div class="research-card-top">
+<div class="research-card-icon">😟</div>
+<div class="research-card-title">Рівень тривожності</div>
+</div>
+<div class="research-card-score">
+<span class="research-card-number">4,6</span>
+<span class="research-card-max">/ 10</span>
+</div>
+<div class="research-card-bar"><div class="research-card-bar-fill" style="width:46%"></div></div>
+<div class="research-card-note">⚠️ Найнижчий показник</div>
+</div>
+</div>
+<div class="research-questions">
+<div class="research-questions-title">🔍 Що саме потрібно проаналізувати?</div>
+<div class="research-question-block">
+<div class="research-question-header">
+<div class="research-question-num">1</div>
+<div class="research-question-text">Порівняй показники. Який показник отримав найвищу оцінку, а який — найнижчу?<small>Обери одну правильну відповідь</small></div>
+</div>
+<div class="research-question-options" id="rq1">
+<div class="option" data-correct="false" onclick="sel(this,'rq1')" tabindex="0" role="button">
+<div class="option-radio"></div>
+<div class="option-text">
+<div class="option-label">😐 Найвищу оцінку отримало «Відчуття щастя» (5,1), а найнижчу — «Задоволеність життям» (6,9)</div>
+</div>
+</div>
+<div class="option" data-correct="true" onclick="sel(this,'rq1')" tabindex="0" role="button">
+<div class="option-radio"></div>
+<div class="option-text">
+<div class="option-label">💡 Найвищу оцінку отримала «Задоволеність життям» (6,9), а найнижчу — «Рівень тривожності» (4,6). Це свідчить про стійкість українців попри війну: вони цінують життя, але відчувають напругу</div>
+</div>
+</div>
+<div class="option" data-correct="false" onclick="sel(this,'rq1')" tabindex="0" role="button">
+<div class="option-radio"></div>
+<div class="option-text">
+<div class="option-label">💰 Усі показники приблизно однакові, тому порівнювати їх немає сенсу</div>
+</div>
+</div>
+</div>
+</div>
+<div class="research-question-block">
+<div class="research-question-header">
+<div class="research-question-num">2</div>
+<div class="research-question-text">Зв'яжи зі складовими добробуту. Які складові добробуту (зі схеми на попередньому кроці) могли вплинути на ці результати?<small>Обери одну правильну відповідь</small></div>
+</div>
+<div class="research-question-options" id="rq2">
+<div class="option" data-correct="false" onclick="sel(this,'rq2')" tabindex="0" role="button">
+<div class="option-radio"></div>
+<div class="option-text">
+<div class="option-label">💰 Тільки матеріальний добробут впливає на всі показники</div>
+</div>
+</div>
+<div class="option" data-correct="true" onclick="sel(this,'rq2')" tabindex="0" role="button">
+<div class="option-radio"></div>
+<div class="option-text">
+<div class="option-label">🔗 На результати впливають одразу кілька складових: безпека (війна знижує показники), соціальні зв'язки (підтримка близьких підвищує задоволеність), здоров'я (стрес впливає на тривожність) та матеріальний добробут</div>
+</div>
+</div>
+<div class="option" data-correct="false" onclick="sel(this,'rq2')" tabindex="0" role="button">
+<div class="option-radio"></div>
+<div class="option-text">
+<div class="option-label">🎓 Лише освіта й доступ до медицини впливають на добробут</div>
+</div>
+</div>
+</div>
+</div>
+<div class="research-question-block">
+<div class="research-question-header">
+<div class="research-question-num">3</div>
+<div class="research-question-text">Проаналізуй контекст. Які життєві обставини могли найбільше вплинути на оцінки українців у 2024 році?<small>Обери одну правильну відповідь</small></div>
+</div>
+<div class="research-question-options" id="rq3">
+<div class="option" data-correct="false" onclick="sel(this,'rq3')" tabindex="0" role="button">
+<div class="option-radio"></div>
+<div class="option-text">
+<div class="option-label">😐 На оцінки вплинули лише особисті фінансові труднощі кожної людини</div>
+</div>
+</div>
+<div class="option" data-correct="false" onclick="sel(this,'rq3')" tabindex="0" role="button">
+<div class="option-radio"></div>
+<div class="option-text">
+<div class="option-label">🌦️ Погодні умови та сезонні зміни — головна причина таких результатів</div>
+</div>
+</div>
+<div class="option" data-correct="true" onclick="sel(this,'rq3')" tabindex="0" role="button">
+<div class="option-radio"></div>
+<div class="option-text">
+<div class="option-label">🇺🇦 Повномасштабна війна: загроза безпеці, вимушене переселення, втрати близьких, економічна нестабільність, стрес і тривога за майбутнє. Водночас єдність та взаємодопомога підтримують високу задоволеність життям</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="s2t2f" class="feedback" style="display:none"></div>
+<div class="navigation"><button class="btn btn-secondary" onclick="showS2('s2t1')">← Назад</button><button class="btn btn-primary" onclick="chkResearch()">✓ Перевірити всі відповіді</button><button class="btn btn-success" onclick="showS2('s2t3')">Далі →</button></div>
+</section>
+<section class="card hidden" id="s2t3">
+<h2>✍️ Завдання 3. Заповни пропуски</h2>
+<div class="feedback feedback-warning mb-24"><strong>📌 Інструкція:</strong> Натисни на пропущене слово → потім на потрібне слово зі «Слова-підказки».</div>
+<div class="fill-blanks-container">
+<div class="fill-blanks-text" id="fillText2">
+<strong>Добробут</strong> — це загальний стан життя людини, за якого вона може задовольняти свої <span class="fill-blank" data-correct="потреби" onclick="fillSel(this)">___?</span>, почуватися захищено та <span class="fill-blank" data-correct="реалізовувати здібності" onclick="fillSel(this)">___?</span>. Одним із найважливіших показників добробуту є <span class="fill-blank" data-correct="якість життя" onclick="fillSel(this)">___?</span>. Вона залежить від багатьох складових: здоров'я, освіти, <span class="fill-blank" data-correct="безпеки" onclick="fillSel(this)">___?</span>, матеріального добробуту, соціальних зв'язків і стану <span class="fill-blank" data-correct="довкілля" onclick="fillSel(this)">___?</span>.
+</div>
+<div class="fill-blank-word-bank" id="fillBank2">
+<div class="fill-word" onclick="wordSel(this)">потреби</div>
+<div class="fill-word" onclick="wordSel(this)">якість життя</div>
+<div class="fill-word" onclick="wordSel(this)">довкілля</div>
+<div class="fill-word" onclick="wordSel(this)">гроші</div>
+<div class="fill-word" onclick="wordSel(this)">реалізовувати здібності</div>
+<div class="fill-word" onclick="wordSel(this)">слабкості</div>
+<div class="fill-word" onclick="wordSel(this)">задоволення</div>
+<div class="fill-word" onclick="wordSel(this)">безпеки</div>
+</div>
+</div>
+<div id="s2t3f" class="feedback" style="display:none"></div>
+<div class="navigation"><button class="btn btn-secondary" onclick="showS2('s2t2')">← Назад</button><button class="btn btn-primary" onclick="chkFill('fillText2',5,'s2t3f','step2_task3')">✓ Перевірити</button><button class="btn btn-success" onclick="goToStep(3)">Далі: Крок 3 →</button></div>
 </section>
 </main>
-<main class="container hidden" id="step4Page">
-<div class="step-header"><div class="step-header-top"><h2 class="step-title">📚 Крок 4. Самоосвіта</h2><span class="step-badge">📝 4 завдання</span></div></div>
-<section class="card" id="s4Theory">
+<!-- КРОК 3 - ОСОБИСТИЙ І СУСПІЛЬНИЙ ДОБРОБУТ -->
+<main class="container hidden" id="step3Page">
+<div class="step-header"><div class="step-header-top"><h2 class="step-title">🔗 Крок 3. Особистий і суспільний добробут</h2><span class="step-badge">3 завдання</span></div></div>
+<section class="card" id="s3Theory">
 <h2>📖 Теоретичний блок</h2>
-<div class="theory-compact" style="background:linear-gradient(135deg,#f3e8ff,#e9d5ff);border-color:#a855f7">
-<h4 style="color:#6d28d9"> Що таке самоосвіта?</h4>
-<p><strong>Самоосвіта</strong> — це навчання, яке людина самостійно організовує відповідно до власних потреб, інтересів і цілей. Цифрові технології роблять самоосвіту доступнішою: допомагають знаходити матеріали, навчатися у зручний час і тренувати нові вміння.</p>
+<div class="theory-compact" style="background:linear-gradient(135deg,#dcfce7,#bbf7d0);border-color:#86efac">
+<h4 style="color:#166534">🔗 Як пов'язані особистий і суспільний добробут?</h4>
+<p><strong>Добробут людини неможливо розглядати окремо від добробуту суспільства.</strong> Якість життя кожної людини залежить від умов, створених у громаді та державі, а добробут суспільства формується завдяки здоров'ю, освіті, праці й відповідальній поведінці його громадян.</p>
 </div>
-<h3 style="margin:24px 0 16px;color:var(--primary)">🛠️ Як можна навчатися самостійно?</h3>
+<div class="key-point">💡 <strong>Важливо!</strong> Особистий і суспільний добробут не існують окремо. Добробут кожної людини залежить від розвитку суспільства, а добробут суспільства — від відповідальних дій його громадян.</div>
+<h3 style="margin:24px 0 16px;color:var(--primary)">🤝 Спільні складові</h3>
 <div class="theory-grid">
 <div class="theory-block block-blue">
-<div class="theory-block-icon">📖</div>
+<div class="theory-block-icon">🏥</div>
 <div class="theory-block-content">
-<h4>Працювати з інформацією</h4>
-<p>Читати книжки й добірки статей, переглядати короткі навчальні відео, слухати подкасти, користуватися освітніми платформами.</p>
+<h4>Здоров'я</h4>
+<p>Здоров'я кожної людини впливає на продуктивність суспільства, а стан системи охорони здоров'я — на якість життя кожного.</p>
 </div>
 </div>
 <div class="theory-block block-green">
 <div class="theory-block-icon">🎓</div>
 <div class="theory-block-content">
-<h4>Навчатися з іншими</h4>
-<p>Проходити онлайн-курси, брати участь у вебінарах і майстер-класах, долучатися до навчальних спільнот.</p>
+<h4>Освіта</h4>
+<p>Освічена людина реалізує себе, а освічене суспільство розвивається.</p>
 </div>
 </div>
 <div class="theory-block block-purple">
-<div class="theory-block-icon">📝</div>
+<div class="theory-block-icon">🛡️</div>
 <div class="theory-block-content">
-<h4>Планувати та аналізувати</h4>
-<p>Ставити цілі, складати план дій, вести нотатки, відстежувати прогрес і робити висновки.</p>
+<h4>Безпека</h4>
+<p>Безпечне середовище створюється спільними зусиллями громадян і держави.</p>
 </div>
 </div>
 <div class="theory-block block-orange">
-<div class="theory-block-icon">🏋️</div>
+<div class="theory-block-icon">💰</div>
 <div class="theory-block-content">
-<h4>Практикуватися</h4>
-<p>Виконувати вправи, створювати власні мініпроєкти, брати участь у челенджах, отримувати зворотний зв'язок.</p>
+<h4>Матеріальне забезпечення</h4>
+<p>Достаток родин формує економіку держави.</p>
+</div>
+</div>
+<div class="theory-block block-pink">
+<div class="theory-block-icon">🤝</div>
+<div class="theory-block-content">
+<h4>Соціальні зв'язки</h4>
+<p>Довіра, взаємодопомога, підтримка близьких — основа здорової громади.</p>
+</div>
+</div>
+<div class="theory-block block-red">
+<div class="theory-block-icon">🌳</div>
+<div class="theory-block-content">
+<h4>Стан довкілля</h4>
+<p>Чисте довкілля — спільна відповідальність і спільний ресурс.</p>
 </div>
 </div>
 </div>
-<div class="key-point">💡 <strong>Важливо!</strong> Цифрові інструменти та ШІ допомагають у самоосвіті, але не замінюють власного мислення. Перевіряйте інформацію за надійними джерелами й використовуйте отримані знання на практиці.</div>
-<div class="navigation"><button class="btn btn-secondary" onclick="goToMainPage()">🏠 До змісту</button><button class="btn btn-primary" onclick="showS4('s4t1')">➡️ Далі: Завдання 1</button></div>
+<div class="navigation"><button class="btn btn-secondary" onclick="goToMainPage()">← До змісту</button><button class="btn btn-primary" onclick="showS3('s3t1')">Далі: Завдання 1 →</button></div>
 </section>
-<section class="card hidden" id="s4t1">
-<h2>📖 Завдання 1. Історія Олега</h2>
+<section class="card hidden" id="s3t1">
+<h2>📝 Завдання 1. Аналіз ситуації</h2>
+<div class="task-instruction mb-24" style="background: #f0f4f8; padding: 12px 16px; border-radius: 8px; border-left: 4px solid #3b82f6;">
+<strong>📌 Умова:</strong> Проаналізуйте описану ситуацію та <strong>оберіть три правильні відповіді</strong>, що найкраще розкривають її суть та наслідки для громади.
+</div>
 <div class="feedback feedback-warning mb-24">
-<strong>📌 Ситуація:</strong> Олег захопився фотографією й почав навчатися самостійно: переглядав відео, читав статті, брав участь у вебінарах і практикувався. Він публікував світлини у спільнотах фотографів, враховував поради й помітив, що за кілька місяців значно покращив свої роботи.
+<strong>📌 Ситуація:</strong> У невеликій громаді відкрили сучасний спортивний майданчик, облаштували велосипедні доріжки та висадили дерева. Мешканці почали частіше гуляти, займатися спортом і проводити час разом. Водночас частина людей продовжувала залишати сміття після відпочинку, пошкоджувала обладнання та не дотримувалася правил благоустрою.
 </div>
 <div class="situation-layout">
 <div class="situation-illustration-left">
 <div class="img-wrapper">
-<img src="https://res.cloudinary.com/dmydvhkzr/image/upload/v1792516085/24-5_g26i8m.png" alt="Олег - фотографія" class="situation-img" onerror="this.parentElement.classList.add('img-failed')">
-<div class="img-fallback"><div></div><div class="img-fallback-text">📸 Місце для ілюстрації: підліток із фотокамерою, що робить знімок</div></div>
+<img src="https://res.cloudinary.com/dmydvhkzr/image/upload/v1792349263/22-3_zpa4ir.png" alt="Спортивний майданчик у громаді" class="situation-img" onerror="this.parentElement.classList.add('img-failed')">
+<div class="img-fallback">🏞️<div class="img-fallback-text">Зображення не завантажилось</div></div>
 </div>
 </div>
-<div>
-<div class="feedback feedback-info mb-24">
-<strong> Запитання:</strong> Які способи самоосвіти використовував Олег?
-</div>
-<div class="task-options" id="s4t1">
+<div class="task-options" id="s3t1-options">
 <div class="option" data-correct="true" onclick="tog(this)" tabindex="0">
 <div class="option-checkbox"></div>
-<div class="option-text"><div class="option-label">📖 Робота з інформацією — перегляд відео, читання статей</div></div>
+<div class="option-text">
+<div class="option-label">💡 Особисті дії можуть змінити якість життя всієї громади — як позитивно, так і негативно</div>
 </div>
-<div class="option" data-correct="true" onclick="tog(this)" tabindex="0">
-<div class="option-checkbox"></div>
-<div class="option-text"><div class="option-label">🤝 Навчання з іншими — вебінари, спільноти фотографів</div></div>
 </div>
 <div class="option" data-correct="true" onclick="tog(this)" tabindex="0">
 <div class="option-checkbox"></div>
-<div class="option-text"><div class="option-label">️📋 Практика — самостійні зйомки та врахування порад</div></div>
+<div class="option-text">
+<div class="option-label">🚯 Безвідповідальна поведінка окремих людей (сміття, пошкодження) знижує добробут інших мешканців</div>
+</div>
 </div>
 <div class="option" data-correct="false" onclick="tog(this)" tabindex="0">
 <div class="option-checkbox"></div>
-<div class="option-text"><div class="option-label">😐 Олег не використовував жодного способу самоосвіти</div></div>
+<div class="option-text">
+<div class="option-label">😐 Це проблема лише тих, хто залишає сміття, і не стосується інших</div>
 </div>
-</div>
-<div id="s4t1f" class="feedback" style="display:none"></div>
-</div>
-</div>
-<div class="navigation"><button class="btn btn-secondary" onclick="showS4('s4Theory')">⬅️ Назад</button><button class="btn btn-primary" onclick="chkMulti('s4t1','s4t1f',3,'step4_task1')">✅ Перевірити</button><button class="btn btn-success" onclick="showS4('s4t2')">➡️ Далі</button></div>
-</section>
-<section class="card hidden" id="s4t2">
-<h2>️ Завдання 2. Класифікація способів самоосвіти</h2>
-<div class="feedback feedback-warning mb-24">
-<strong>📌 Інструкція:</strong> Обери дії, які належать до категорії <strong>«Навчатися з іншими»</strong>.
-</div>
-<div class="category-grid" id="s4t2">
-<div class="category-card" data-correct="false" onclick="catSel(this)" tabindex="0" role="button">
-<div class="category-card-icon">📚</div>
-<div class="category-card-title">Читати книжки</div>
-<div class="category-card-desc">Самостійна робота з текстом</div>
-</div>
-<div class="category-card" data-correct="true" onclick="catSel(this)" tabindex="0" role="button">
-<div class="category-card-icon"></div>
-<div class="category-card-title">💻Проходити онлайн-курси</div>
-<div class="category-card-desc">Навчання разом з іншими учасниками</div>
-</div>
-<div class="category-card" data-correct="true" onclick="catSel(this)" tabindex="0" role="button">
-<div class="category-card-icon">🎥</div>
-<div class="category-card-title">Брати участь у вебінарах</div>
-<div class="category-card-desc">Живе спілкування з експертом</div>
-</div>
-<div class="category-card" data-correct="false" onclick="catSel(this)" tabindex="0" role="button">
-<div class="category-card-icon">🎧</div>
-<div class="category-card-title">Слухати подкасти</div>
-<div class="category-card-desc">Самостійне сприйняття аудіо</div>
-</div>
-<div class="category-card" data-correct="true" onclick="catSel(this)" tabindex="0" role="button">
-<div class="category-card-icon">👥</div>
-<div class="category-card-title">Долучатися до навчальних спільнот</div>
-<div class="category-card-desc">Обмін досвідом з однодумцями</div>
-</div>
-<div class="category-card" data-correct="true" onclick="catSel(this)" tabindex="0" role="button">
-<div class="category-card-icon">🎨</div>
-<div class="category-card-title">Відвідувати майстер-класи</div>
-<div class="category-card-desc">Практика під керівництвом фахівця</div>
-</div>
-</div>
-<div id="s4t2f" class="feedback" style="display:none"></div>
-<div class="navigation"><button class="btn btn-secondary" onclick="showS4('s4t1')">⬅️ Назад</button><button class="btn btn-primary" onclick="chkCat('s4t2','s4t2f',4,'step4_task2')">✅ Перевірити</button><button class="btn btn-success" onclick="showS4('s4t3')">➡️ Далі</button></div>
-</section>
-<section class="card hidden" id="s4t3">
-<h2>✍️ Завдання 3. Заповни пропуски</h2>
-<div class="feedback feedback-warning mb-24">
-<strong>📌 Інструкція:</strong> Натисни на пропущене слово → потім на потрібне слово зі «Слова-підказки».
-</div>
-<div class="fill-blanks-container">
-<div class="fill-blanks-text" id="fillText4">
-<strong>📚 Самоосвіта</strong> — це навчання, яке людина <span class="fill-blank" data-correct="самостійно" onclick="fillSel(this,'fillText4')">___?</span> організовує відповідно до власних потреб, <span class="fill-blank" data-correct="інтересів" onclick="fillSel(this,'fillText4')">___?</span> і цілей. Цифрові технології роблять самоосвіту <span class="fill-blank" data-correct="доступнішою" onclick="fillSel(this,'fillText4')">___?</span>: допомагають знаходити матеріали, навчатися у <span class="fill-blank" data-correct="зручний" onclick="fillSel(this,'fillText4')">___?</span> час і тренувати нові вміння. Онлайн-платформи, застосунки та ШІ-помічники можуть пояснювати складні теми, пропонувати <span class="fill-blank" data-correct="вправи" onclick="fillSel(this,'fillText4')">___?</span> й допомагати аналізувати помилки.
-</div>
-<div class="fill-blank-word-bank" id="fillBank4">
-<div class="fill-word" onclick="wordSel(this,'fillText4')">самостійно</div>
-<div class="fill-word" onclick="wordSel(this,'fillText4')">доступнішою</div>
-<div class="fill-word" onclick="wordSel(this,'fillText4')">складнішою</div>
-<div class="fill-word" onclick="wordSel(this,'fillText4')">зручний</div>
-<div class="fill-word" onclick="wordSel(this,'fillText4')">вправи</div>
-<div class="fill-word" onclick="wordSel(this,'fillText4')">випадково</div>
-<div class="fill-word" onclick="wordSel(this,'fillText4')">обов'язків</div>
-<div class="fill-word" onclick="wordSel(this,'fillText4')">робочий</div>
-<div class="fill-word" onclick="wordSel(this,'fillText4')">інтересів</div>
-<div class="fill-word" onclick="wordSel(this,'fillText4')">іспити</div>
-</div>
-</div>
-<div id="s4t3f" class="feedback" style="display:none"></div>
-<div class="navigation"><button class="btn btn-secondary" onclick="showS4('s4t2')">️ Назад</button><button class="btn btn-primary" onclick="chkFill('fillText4',5,'s4t3f','step4_task3')">✅ Перевірити</button><button class="btn btn-success" onclick="showS4('s4t4')">➡️ Далі</button></div>
-</section>
-<section class="card hidden" id="s4t4">
-<h2>🎯 Завдання 4. Вибір стратегії самоосвіти</h2>
-<div class="feedback feedback-warning mb-24">
-<strong>📌 Ситуація:</strong> Тобі потрібно опанувати нову навичку — створення презентацій. Які стратегії самоосвіти будуть найефективнішими?
-</div>
-<div class="task-options" id="s4t4">
-<div class="option" data-correct="true" onclick="tog(this)" tabindex="0">
-<div class="option-checkbox"></div>
-<div class="option-text"><div class="option-label">💻Переглянути 2-3 навчальні відео про основи дизайну презентацій</div></div>
 </div>
 <div class="option" data-correct="true" onclick="tog(this)" tabindex="0">
 <div class="option-checkbox"></div>
-<div class="option-text"><div class="option-label">🏋️ Створити власну презентацію на відому тему та отримати відгук</div></div>
-</div>
-<div class="option" data-correct="true" onclick="tog(this)" tabindex="0">
-<div class="option-checkbox"></div>
-<div class="option-text"><div class="option-label">👥 Приєднатися до спільноти дизайнерів для обміну досвідом</div></div>
-</div>
-<div class="option" data-correct="false" onclick="tog(this)" tabindex="0">
-<div class="option-checkbox"></div>
-<div class="option-text"><div class="option-label">😐 Просто завантажити готовий шаблон і не вчитися нічому новому</div></div>
-</div>
-<div class="option" data-correct="false" onclick="tog(this)" tabindex="0">
-<div class="option-checkbox"></div>
-<div class="option-text"><div class="option-label">📀 Дивитися розважальні відео замість навчальних</div></div>
+<div class="option-text">
+<div class="option-label">🤝 Відповідальна поведінка кожного мешканця є запорукою збереження спільного простору та гармонії в громаді</div>
 </div>
 </div>
-<div id="s4t4f" class="feedback" style="display:none"></div>
-<div class="navigation"><button class="btn btn-secondary" onclick="showS4('s4t3')">️ Назад</button><button class="btn btn-primary" onclick="chkMulti('s4t4','s4t4f',3,'step4_task4')">✅ Перевірити</button><button class="btn btn-success" onclick="goToStep(5)">➡️ Далі: Крок 5</button></div>
+</div>
+</div>
+<div id="s3t1f" class="feedback" style="display:none"></div>
+<div class="navigation">
+<button class="btn btn-secondary" onclick="showS3('s3Theory')">← Назад</button>
+<button class="btn btn-primary" onclick="chkMulti('s3t1-options','s3t1f',3,'step3_task1')">✓ Перевірити</button>
+<button class="btn btn-success" onclick="showS3('s3t2')">Далі →</button>
+</div>
+</section>
+<section class="card hidden" id="s3t2">
+<h2>✅❌ Завдання 2. Так чи Ні?</h2>
+<div class="feedback feedback-warning mb-24"><strong>📌 Інструкція:</strong> Для кожного твердження обери — чи воно правильне.</div>
+<div class="yn-grid" id="ynGrid3">
+<div class="yn-row"><div class="yn-label">🔗 Добробут людини залежить від умов у громаді та державі</div><button class="yn-btn" data-correct="yes" onclick="ynSel(this)">✅ Так</button><button class="yn-btn" data-correct="no" onclick="ynSel(this)">❌ Ні</button></div>
+<div class="yn-row"><div class="yn-label">🔗 Добробут суспільства формується з дій кожного громадянина</div><button class="yn-btn" data-correct="yes" onclick="ynSel(this)">✅ Так</button><button class="yn-btn" data-correct="no" onclick="ynSel(this)">❌ Ні</button></div>
+<div class="yn-row"><div class="yn-label">😐 Особистий і суспільний добробут — це незалежні поняття</div><button class="yn-btn" data-correct="no" onclick="ynSel(this)">✅ Так</button><button class="yn-btn" data-correct="yes" onclick="ynSel(this)">❌ Ні</button></div>
+<div class="yn-row"><div class="yn-label">🤝 Довіра, взаємодопомога й дотримання законів підвищують добробут усього суспільства</div><button class="yn-btn" data-correct="yes" onclick="ynSel(this)">✅ Так</button><button class="yn-btn" data-correct="no" onclick="ynSel(this)">❌ Ні</button></div>
+<div class="yn-row"><div class="yn-label">💰 Тільки матеріальний добробут впливає на якість життя суспільства</div><button class="yn-btn" data-correct="no" onclick="ynSel(this)">✅ Так</button><button class="yn-btn" data-correct="yes" onclick="ynSel(this)">❌ Ні</button></div>
+</div>
+<div id="s3t2f" class="feedback" style="display:none"></div>
+<div class="navigation"><button class="btn btn-secondary" onclick="showS3('s3t1')">← Назад</button><button class="btn btn-primary" onclick="chkYN('ynGrid3',5,'s3t2f','step3_task2')">✓ Перевірити</button><button class="btn btn-success" onclick="showS3('s3t3')">Далі →</button></div>
+</section>
+<section class="card hidden" id="s3t3">
+<h2>🎚️ Завдання 3. Слайдер: оціни взаємозв'язок</h2>
+<div class="feedback feedback-warning mb-24"><strong>📌 Інструкція:</strong> Оціни, наскільки кожна дія окремої людини впливає на добробут суспільства (0 — майже не впливає, 100 — дуже сильно).</div>
+<div class="slider-container">
+<div class="slider-scenario">📋 <strong>Дія 1:</strong> Громадянин не платить податки, ухиляється від обов'язків.</div>
+<div class="slider-labels"><span>0 — Не впливає</span><span>50 — Помірно</span><span>100 — Дуже сильно</span></div>
+<input type="range" min="0" max="100" value="50" class="slider-input" id="slider31" oninput="updSlider('slider31','sv31')">
+<div class="slider-value" id="sv31">50</div>
+<div class="slider-answer" id="sa31"></div>
+</div>
+<div class="slider-container">
+<div class="slider-scenario">📋 <strong>Дія 2:</strong> Людина волонтерить, допомагає ЗСУ, підтримує громаду.</div>
+<div class="slider-labels"><span>0 — Не впливає</span><span>50 — Помірно</span><span>100 — Дуже сильно</span></div>
+<input type="range" min="0" max="100" value="50" class="slider-input" id="slider32" oninput="updSlider('slider32','sv32')">
+<div class="slider-value" id="sv32">50</div>
+<div class="slider-answer" id="sa32"></div>
+</div>
+<div class="slider-container">
+<div class="slider-scenario">📋 <strong>Дія 3:</strong> Людина дотримується правил безпеки, не поширює дезінформацію.</div>
+<div class="slider-labels"><span>0 — Не впливає</span><span>50 — Помірно</span><span>100 — Дуже сильно</span></div>
+<input type="range" min="0" max="100" value="50" class="slider-input" id="slider33" oninput="updSlider('slider33','sv33')">
+<div class="slider-value" id="sv33">50</div>
+<div class="slider-answer" id="sa33"></div>
+</div>
+<div id="s3t3f" class="feedback" style="display:none"></div>
+<div class="navigation"><button class="btn btn-secondary" onclick="showS3('s3t2')">← Назад</button><button class="btn btn-primary" onclick="chkSlider3()">✓ Перевірити</button><button class="btn btn-success" onclick="goToStep(4)">Далі: Крок 4 →</button></div>
 </section>
 </main>
-<main class="container hidden" id="step5Page">
-<div class="step-header"><div class="step-header-top"><h2 class="step-title">⚖️ Крок 5. Баланс між навчанням, працею та відпочинком</h2><span class="step-badge">📝 3 завдання</span></div></div>
-<section class="card" id="s5Theory">
+<!-- КРОК 4 - ВПЛИВ ЦІННОСТЕЙ -->
+<main class="container hidden" id="step4Page">
+<div class="step-header"><div class="step-header-top"><h2 class="step-title">🧭 Крок 4. Вплив цінностей на добробут</h2><span class="step-badge">3 завдання</span></div></div>
+<section class="card" id="s4Theory">
 <h2>📖 Теоретичний блок</h2>
-<div class="theory-compact" style="background:linear-gradient(135deg,#fef3c7,#fde68a);border-color:#fbbf24">
-<h4 style="color:#78350f">⚖️ Чому важливий баланс?</h4>
-<p>Коли ви робите освітній вибір на основі власних цінностей, навчання стає більш захопливим і продуктивним. Водночас важливо стежити за тим, щоб робити перерви, залишати достатньо часу для інших важливих справ і для відпочинку, дозвілля, спорту.</p>
+<div class="theory-compact" style="background:linear-gradient(135deg,#f3e8ff,#e9d5ff);border-color:#a855f7">
+<h4 style="color:#6d28d9">🧭 Що таке цінності?</h4>
+<p><strong>Цінності</strong> — це життєві орієнтири, які визначають, що людина вважає важливим і до чого прагне. Вони впливають на наші рішення, поведінку, стосунки з іншими людьми та ставлення до власного майбутнього.</p>
 </div>
-<h3 style="margin:24px 0 16px;color:var(--primary)">🕐 Умовний розподіл доби (8+8+8):</h3>
+<div class="key-point">💡 <strong>Важливо!</strong> Цінності стають основою добробуту лише тоді, коли вони проявляються у щоденних рішеннях і вчинках.</div>
+<h3 style="margin:24px 0 16px;color:var(--primary)">🌟 Як цінності впливають на добробут</h3>
 <div class="theory-grid">
+<div class="theory-block block-green">
+<div class="theory-block-icon">🏥</div>
+<div class="theory-block-content">
+<h4>Здоров'я</h4>
+<p>Турбота про фізичний і психічний стан → краще самопочуття, активне й повноцінне життя.</p>
+</div>
+</div>
 <div class="theory-block block-blue">
+<div class="theory-block-icon">🎓</div>
+<div class="theory-block-content">
+<h4>Освіта</h4>
+<p>Готовність навчатися → нові можливості, самореалізація, успішне майбутнє.</p>
+</div>
+</div>
+<div class="theory-block block-indigo">
 <div class="theory-block-icon">💼</div>
 <div class="theory-block-content">
-<h4>Навчання та праця</h4>
-<p>Уроки, домашні завдання, робота, самоосвіта, творчість.</p>
+<h4>Працелюбність</h4>
+<p>Старанне виконання обов'язків → гідний дохід, професійний ріст, економічний розвиток.</p>
 </div>
 </div>
-<div class="theory-block block-green">
+<div class="theory-block block-orange">
+<div class="theory-block-icon">⚖️</div>
+<div class="theory-block-content">
+<h4>Відповідальність</h4>
+<p>Усвідомлення наслідків своїх рішень → довіра людей, стабільність і порядок.</p>
+</div>
+</div>
+<div class="theory-block block-pink">
 <div class="theory-block-icon">🤝</div>
 <div class="theory-block-content">
-<h4>Соціальне життя</h4>
-<p>Родина, друзі, спілкування, допомога вдома.</p>
+<h4>Взаємодопомога</h4>
+<p>Підтримка тих, хто потребує → єдність, довіра, підтримка у складних ситуаціях.</p>
+</div>
+</div>
+<div class="theory-block block-red">
+<div class="theory-block-icon">🛡️</div>
+<div class="theory-block-content">
+<h4>Безпека</h4>
+<p>Дотримання правил і турбота про інших → захищене життя, спокій, упевненість у майбутньому.</p>
+</div>
+</div>
+<div class="theory-block block-cyan">
+<div class="theory-block-icon">🏛️</div>
+<div class="theory-block-content">
+<h4>Громадянська активність</h4>
+<p>Участь у житті громади → позитивні зміни, розвиток, краща якість життя.</p>
 </div>
 </div>
 <div class="theory-block block-purple">
-<div class="theory-block-icon"></div>
+<div class="theory-block-icon">🙏</div>
 <div class="theory-block-content">
-<h4>Відпочинок та відновлення</h4>
-<p>Сон, рухова активність, дозвілля, хобі.</p>
+<h4>Повага</h4>
+<p>Визнання гідності, прав і потреб інших → доброзичливі стосунки, порозуміння, мир у громаді.</p>
 </div>
 </div>
 </div>
-<div class="key-point">💡 <strong>Важливо!</strong> Плануючи навчання, залишайте час для сну, рухової активності, спілкування та відпочинку. Саме баланс допомагає досягати результатів без перевтоми.</div>
-<div class="navigation"><button class="btn btn-secondary" onclick="goToMainPage()">🏠 До змісту</button><button class="btn btn-primary" onclick="showS5('s5t1')">➡️ Далі: Завдання 1</button></div>
+<div class="navigation"><button class="btn btn-secondary" onclick="goToMainPage()">← До змісту</button><button class="btn btn-primary" onclick="showS4('s4t1')">Далі: Завдання 1 →</button></div>
+</section>
+<section class="card hidden" id="s4t1">
+<h2>🔗 Завдання 1. Зіставлення: цінність → наслідок</h2>
+<div class="feedback feedback-warning mb-24"><strong>📌 Інструкція:</strong> З'єднай цінність із наслідком для добробуту.</div>
+<div id="matchingContainer" style="display:flex;flex-direction:column;gap:12px;margin:16px 0">
+<div style="display:grid;grid-template-columns:1fr 40px 1.5fr;gap:12px;align-items:center">
+<div style="background:var(--bg);padding:12px;border-radius:8px;font-weight:600;font-size:15px;border:2px solid var(--border)">💼 Працелюбність</div>
+<div style="text-align:center;font-size:20px;color:var(--text-muted)">→</div>
+<select class="matching-select" id="m41" style="width:100%;padding:12px;border:2px solid var(--border);border-radius:8px;font-size:15px;background:#fff;cursor:pointer">
+<option value="">Обери наслідок...</option>
+<option value="a">Довіра людей, стабільність і порядок</option>
+<option value="b">Гідний дохід, професійний ріст, економічний розвиток</option>
+<option value="c">Єдність, довіра, підтримка у складних ситуаціях</option>
+<option value="d">Захищене життя, спокій, упевненість у майбутньому</option>
+</select>
+</div>
+<div style="display:grid;grid-template-columns:1fr 40px 1.5fr;gap:12px;align-items:center">
+<div style="background:var(--bg);padding:12px;border-radius:8px;font-weight:600;font-size:15px;border:2px solid var(--border)">⚖️ Відповідальність</div>
+<div style="text-align:center;font-size:20px;color:var(--text-muted)">→</div>
+<select class="matching-select" id="m42" style="width:100%;padding:12px;border:2px solid var(--border);border-radius:8px;font-size:15px;background:#fff;cursor:pointer">
+<option value="">Обери наслідок...</option>
+<option value="a">Довіра людей, стабільність і порядок</option>
+<option value="b">Гідний дохід, професійний ріст</option>
+<option value="c">Єдність, довіра, підтримка</option>
+<option value="d">Захищене життя, спокій</option>
+</select>
+</div>
+<div style="display:grid;grid-template-columns:1fr 40px 1.5fr;gap:12px;align-items:center">
+<div style="background:var(--bg);padding:12px;border-radius:8px;font-weight:600;font-size:15px;border:2px solid var(--border)">🤝 Взаємодопомога</div>
+<div style="text-align:center;font-size:20px;color:var(--text-muted)">→</div>
+<select class="matching-select" id="m43" style="width:100%;padding:12px;border:2px solid var(--border);border-radius:8px;font-size:15px;background:#fff;cursor:pointer">
+<option value="">Обери наслідок...</option>
+<option value="a">Довіра людей, стабільність і порядок</option>
+<option value="b">Гідний дохід, професійний ріст</option>
+<option value="c">Єдність, довіра, підтримка у складних ситуаціях</option>
+<option value="d">Захищене життя, спокій</option>
+</select>
+</div>
+<div style="display:grid;grid-template-columns:1fr 40px 1.5fr;gap:12px;align-items:center">
+<div style="background:var(--bg);padding:12px;border-radius:8px;font-weight:600;font-size:15px;border:2px solid var(--border)">🛡️ Безпека</div>
+<div style="text-align:center;font-size:20px;color:var(--text-muted)">→</div>
+<select class="matching-select" id="m44" style="width:100%;padding:12px;border:2px solid var(--border);border-radius:8px;font-size:15px;background:#fff;cursor:pointer">
+<option value="">Обери наслідок...</option>
+<option value="a">Довіра людей, стабільність і порядок</option>
+<option value="b">Гідний дохід, професійний ріст</option>
+<option value="c">Єдність, довіра, підтримка</option>
+<option value="d">Захищене життя, спокій, упевненість у майбутньому</option>
+</select>
+</div>
+</div>
+<div id="s4t1f" class="feedback" style="display:none"></div>
+<div class="navigation"><button class="btn btn-secondary" onclick="showS4('s4Theory')">← Назад</button><button class="btn btn-primary" onclick="chkMatching('s4t1',{m41:'b',m42:'a',m43:'c',m44:'d'},'step4_task1')">✓ Перевірити</button><button class="btn btn-success" onclick="showS4('s4t2')">Далі →</button></div>
+</section>
+<section class="card hidden" id="s4t2">
+<h2>📝 Завдання 2. Аналіз ситуації</h2>
+<div class="task-instruction mb-24" style="background: #f0f4f8; padding: 12px 16px; border-radius: 8px; border-left: 4px solid #3b82f6;">
+<strong>📌 Умова:</strong> Проаналізуйте ситуацію та <strong>оберіть три правильні відповіді</strong>, які дають об'єктивну моральну оцінку вчинкам героїв та їхнім наслідкам.
+</div>
+<div class="feedback feedback-warning mb-24">
+<strong>📌 Ситуація:</strong> Інна та Андрій знайшли гаманець із грошима і паспортом. Андрій запропонував поділити гроші й купити кросівки. Інна відмовилася, бо це чужі речі, і запропонувала повернути власниці.
+</div>
+<div class="situation-layout">
+<div class="situation-illustration-left">
+<div class="img-wrapper">
+<img src="https://res.cloudinary.com/dmydvhkzr/image/upload/v1792349268/22-4_gpdy2p.png" alt="Інна й Андрій знайшли гаманець" class="situation-img" onerror="this.parentElement.classList.add('img-failed')">
+<div class="img-fallback">💼<div class="img-fallback-text">Зображення не завантажилось</div></div>
+</div>
+</div>
+<div class="task-options" id="s4t2-options">
+<div class="option" data-correct="true" onclick="tog(this)" tabindex="0">
+<div class="option-checkbox"></div>
+<div class="option-text">
+<div class="option-label">⚖️ Інна керується цінностями чесності, поваги до чужого майна та відповідальності</div>
+</div>
+</div>
+<div class="option" data-correct="true" onclick="tog(this)" tabindex="0">
+<div class="option-checkbox"></div>
+<div class="option-text">
+<div class="option-label">💰 Рішення Андрія — егоїстичне, воно підриває довіру в суспільстві</div>
+</div>
+</div>
+<div class="option" data-correct="false" onclick="tog(this)" tabindex="0">
+<div class="option-checkbox"></div>
+<div class="option-text">
+<div class="option-label">😐 Знайдене — це удача, можна робити що завгодно</div>
+</div>
+</div>
+<div class="option" data-correct="true" onclick="tog(this)" tabindex="0">
+<div class="option-checkbox"></div>
+<div class="option-text">
+<div class="option-label">🤝 Вчинок Інни зміцнює довіру в суспільстві та робить його безпечнішим для всіх</div>
+</div>
+</div>
+</div>
+</div>
+<div id="s4t2f" class="feedback" style="display:none"></div>
+<div class="navigation"><button class="btn btn-secondary" onclick="showS4('s4t1')">← Назад</button><button class="btn btn-primary" onclick="chkMulti('s4t2-options','s4t2f',3,'step4_task2')">✓ Перевірити</button><button class="btn btn-success" onclick="showS4('s4t3')">Далі →</button></div>
+</section>
+<section class="card hidden" id="s4t3">
+<h2>🎯 Завдання 3. Міф чи правда?</h2>
+<div class="feedback feedback-warning mb-24"><strong>📌 Інструкція:</strong> Прочитай твердження та обери — це МІФ чи ПРАВДА.</div>
+<div class="myth-row">
+<div class="myth-statement">💭 «Цінності — це лише абстрактні поняття, вони не впливають на реальне життя»</div>
+<div class="myth-buttons">
+<button class="myth-btn" data-val="myth" onclick="mythSel(this,'s4t3q1')">❌ Міф</button>
+<button class="myth-btn" data-val="truth" onclick="mythSel(this,'s4t3q1')">✅ Правда</button>
+</div>
+<div class="myth-feedback" id="s4t3q1f"></div>
+</div>
+<div class="myth-row">
+<div class="myth-statement">💭 «Особисті цінності впливають не лише на добробут людини, а й на добробут суспільства»</div>
+<div class="myth-buttons">
+<button class="myth-btn" data-val="myth" onclick="mythSel(this,'s4t3q2')">❌ Міф</button>
+<button class="myth-btn" data-val="truth" onclick="mythSel(this,'s4t3q2')">✅ Правда</button>
+</div>
+<div class="myth-feedback" id="s4t3q2f"></div>
+</div>
+<div class="myth-row">
+<div class="myth-statement">💭 «Цінності стають основою добробуту лише тоді, коли проявляються у щоденних рішеннях і вчинках»</div>
+<div class="myth-buttons">
+<button class="myth-btn" data-val="myth" onclick="mythSel(this,'s4t3q3')">❌ Міф</button>
+<button class="myth-btn" data-val="truth" onclick="mythSel(this,'s4t3q3')">✅ Правда</button>
+</div>
+<div class="myth-feedback" id="s4t3q3f"></div>
+</div>
+<div class="myth-row">
+<div class="myth-statement">💭 «Добробут починається з особистих цінностей і щоденних учинків»</div>
+<div class="myth-buttons">
+<button class="myth-btn" data-val="myth" onclick="mythSel(this,'s4t3q4')">❌ Міф</button>
+<button class="myth-btn" data-val="truth" onclick="mythSel(this,'s4t3q4')">✅ Правда</button>
+</div>
+<div class="myth-feedback" id="s4t3q4f"></div>
+</div>
+<div id="s4t3f" class="feedback" style="display:none"></div>
+<div class="navigation"><button class="btn btn-secondary" onclick="showS4('s4t2')">← Назад</button><button class="btn btn-primary" onclick="chkMyth('s4t3',{s4t3q1:'myth',s4t3q2:'truth',s4t3q3:'truth',s4t3q4:'truth'},'step4_task3')">✓ Завершити</button><button class="btn btn-success" onclick="goToStep(5)">Далі: Крок 5 →</button></div>
+</section>
+</main>
+<!-- КРОК 5 - ЩО ЗМІЦНЮЄ СУСПІЛЬНИЙ ДОБРОБУТ -->
+<main class="container hidden" id="step5Page">
+<div class="step-header"><div class="step-header-top"><h2 class="step-title">🇺🇦 Крок 5. Що зміцнює суспільний добробут</h2><span class="step-badge">3 завдання</span></div></div>
+<section class="card" id="s5Theory">
+<h2>📖 Теоретичний блок</h2>
+<div class="theory-compact" style="background:linear-gradient(135deg,#fef3c7,#fde68a);border-color:#fbbf24">
+<h4 style="color:#78350f">🇺🇦 Три опори суспільного добробуту</h4>
+<p><strong>Національні цінності</strong> визначають, що нас об'єднує.</p>
+<p><strong>Громадянська активність</strong> показує, що ми робимо.</p>
+<p><strong>Оборонна свідомість</strong> — за що ми несемо відповідальність.</p>
+</div>
+<h3 style="margin:24px 0 16px;color:#1e40af;display:flex;align-items:center;gap:10px;padding:12px 16px;background:linear-gradient(135deg,#dbeafe,#bfdbfe);border-radius:12px;border-left:6px solid #2563eb">🇺🇦 Національні цінності</h3>
+<div class="theory-grid">
+<div class="theory-block block-blue">
+<div class="theory-block-icon">❤️</div>
+<div class="theory-block-content">
+<h4>Любов до України</h4>
+<p>Гордість за країну, патріотизм, повага до символів.</p>
+</div>
+</div>
+<div class="theory-block block-blue">
+<div class="theory-block-icon">🗽</div>
+<div class="theory-block-content">
+<h4>Свобода, права людини</h4>
+<p>Гідність, справедливість, рівність.</p>
+</div>
+</div>
+<div class="theory-block block-blue">
+<div class="theory-block-icon">🤝</div>
+<div class="theory-block-content">
+<h4>Єдність, взаємодопомога</h4>
+<p>Підтримка один одного, солідарність.</p>
+</div>
+</div>
+<div class="theory-block block-blue">
+<div class="theory-block-icon">🌳</div>
+<div class="theory-block-content">
+<h4>Відповідальність за природу</h4>
+<p>Дбайливе ставлення до довкілля.</p>
+</div>
+</div>
+</div>
+<h3 style="margin:24px 0 16px;color:#166534;display:flex;align-items:center;gap:10px;padding:12px 16px;background:linear-gradient(135deg,#dcfce7,#bbf7d0);border-radius:12px;border-left:6px solid #16a34a">🏛️ Громадянська активність</h3>
+<div class="theory-grid">
+<div class="theory-block block-green">
+<div class="theory-block-icon">🗳️</div>
+<div class="theory-block-content">
+<h4>Участь у виборах</h4>
+<p>Свідомий вибір майбутнього країни.</p>
+</div>
+</div>
+<div class="theory-block block-green">
+<div class="theory-block-icon">🤲</div>
+<div class="theory-block-content">
+<h4>Волонтерство та благодійність</h4>
+<p>Допомога тим, хто її потребує.</p>
+</div>
+</div>
+<div class="theory-block block-green">
+<div class="theory-block-icon">📝</div>
+<div class="theory-block-content">
+<h4>Подання петицій</h4>
+<p>Висловлення своєї позиції, вплив на рішення влади.</p>
+</div>
+</div>
+<div class="theory-block block-green">
+<div class="theory-block-icon">🏫</div>
+<div class="theory-block-content">
+<h4>Участь у житті школи та громади</h4>
+<p>Активна позиція у власній спільноті.</p>
+</div>
+</div>
+</div>
+<h3 style="margin:24px 0 16px;color:#991b1b;display:flex;align-items:center;gap:10px;padding:12px 16px;background:linear-gradient(135deg,#fee2e2,#fecaca);border-radius:12px;border-left:6px solid #dc2626">🛡️ Оборонна свідомість</h3>
+<div class="theory-grid">
+<div class="theory-block block-red">
+<div class="theory-block-icon">🎖️</div>
+<div class="theory-block-content">
+<h4>Підтримка Сил оборони України</h4>
+<p>Допомога ЗСУ, волонтерство для армії.</p>
+</div>
+</div>
+<div class="theory-block block-red">
+<div class="theory-block-icon">🙏</div>
+<div class="theory-block-content">
+<h4>Повага до військових і ветеранів</h4>
+<p>Визнання їхнього внеску в безпеку країни.</p>
+</div>
+</div>
+<div class="theory-block block-red">
+<div class="theory-block-icon">🚨</div>
+<div class="theory-block-content">
+<h4>Знання правил безпеки</h4>
+<p>Дії під час тривог, надзвичайних ситуацій.</p>
+</div>
+</div>
+<div class="theory-block block-red">
+<div class="theory-block-icon">📵</div>
+<div class="theory-block-content">
+<h4>Протидія дезінформації</h4>
+<p>Перевірка інформації, не поширення фейків.</p>
+</div>
+</div>
+</div>
+<div class="key-point">💡 <strong>Пам'ятай:</strong> Кожен громадянин може зробити внесок у добробут і стійкість України своїми щоденними відповідальними вчинками.</div>
+<div class="navigation"><button class="btn btn-secondary" onclick="goToMainPage()">← До змісту</button><button class="btn btn-primary" onclick="showS5('s5t1')">Далі: Завдання 1 →</button></div>
 </section>
 <section class="card hidden" id="s5t1">
-<h2>🎡 Завдання 1. Колесо мого навчального балансу</h2>
-<div class="feedback feedback-warning mb-24">
-<strong>📌 Інструкція:</strong> Рухай повзунки — колесо змінюється в реальному часі! Оціни кожен сектор від 1 до 10 балів. Це допоможе побачити, які сфери «просідають», а які — твоя сила.
+<h2>🗂️ Завдання 1. Класифікація дій</h2>
+<div class="feedback feedback-warning mb-24"><strong>📌 Інструкція:</strong> Визнач, до якої категорії належить кожна дія: національні цінності, громадянська активність чи оборонна свідомість.</div>
+<div class="three-zone-container">
+<div class="three-zone-bank">
+<h4>📋 Дії</h4>
+<div class="three-zone-items" id="tzBank5"></div>
+<button class="dnd-reset-btn" onclick="resetTZ('s5t1')">🔄 Перемішати</button>
 </div>
-<div class="balance-wheel-container">
-<div class="wheel-app-layout">
-<div class="wheel-canvas-wrap">
-<canvas id="wheelCanvas" width="800" height="800"></canvas>
-<div class="wheel-tooltip" id="wheelTooltip"></div>
+<div class="three-zone-targets">
+<div class="tz-target" data-zone="national" onclick="placeTZ(this,'s5t1')">
+<div class="tz-target-header zone-a">🇺🇦 Національні цінності</div>
+<div class="tz-target-items"></div>
 </div>
-<div class="wheel-controls">
-<div class="wheel-controls-title">⚙️ Налаштуй сектори (1–10)</div>
-<div id="wheelSliders"></div>
-<div class="wheel-btn-row">
-<button class="wheel-btn wheel-btn-random" onclick="wheelRandom()">🎲 Випадково</button>
-<button class="wheel-btn wheel-btn-ideal" onclick="wheelIdeal()">✨ Ідеал</button>
-<button class="wheel-btn wheel-btn-reset" onclick="wheelReset()">🔄 Скинути</button>
+<div class="tz-target" data-zone="civic" onclick="placeTZ(this,'s5t1')">
+<div class="tz-target-header zone-b">🏛️ Громадянська активність</div>
+<div class="tz-target-items"></div>
 </div>
+<div class="tz-target" data-zone="defense" onclick="placeTZ(this,'s5t1')">
+<div class="tz-target-header zone-c">🛡️ Оборонна свідомість</div>
+<div class="tz-target-items"></div>
 </div>
-</div>
-<div class="wheel-stats">
-<div class="wheel-stats-title">📊 Статистика твого балансу</div>
-<div class="wheel-stats-grid" id="wheelStatsGrid"></div>
-<div class="wheel-balance-bar"><div class="wheel-balance-fill" id="wheelBalanceFill"></div></div>
-<div class="wheel-balance-label" id="wheelBalanceLabel">Баланс: 0%</div>
 </div>
 </div>
 <div id="s5t1f" class="feedback" style="display:none"></div>
-<div class="navigation"><button class="btn btn-secondary" onclick="showS5('s5Theory')">⬅️ Назад</button><button class="btn btn-primary" onclick="chkWheel()">✅ Завершити аналіз</button><button class="btn btn-success" onclick="showS5('s5t3')">➡️ Далі</button></div>
+<div class="navigation"><button class="btn btn-secondary" onclick="showS5('s5Theory')">← Назад</button><button class="btn btn-primary" onclick="chkTZ('s5t1',{d1:'national',d2:'civic',d3:'defense',d4:'civic',d5:'defense',d6:'national'},'step5_task1')">✓ Перевірити</button><button class="btn btn-success" onclick="showS5('s5t2')">Далі →</button></div>
+</section>
+<section class="card hidden" id="s5t2">
+<h2>📝 Завдання 2. Аналіз ситуації</h2>
+<div class="task-instruction mb-24" style="background: #f0f4f8; padding: 12px 16px; border-radius: 8px; border-left: 4px solid #3b82f6;">
+<strong>📌 Умова:</strong> Проаналізуйте ситуацію та <strong>оберіть три правильні відповіді</strong>, які найкраще характеризують дії мешканців та їхній вплив на життя громади.
+</div>
+<div class="feedback feedback-warning mb-24">
+<strong>📌 Ситуація:</strong> Після сильного буревію в громаді було пошкоджено дитячий майданчик і парк. Частина мешканців організувала прибирання, збір коштів на ремонт та допомогу літнім людям. Інші вважали, що це повинна робити лише місцева влада, тому не долучалися.
+</div>
+<div class="situation-layout">
+<div class="situation-illustration-left">
+<div class="img-wrapper">
+<img src="https://res.cloudinary.com/dmydvhkzr/image/upload/v1792349270/22-5_vvrjc1.png" alt="Буревій у громаді" class="situation-img" onerror="this.parentElement.classList.add('img-failed')">
+<div class="img-fallback">🌪️<div class="img-fallback-text">Зображення не завантажилось</div></div>
+</div>
+</div>
+<div class="task-options" id="s5t2-options">
+<div class="option" data-correct="true" onclick="tog(this)" tabindex="0">
+<div class="option-checkbox"></div>
+<div class="option-text">
+<div class="option-label">🏛️ Мешканці, які долучилися, проявили громадянську активність</div>
+</div>
+</div>
+<div class="option" data-correct="true" onclick="tog(this)" tabindex="0">
+<div class="option-checkbox"></div>
+<div class="option-text">
+<div class="option-label">🤝 У їхніх діях проявилися національні цінності єдності та взаємодопомоги</div>
+</div>
+</div>
+<div class="option" data-correct="false" onclick="tog(this)" tabindex="0">
+<div class="option-checkbox"></div>
+<div class="option-text">
+<div class="option-label">😐 Ті, хто не долучився, діяли правильно — це справа влади</div>
+</div>
+</div>
+<div class="option" data-correct="true" onclick="tog(this)" tabindex="0">
+<div class="option-checkbox"></div>
+<div class="option-text">
+<div class="option-label">💪 Така поведінка активних мешканців підвищує добробут і стійкість громади</div>
+</div>
+</div>
+</div>
+</div>
+<div id="s5t2f" class="feedback" style="display:none"></div>
+<div class="navigation"><button class="btn btn-secondary" onclick="showS5('s5t1')">← Назад</button><button class="btn btn-primary" onclick="chkMulti('s5t2-options','s5t2f',3,'step5_task2')">✓ Перевірити</button><button class="btn btn-success" onclick="showS5('s5t3')">Далі →</button></div>
 </section>
 <section class="card hidden" id="s5t3">
-<h2>📅 Завдання 2. Збалансований план дня</h2>
-<div class="feedback feedback-warning mb-24">
-<strong>📌 Ситуація:</strong> Склади план дня десятикласника, який має підготуватися до контрольної, виконати частину групового проєкту, допомогти вдома, знайти час для рухової активності, поспілкуватися з друзями та повноцінно відпочити. Обери, які активності обов'язково мають бути в плані.
+<h2>✍️ Завдання 3. Заповни пропуски</h2>
+<div class="feedback feedback-warning mb-24"><strong>📌 Інструкція:</strong> Натисни на пропущене слово → потім на потрібне слово зі «Слова-підказки».</div>
+<div class="fill-blanks-container">
+<div class="fill-blanks-text" id="fillText5">
+<strong>Національні цінності</strong> <span class="fill-blank" data-correct="об'єднують" onclick="fillSel(this)">___?</span> суспільство, <strong>громадянська активність</strong> допомагає його <span class="fill-blank" data-correct="розвивати" onclick="fillSel(this)">___?</span>, а <strong>оборонна свідомість</strong> зміцнює <span class="fill-blank" data-correct="безпеку" onclick="fillSel(this)">___?</span> держави. Особисті цінності визначають <span class="fill-blank" data-correct="поведінку" onclick="fillSel(this)">___?</span> людини, а поведінка кожного впливає на добробут <span class="fill-blank" data-correct="суспільства" onclick="fillSel(this)">___?</span>.
 </div>
-<div class="task-options" id="s5t3">
-<div class="option" data-correct="true" onclick="tog(this)" tabindex="0">
-<div class="option-checkbox"></div>
-<div class="option-text"><div class="option-label">📚 Підготовка до контрольної (60–90 хв з перервами)</div></div>
-</div>
-<div class="option" data-correct="true" onclick="tog(this)" tabindex="0">
-<div class="option-checkbox"></div>
-<div class="option-text"><div class="option-label">👥 Робота над груповим проєктом (онлайн або особисто)</div></div>
-</div>
-<div class="option" data-correct="false" onclick="tog(this)" tabindex="0">
-<div class="option-checkbox"></div>
-<div class="option-text"><div class="option-label">😐 Вчитися 5 годин поспіль без перерв — так ефективніше</div></div>
-</div>
-<div class="option" data-correct="true" onclick="tog(this)" tabindex="0">
-<div class="option-checkbox"></div>
-<div class="option-text"><div class="option-label">🏃 Рухова активність — прогулянка, спорт, зарядка (30–60 хв)</div></div>
-</div>
-<div class="option" data-correct="true" onclick="tog(this)" tabindex="0">
-<div class="option-checkbox"></div>
-<div class="option-text"><div class="option-label">🤝 Спілкування з друзями або родиною</div></div>
-</div>
-<div class="option" data-correct="false" onclick="tog(this)" tabindex="0">
-<div class="option-checkbox"></div>
-<div class="option-text"><div class="option-label">📱 Замінити сон гортанням соцмереж — вистачить 4 години</div></div>
-</div>
-<div class="option" data-correct="true" onclick="tog(this)" tabindex="0">
-<div class="option-checkbox"></div>
-<div class="option-text"><div class="option-label">😴 Повноцінний сон 8–9 годин</div></div>
+<div class="fill-blank-word-bank" id="fillBank5">
+<div class="fill-word" onclick="wordSel(this)">об'єднують</div>
+<div class="fill-word" onclick="wordSel(this)">безпеку</div>
+<div class="fill-word" onclick="wordSel(this)">поведінку</div>
+<div class="fill-word" onclick="wordSel(this)">розділяють</div>
+<div class="fill-word" onclick="wordSel(this)">руйнувати</div>
+<div class="fill-word" onclick="wordSel(this)">суспільства</div>
+<div class="fill-word" onclick="wordSel(this)">розвивати</div>
+<div class="fill-word" onclick="wordSel(this)">економіку</div>
 </div>
 </div>
 <div id="s5t3f" class="feedback" style="display:none"></div>
-<div class="navigation"><button class="btn btn-secondary" onclick="showS5('s5t1')">⬅️ Назад</button><button class="btn btn-primary" onclick="chkMulti('s5t3','s5t3f',5,'step5_task3')">✅ Перевірити</button><button class="btn btn-success" onclick="showS5('s5t4')">➡️ Далі</button></div>
-</section>
-<section class="card hidden" id="s5t4">
-<h2>✅❌ Завдання 3. Так чи Ні про баланс?</h2>
-<div class="feedback feedback-warning mb-24">
-<strong>📌 Інструкція:</strong> Для кожного твердження обери — чи воно правильне.
-</div>
-<div class="yn-grid" id="ynGrid5">
-<div class="yn-row">
-<div class="yn-question">📝 Для ефективного навчання достатньо спати 4-5 годин на добу.</div>
-<div class="yn-buttons">
-<button class="yn-btn" onclick="ynSelV2(this,'s5t4_1','yes')">Так</button>
-<button class="yn-btn" onclick="ynSelV2(this,'s5t4_1','no')">Ні</button>
-</div>
-</div>
-<div class="yn-row">
-<div class="yn-question">📝 Рухова активність допомагає покращити концентрацію та пам'ять.</div>
-<div class="yn-buttons">
-<button class="yn-btn" onclick="ynSelV2(this,'s5t4_2','yes')">Так</button>
-<button class="yn-btn" onclick="ynSelV2(this,'s5t4_2','no')">Ні</button>
-</div>
-</div>
-<div class="yn-row">
-<div class="yn-question">📝 Спілкування з друзями відволікає від навчання, тому його треба уникати.</div>
-<div class="yn-buttons">
-<button class="yn-btn" onclick="ynSelV2(this,'s5t4_3','yes')">Так</button>
-<button class="yn-btn" onclick="ynSelV2(this,'s5t4_3','no')">Ні</button>
-</div>
-</div>
-<div class="yn-row">
-<div class="yn-question">📝 Перерви під час навчання (5-10 хв щогодини) підвищують продуктивність.</div>
-<div class="yn-buttons">
-<button class="yn-btn" onclick="ynSelV2(this,'s5t4_4','yes')">Так</button>
-<button class="yn-btn" onclick="ynSelV2(this,'s5t4_4','no')">Ні</button>
-</div>
-</div>
-</div>
-<div id="s5t4f" class="feedback" style="display:none"></div>
-<div class="navigation"><button class="btn btn-secondary" onclick="showS5('s5t3')">⬅️ Назад</button><button class="btn btn-primary" onclick="chkYnV2('ynGrid5',4,'s5t4f','step5_task4')">✅ Перевірити</button><button class="btn btn-success" onclick="goToStep(6)">➡️ Далі: Самооцінювання</button></div>
+<div class="navigation"><button class="btn btn-secondary" onclick="showS5('s5t2')">← Назад</button><button class="btn btn-primary" onclick="chkFill('fillText5',5,'s5t3f','step5_task3')">✓ Перевірити</button><button class="btn btn-success" onclick="goToStep(6)">Далі: Самооцінювання →</button></div>
 </section>
 </main>
+<!-- КРОК 6 - САМООЦІНЮВАННЯ -->
 <main class="container hidden" id="step6Page">
-<div class="step6-header"><h2> Вітаємо! Ти завершив(ла) параграф!</h2><p>⭐ Час дізнатися свій рівень</p></div>
+<div class="step7-header"><h2>🎉 Вітаємо! Ти завершив(ла) параграф!</h2><p>Час дізнатися свій рівень</p></div>
 <div class="card"><h2>⭐ Оціни свої вміння</h2>
-<div class="skill-eval"><div class="skill-title">✅ Я можу визначити власні освітні цілі відповідно до своїх інтересів і здібностей</div><div class="star-rating" data-skill="1"><span class="star" onclick="rate(1,1)">★</span><span class="star" onclick="rate(1,2)">★</span><span class="star" onclick="rate(1,3)">★</span><span class="star" onclick="rate(1,4)">★</span><span class="star" onclick="rate(1,5)">★</span></div></div>
-<div class="skill-eval"><div class="skill-title">🗺️ Я вмію планувати власну освітню траєкторію</div><div class="star-rating" data-skill="2"><span class="star" onclick="rate(2,1)">★</span><span class="star" onclick="rate(2,2)">★</span><span class="star" onclick="rate(2,3)">★</span><span class="star" onclick="rate(2,4)">★</span><span class="star" onclick="rate(2,5)">★</span></div></div>
-<div class="skill-eval"><div class="skill-title">📚 Я розумію значення самоосвіти для розвитку</div><div class="star-rating" data-skill="3"><span class="star" onclick="rate(3,1)">★</span><span class="star" onclick="rate(3,2)">★</span><span class="star" onclick="rate(3,3)">★</span><span class="star" onclick="rate(3,4)">★</span><span class="star" onclick="rate(3,5)">★</span></div></div>
-<div class="skill-eval"><div class="skill-title">🧠 Я можу обирати ефективні способи самоосвіти</div><div class="star-rating" data-skill="4"><span class="star" onclick="rate(4,1)">★</span><span class="star" onclick="rate(4,2)">★</span><span class="star" onclick="rate(4,3)">★</span><span class="star" onclick="rate(4,4)">★</span><span class="star" onclick="rate(4,5)">★</span></div></div>
-<div class="skill-eval"><div class="skill-title">⚖️ Я дотримуюся балансу між навчанням, працею та відпочинком</div><div class="star-rating" data-skill="5"><span class="star" onclick="rate(5,1)">★</span><span class="star" onclick="rate(5,2)">★</span><span class="star" onclick="rate(5,3)">★</span><span class="star" onclick="rate(5,4)">★</span><span class="star" onclick="rate(5,5)">★</span></div></div>
+<div class="skill-eval"><div class="skill-title">🌟 Я можу пояснити, що впливає на мій добробут і якість життя</div><div class="star-rating" data-skill="1"><span class="star" onclick="rate(1,1)">★</span><span class="star" onclick="rate(1,2)">★</span><span class="star" onclick="rate(1,3)">★</span><span class="star" onclick="rate(1,4)">★</span><span class="star" onclick="rate(1,5)">★</span></div></div>
+<div class="skill-eval"><div class="skill-title">🔗 Я розумію, як особистий добробут пов'язаний із добробутом громади й суспільства</div><div class="star-rating" data-skill="2"><span class="star" onclick="rate(2,1)">★</span><span class="star" onclick="rate(2,2)">★</span><span class="star" onclick="rate(2,3)">★</span><span class="star" onclick="rate(2,4)">★</span><span class="star" onclick="rate(2,5)">★</span></div></div>
+<div class="skill-eval"><div class="skill-title">🧭 Я можу проаналізувати, як мої щоденні рішення впливають на мене й інших людей</div><div class="star-rating" data-skill="3"><span class="star" onclick="rate(3,1)">★</span><span class="star" onclick="rate(3,2)">★</span><span class="star" onclick="rate(3,3)">★</span><span class="star" onclick="rate(3,4)">★</span><span class="star" onclick="rate(3,5)">★</span></div></div>
+<div class="skill-eval"><div class="skill-title">🇺🇦 Я розумію роль національних цінностей, громадянської активності й оборонної свідомості</div><div class="star-rating" data-skill="4"><span class="star" onclick="rate(4,1)">★</span><span class="star" onclick="rate(4,2)">★</span><span class="star" onclick="rate(4,3)">★</span><span class="star" onclick="rate(4,4)">★</span><span class="star" onclick="rate(4,5)">★</span></div></div>
+<div class="skill-eval"><div class="skill-title">🤝 Я можу навести приклади, як своїми діями сприяти добробуту громади</div><div class="star-rating" data-skill="5"><span class="star" onclick="rate(5,1)">★</span><span class="star" onclick="rate(5,2)">★</span><span class="star" onclick="rate(5,3)">★</span><span class="star" onclick="rate(5,4)">★</span><span class="star" onclick="rate(5,5)">★</span></div></div>
 </div>
 <div class="stats-grid">
-<div class="stat-card"><div class="stat-value" id="statTasks">0/13</div><div class="stat-label">✅ Виконано</div></div>
-<div class="stat-card"><div class="stat-value" id="statCorrect">0</div><div class="stat-label"> Правильних</div></div>
+<div class="stat-card"><div class="stat-value" id="statTasks">0/16</div><div class="stat-label">✅ Виконано</div></div>
+<div class="stat-card"><div class="stat-value" id="statCorrect">0</div><div class="stat-label">🎯 Правильних</div></div>
 <div class="stat-card"><div class="stat-value" id="statSteps">0/5</div><div class="stat-label">📍 Кроків</div></div>
 <div class="stat-card"><div class="stat-value" id="statAccuracy">0%</div><div class="stat-label">🎯 Точність</div></div>
 </div>
-<div class="progress-circle-container"><div class="progress-circle" id="progressCircle"><div class="progress-circle-inner"><div class="circle-percentage" id="circlePercentage">0%</div><div class="circle-label">📊 Прогрес</div></div></div></div>
+<div class="progress-circle-container"><div class="progress-circle" id="progressCircle"><div class="progress-circle-inner"><div class="circle-percentage" id="circlePercentage">0%</div><div class="circle-label">Прогрес</div></div></div></div>
 <div style="text-align:center"><div class="level-badge"><div class="level-badge-icon">⭐</div><div><div class="level-badge-title" id="finalLevelTitle">Початківець</div><div class="level-badge-desc" id="finalLevelDesc">⭐☆☆☆☆</div></div></div></div>
-<div class="tip-card">💡 <strong>Освітня ціль перетворює бажання на конкретний напрям дій.</strong><br>🌱 Пам'ятай: твоя освітня траєкторія — це твій особистий шлях. Вона може змінюватися, і це нормально!</div>
+<div class="tip-card">💡 <strong>Добробут починається з особистих цінностей і щоденних учинків.</strong><br>🌱 Кожен громадянин може зробити внесок у добробут і стійкість України своїми щоденними відповідальними вчинками.</div>
 <div class="navigation"><button class="btn btn-warning" onclick="resetProgress()">🔄 Пройти ще раз</button><button class="btn btn-primary" onclick="goToMainPage()">🏠 На головну</button></div>
 </main>
+<!-- MODALS -->
 <div class="modal-overlay" id="progressModal" role="dialog" aria-modal="true" aria-labelledby="pTitle">
-<div class="modal"><div class="modal-header"><h2 id="pTitle"> Мій прогрес</h2><button class="modal-close" onclick="closeModal('progressModal')"></button></div>
+<div class="modal"><div class="modal-header"><h2 id="pTitle">📊 Мій прогрес</h2><button class="modal-close" onclick="closeModal('progressModal')">✕</button></div>
 <div class="text-center"><div style="font-size:48px;margin-bottom:16px" id="mEmoji">⭐☆☆☆☆</div><h3 style="color:var(--primary);margin-bottom:24px" id="mName">Початківець</h3>
 <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-bottom:20px">
-<div style="background:var(--bg);padding:14px;border-radius:12px"><div style="font-size:24px;font-weight:700;color:var(--accent)" id="mT">0/13</div><div style="font-size:12px;color:var(--text-muted)">📝 Завдань</div></div>
-<div style="background:var(--bg);padding:14px;border-radius:12px"><div style="font-size:24px;font-weight:700;color:var(--success)" id="mC">0</div><div style="font-size:12px;color:var(--text-muted)">🎯 Правильних</div></div>
-<div style="background:var(--bg);padding:14px;border-radius:12px"><div style="font-size:24px;font-weight:700;color:var(--warning)" id="mS">0/5</div><div style="font-size:12px;color:var(--text-muted)"> Кроків</div></div>
-<div style="background:var(--bg);padding:14px;border-radius:12px"><div style="font-size:24px;font-weight:700;color:var(--primary)" id="mA">0%</div><div style="font-size:12px;color:var(--text-muted)">🎯 Точність</div></div>
+<div style="background:var(--bg);padding:14px;border-radius:12px"><div style="font-size:24px;font-weight:700;color:var(--accent)" id="mT">0/16</div><div style="font-size:12px;color:var(--text-muted)">Завдань</div></div>
+<div style="background:var(--bg);padding:14px;border-radius:12px"><div style="font-size:24px;font-weight:700;color:var(--success)" id="mC">0</div><div style="font-size:12px;color:var(--text-muted)">Правильних</div></div>
+<div style="background:var(--bg);padding:14px;border-radius:12px"><div style="font-size:24px;font-weight:700;color:var(--warning)" id="mS">0/5</div><div style="font-size:12px;color:var(--text-muted)">Кроків</div></div>
+<div style="background:var(--bg);padding:14px;border-radius:12px"><div style="font-size:24px;font-weight:700;color:var(--primary)" id="mA">0%</div><div style="font-size:12px;color:var(--text-muted)">Точність</div></div>
 </div>
 <div style="background:var(--border);height:12px;border-radius:6px;overflow:hidden;margin-bottom:12px"><div id="mBar" style="height:100%;background:linear-gradient(90deg,var(--accent),var(--success));width:0%;transition:width .5s"></div></div>
-<p style="font-weight:600;color:var(--primary)">📊 Прогрес: <span id="mP">0%</span></p></div></div></div>
+<p style="font-weight:600;color:var(--primary)">Прогрес: <span id="mP">0%</span></p></div></div></div>
 <div class="modal-overlay" id="helpModal" role="dialog" aria-modal="true" aria-labelledby="hTitle">
 <div class="modal"><div class="modal-header"><h2 id="hTitle">❓ Як працювати</h2><button class="modal-close" onclick="closeModal('helpModal')">✕</button></div>
 <div class="feature-list">
-<div data-icon="" style="padding:10px 0 10px 32px;position:relative;border-bottom:1px solid var(--border)"><strong> Як почати?</strong><br>Натисни «Розпочати параграф».</div>
-<div data-icon="✅" style="padding:10px 0 10px 32px;position:relative;border-bottom:1px solid var(--border)"><strong>✅ Форми завдань:</strong><br>🎯 Вибір варіантів<br>🎯 Вибір найкращої освітньої цілі<br>✅❌ Так / Ні<br>🔢 Сортування кроків<br>🗂️ Класифікація способів<br>✍️ Заповнення пропусків<br>🎡 Інтерактивне колесо балансу<br>⭐ Самооцінювання</div>
-<div data-icon="📊" style="padding:10px 0 10px 32px;position:relative"><strong>📊 Прогрес:</strong><br>Натисни на віджет прогресу.</div>
+<div data-icon="🚀" style="padding:10px 0 10px 32px;position:relative;border-bottom:1px solid var(--border)"><strong>Як почати?</strong><br>Натисни «Розпочати параграф».</div>
+<div data-icon="✅" style="padding:10px 0 10px 32px;position:relative;border-bottom:1px solid var(--border)"><strong>Форми завдань:</strong><br>✅❌ Так / Ні<br>🎚️ Слайдер впливу<br>🔀 Сортування<br>🔗 Зіставлення<br>🗂️ Класифікація в 3 зони<br>✍️ Заповнення пропусків<br>🎯 Міф чи правда<br>📊 Аналіз дослідження з варіантами</div>
+<div data-icon="📊" style="padding:10px 0 10px 32px;position:relative"><strong>Прогрес:</strong><br>Натисни на віджет прогресу.</div>
 </div>
-<button class="btn btn-primary mt-24" onclick="closeModal('helpModal')" style="width:100%"> Зрозуміло!</button></div></div>
+<button class="btn btn-primary mt-24" onclick="closeModal('helpModal')" style="width:100%">Зрозуміло!</button></div></div>
 <script>
-var TOTAL_TASKS = 13;
-var ST = {step1:{t:1,c:0,tasks:{task1:0}},step2:{t:3,c:0,tasks:{task1:0,task2:0,task3:0}},step3:{t:2,c:0,tasks:{task1:0,task2:0}},step4:{t:4,c:0,tasks:{task1:0,task2:0,task3:0,task4:0}},step5:{t:3,c:0,tasks:{task1:0,task3:0,task4:0}}};
+var TOTAL_TASKS = 16;
+var ST = {step1:{t:1,c:0,tasks:{task1:0}},step2:{t:3,c:0,tasks:{task1:0,task2:0,task3:0}},step3:{t:3,c:0,tasks:{task1:0,task2:0,task3:0}},step4:{t:3,c:0,tasks:{task1:0,task2:0,task3:0}},step5:{t:3,c:0,tasks:{task1:0,task2:0,task3:0}}};
 var SC = {1:0,2:0,3:0,4:0,5:0};
 var PT = {c:0,t:TOTAL_TASKS,a:[]};
 var state = {cs:0,sr:[0,0,0,0,0]};
+var tzSelected = {};
 var fillSelected = null;
-var ynSelections = {};
+var sortSelected = null;
+var mythCompleted = {};
 function addC(id){if(PT.a.indexOf(id)!==-1)return;PT.a.push(id);PT.c++;updST(id);updLive();saveP()}
-function updST(id){var m=id.match(/step(\d+)_(task\d+)/);if(!m)return;var sn=parseInt(m[1]),tn=m[2],sk="step"+sn,s=ST[sk];if(s&&s.tasks.hasOwnProperty(tn)){s.tasks[tn]=1;s.c=0;for(var k in s.tasks)if(s.tasks[k])s.c++;if(s.c===s.t&&!SC[sn]){SC[sn]=1;showToast("🎉 Крок "+sn+" завершено!","🎉")}}updS6()}
+function updST(id){var m=id.match(/step(\d+)_(task\d+)/);if(!m)return;var sn=parseInt(m[1]),tn=m[2],sk="step"+sn,s=ST[sk];if(s&&s.tasks.hasOwnProperty(tn)){s.tasks[tn]=1;s.c=0;for(var k in s.tasks)if(s.tasks[k])s.c++;if(s.c===s.t&&!SC[sn]){SC[sn]=1;showToast("Крок "+sn+" завершено!","🏆")}}updS6()}
 function updLive(){try{var c=0;for(var i=1;i<=5;i++)c+=ST["step"+i].c;var p=Math.min(100,Math.round(c/TOTAL_TASKS*100));var b=document.getElementById("topProgressBar");if(b)b.style.width=p+"%";var wp=document.getElementById("widgetPercentage");if(wp)wp.textContent=p+"%";var wt=document.getElementById("widgetTasks");if(wt)wt.textContent=c+"/"+TOTAL_TASKS;updateWidgetMiniMap();renderNav();updS6()}catch(e){console.error(e)}}
 function updateWidgetMiniMap(){var wb=document.getElementById("widgetMiniMap");if(!wb)return;wb.innerHTML="";for(var i=1;i<=5;i++){var d=document.createElement("div");d.className="mini-step";if(SC[i])d.classList.add("completed");else if(i===state.cs)d.classList.add("current");d.textContent=i;wb.appendChild(d)}}
-function saveP(){try{sessionStorage
-.setItem("s24v3",JSON.stringify({PT:PT,ST:ST,SC:SC,state:state,ynSelections:ynSelections}))}catch(e){}}
-function loadP(){try{var s=localStorage.getItem("s24v3");if(s){var d=JSON.parse(s);if(d.PT){PT.c=d.PT.c||0;PT.a=d.PT.a||[]}if(d.ST){for(var i=1;i<=5;i++)if(d.ST["step"+i]){ST["step"+i].c=d.ST["step"+i].c||0;ST["step"+i].tasks=d.ST["step"+i].tasks||ST["step"+i].tasks}}if(d.SC)for(var j=1;j<=5;j++)SC[j]=d.SC[j]||0;if(d.state){state.cs=d.state.cs||0;state.sr=d.state.sr||[0,0,0,0,0];while(state.sr.length<5)state.sr.push(0)}if(d.ynSelections)ynSelections=d.ynSelections}}catch(e){}updLive();renderNav()}
-var steps=[{id:1,icon:"🎯",title:"Стартове завдання",tasks:1},{id:2,icon:"🎯",title:"Освітні цілі",tasks:3},{id:3,icon:"🗺️",title:"Освітня траєкторія",tasks:2},{id:4,icon:"📚",title:"Самоосвіта",tasks:4},{id:5,icon:"⚖️",title:"Баланс",tasks:3},{id:6,icon:"🏆",title:"Самооцінювання",tasks:0}];
-function renderNav(){var n=document.getElementById("stepNavigation");if(!n)return;n.innerHTML="";for(var i=0;i<steps.length;i++){var s=steps[i];var d=document.createElement("div");d.className="step-nav-item";var td=s.tasks>0?ST["step"+s.id].c:0;var ic=s.tasks>0&&SC[s.id];if(s.id===6&&SC[5])d.classList.add("completed");else if(ic)d.classList.add("completed");else if(i===state.cs-1)d.classList.add("active");d.innerHTML='<div class="step-nav-number">'+(ic?"✓":(i+1))+'</div><div class="step-nav-content"><div class="step-nav-title">'+s.icon+" "+s.title+'</div><div class="step-nav-status">'+(s.tasks>0?td+"/"+s.tasks+" завдань":"🏆 Фінал")+'</div></div>';d.setAttribute("tabindex","0");d.setAttribute("role","button");(function(idx){d.onclick=function(){goToStep(idx+1)};d.onkeydown=function(e){if(e.key==="Enter"||e.key===" "){e.preventDefault();goToStep(idx+1)}}})(i);n.appendChild(d)}}
-function updS6(){var c=0;for(var i=1;i<=5;i++)c+=ST["step"+i].c;var p=Math.min(100,Math.round(c/TOTAL_TASKS*100));var ac=PT.t>0?Math.round(PT.c/PT.t*100):0;var cs=0;for(var j=1;j<=5;j++)if(SC[j])cs++;var e=function(id,v){var el=document.getElementById(id);if(el)el.textContent=v};e("statTasks",c+"/"+TOTAL_TASKS);e("statCorrect",PT.c);e("statSteps",cs+"/5");e("statAccuracy",ac+"%");var ci=document.getElementById("progressCircle");if(ci)ci.style.background="conic-gradient(var(--success) "+p+"%,var(--bg) "+p+"%)";var cp=document.getElementById("circlePercentage");if(cp)cp.textContent=p+"%";var l="Початківець",em="⭐☆☆☆☆";if(p>=76){l="🏆 Майстер освітньої траєкторії";em="⭐⭐⭐⭐⭐"}else if(p>=51){l=" Досвідчений учень";em="⭐⭐⭐☆☆"}else if(p>=26){l="🥉 Учень";em="⭐⭐☆☆☆"}e("finalLevelTitle",l);e("finalLevelDesc",em);for(var k=0;k<state.sr.length;k++)if(state.sr[k]>0)rate(k+1,state.sr[k])}
+function saveP(){try{sessionStorage.setItem("s22v3",JSON.stringify({PT:PT,ST:ST,SC:SC,state:state}))}catch(e){}}
+function loadP(){try{var s=localStorage.getItem("s22v3");if(s){var d=JSON.parse(s);if(d.PT){PT.c=d.PT.c||0;PT.a=d.PT.a||[]}if(d.ST){for(var i=1;i<=5;i++)if(d.ST["step"+i]){ST["step"+i].c=d.ST["step"+i].c||0;ST["step"+i].tasks=d.ST["step"+i].tasks||ST["step"+i].tasks}}if(d.SC)for(var j=1;j<=5;j++)SC[j]=d.SC[j]||0;if(d.state){state.cs=d.state.cs||0;state.sr=d.state.sr||[0,0,0,0,0];while(state.sr.length<5)state.sr.push(0)}}}catch(e){}updLive();renderNav()}
+var steps=[{id:1,icon:"🎯",title:"Стартове завдання",tasks:1},{id:2,icon:"📊",title:"Якість життя і добробут",tasks:3},{id:3,icon:"🔗",title:"Особистий і суспільний добробут",tasks:3},{id:4,icon:"🧭",title:"Вплив цінностей на добробут",tasks:3},{id:5,icon:"🇺🇦",title:"Що зміцнює суспільний добробут",tasks:3},{id:6,icon:"🏆",title:"Самооцінювання",tasks:0}];
+function renderNav(){var n=document.getElementById("stepNavigation");if(!n)return;n.innerHTML="";for(var i=0;i<steps.length;i++){var s=steps[i];var d=document.createElement("div");d.className="step-nav-item";var td=s.tasks>0?ST["step"+s.id].c:0;var ic=s.tasks>0&&SC[s.id];if(s.id===6&&SC[5])d.classList.add("completed");else if(ic)d.classList.add("completed");else if(i===state.cs-1)d.classList.add("active");d.innerHTML='<div class="step-nav-number">'+(ic?"✓":(i+1))+'</div><div class="step-nav-content"><div class="step-nav-title">'+s.icon+" "+s.title+'</div><div class="step-nav-status">'+(s.tasks>0?td+"/"+s.tasks+" завдань":"Фінал")+'</div></div>';d.setAttribute("tabindex","0");d.setAttribute("role","button");(function(idx){d.onclick=function(){goToStep(idx+1)};d.onkeydown=function(e){if(e.key==="Enter"||e.key===" "){e.preventDefault();goToStep(idx+1)}}})(i);n.appendChild(d)}}
+function updS6(){var c=0;for(var i=1;i<=5;i++)c+=ST["step"+i].c;var p=Math.min(100,Math.round(c/TOTAL_TASKS*100));var ac=PT.t>0?Math.round(PT.c/PT.t*100):0;var cs=0;for(var j=1;j<=5;j++)if(SC[j])cs++;var e=function(id,v){var el=document.getElementById(id);if(el)el.textContent=v};e("statTasks",c+"/"+TOTAL_TASKS);e("statCorrect",PT.c);e("statSteps",cs+"/5");e("statAccuracy",ac+"%");var ci=document.getElementById("progressCircle");if(ci)ci.style.background="conic-gradient(var(--success) "+p+"%,var(--bg) "+p+"%)";var cp=document.getElementById("circlePercentage");if(cp)cp.textContent=p+"%";var l="Початківець",em="⭐☆☆☆☆";if(p>=76){l="Експерт із добробуту";em="⭐⭐⭐⭐⭐"}else if(p>=51){l="Досвідчений учень";em="⭐⭐⭐☆☆"}else if(p>=26){l="Учень";em="⭐⭐☆☆☆"}e("finalLevelTitle",l);e("finalLevelDesc",em);for(var k=0;k<state.sr.length;k++)if(state.sr[k]>0)rate(k+1,state.sr[k])}
 function hideAll(){var p=["mainPage","step1Page","step2Page","step3Page","step4Page","step5Page","step6Page"];for(var i=0;i<p.length;i++){var el=document.getElementById(p[i]);if(el)el.classList.add("hidden")}}
-function goToMainPage(){hideAll();document.getElementById("mainPage").classList.remove("hidden");document.getElementById("headerTitle").textContent=" § 24. Власна освітня траєкторія і самоосвіта";state.cs=0;saveP();window.scrollTo({top:0,behavior:"smooth"})}
-function goToStep(n){hideAll();var pages={1:"step1Page",2:"step2Page",3:"step3Page",4:"step4Page",5:"step5Page",6:"step6Page"};var el=document.getElementById(pages[n]);if(el){el.classList.remove("hidden");state.cs=n;if(n===6)updS6();if(n===5)setTimeout(initWheel,100);saveP();window.scrollTo({top:0,behavior:"smooth"})}}
-function showS2(id){["s2Theory","s2t1","s2t2","s2t3"].forEach(function(s){var e=document.getElementById(s);if(e)e.classList.add("hidden")});document.getElementById(id).classList.remove("hidden");window.scrollTo({top:0,behavior:"smooth"})}
-function showS3(id){["s3Theory","s3t1","s3t2"].forEach(function(s){var e=document.getElementById(s);if(e)e.classList.add("hidden")});document.getElementById(id).classList.remove("hidden");window.scrollTo({top:0,behavior:"smooth"})}
-function showS4(id){["s4Theory","s4t1","s4t2","s4t3","s4t4"].forEach(function(s){var e=document.getElementById(s);if(e)e.classList.add("hidden")});document.getElementById(id).classList.remove("hidden");window.scrollTo({top:0,behavior:"smooth"})}
-function showS5(id){["s5Theory","s5t1","s5t3","s5t4"].forEach(function(s){var e=document.getElementById(s);if(e)e.classList.add("hidden")});document.getElementById(id).classList.remove("hidden");window.scrollTo({top:0,behavior:"smooth"})}
+function goToMainPage(){hideAll();document.getElementById("mainPage").classList.remove("hidden");document.getElementById("headerTitle").textContent="🌟 § 24. Особистий і соціальний добробут";state.cs=0;saveP();window.scrollTo({top:0,behavior:"smooth"})}
+function goToStep(n){hideAll();var pages={1:"step1Page",2:"step2Page",3:"step3Page",4:"step4Page",5:"step5Page",6:"step6Page"};var el=document.getElementById(pages[n]);if(el){el.classList.remove("hidden");state.cs=n;if(n===2)initS2();if(n===5)initS5();if(n===6)updS6();saveP();window.scrollTo({top:0,behavior:"smooth"})}}
+function showS2(id){["s2Theory","s2t1","s2t2","s2t3"].forEach(function(s){var e=document.getElementById(s);if(e)e.classList.add("hidden")});document.getElementById(id).classList.remove("hidden");if(id==="s2t1")initSort('s2t1');window.scrollTo({top:0,behavior:"smooth"})}
+function showS3(id){["s3Theory","s3t1","s3t2","s3t3"].forEach(function(s){var e=document.getElementById(s);if(e)e.classList.add("hidden")});document.getElementById(id).classList.remove("hidden");window.scrollTo({top:0,behavior:"smooth"})}
+function showS4(id){["s4Theory","s4t1","s4t2","s4t3"].forEach(function(s){var e=document.getElementById(s);if(e)e.classList.add("hidden")});document.getElementById(id).classList.remove("hidden");window.scrollTo({top:0,behavior:"smooth"})}
+function showS5(id){["s5Theory","s5t1","s5t2","s5t3"].forEach(function(s){var e=document.getElementById(s);if(e)e.classList.add("hidden")});document.getElementById(id).classList.remove("hidden");if(id==="s5t1")initTZ('s5t1');window.scrollTo({top:0,behavior:"smooth"})}
+function initS2(){initSort('s2t1')}
+function initS5(){initTZ('s5t1')}
 function sel(el,gid){if(el.classList.contains("disabled"))return;var opts=document.querySelectorAll("#"+gid+" .option");for(var i=0;i<opts.length;i++)opts[i].classList.remove("selected");el.classList.add("selected")}
 function tog(el){if(el.classList.contains("disabled"))return;el.classList.toggle("selected")}
-function chk(gid,tid){var s=document.querySelector("#"+gid+" .option.selected");var f=document.getElementById(gid+"f");if(!f)return;f.style.display="block";if(!s){f.className="feedback feedback-warning";f.innerHTML="⚠️ Обери варіант відповіді";return}if(s.dataset.correct==="true"){s.classList.add("correct");f.className="feedback feedback-success";f.innerHTML="<strong>✅ Правильно!</strong>";var opts=document.querySelectorAll("#"+gid+" .option");for(var i=0;i<opts.length;i++){opts[i].classList.add("disabled");if(opts[i].dataset.correct==="true")opts[i].classList.add("correct")}addC(tid);showToast("✅ Завдання виконано!","✅")}else{s.classList.add("incorrect");f.className="feedback feedback-error";f.innerHTML="<strong>❌ Неправильно.</strong> Спробуй ще раз."}}
-function chkMulti(gid,fid,need,tid){var opts=document.querySelectorAll("#"+gid+" .option");var f=document.getElementById(fid);if(!f)return;f.style.display="block";var selOpts=[];for(var i=0;i<opts.length;i++)if(opts[i].classList.contains("selected"))selOpts.push(opts[i]);if(selOpts.length!==need){f.className="feedback feedback-warning";f.innerHTML="⚠️ Обери <strong>"+need+"</strong> правильні відповіді.";return}var ok=true;for(var j=0;j<opts.length;j++){var sb=opts[j].dataset.correct==="true";var is=opts[j].classList.contains("selected");if(sb&&is)opts[j].classList.add("correct");else if(!sb&&is){opts[j].classList.add("incorrect");ok=false}else if(sb&&!is)ok=false;opts[j].classList.add("disabled")}if(ok){f.className="feedback feedback-success";f.innerHTML="<strong>✅ Правильно!</strong>";addC(tid);showToast("🎉 Завдання виконано!","🎉")}else{f.className="feedback feedback-error";f.innerHTML="<strong>❌ Не зовсім.</strong> Спробуй ще раз.";for(var k=0;k<opts.length;k++)opts[k].classList.remove("correct","incorrect","disabled")}}
-function ynSelV2(btn,group,val){ynSelections[group]=val;var row=btn.parentElement;var btns=row.querySelectorAll('.yn-btn');for(var i=0;i<btns.length;i++){btns[i].classList.remove('selected-yes','selected-no')}if(val==='yes'){btn.classList.add('selected-yes')}else{btn.classList.add('selected-no')}}
-function chkYnV2(gridId,expected,fId,tid){var f=document.getElementById(fId);if(!f)return;f.style.display="block";var correct={s2t3_1:'no',s2t3_2:'yes',s2t3_3:'no',s2t3_4:'yes',s5t4_1:'no',s5t4_2:'yes',s5t4_3:'no',s5t4_4:'yes'};var prefix=gridId==='ynGrid2'?'s2t3_':'s5t4_';var answered=0;var ok=0;for(var k in ynSelections){if(k.indexOf(prefix)===0){answered++;var btns=document.querySelectorAll('[onclick*="'+k+'"]');for(var i=0;i<btns.length;i++){var btn=btns[i];if(btn.classList.contains('selected-yes')||btn.classList.contains('selected-no')){var selected=btn;var correctAns=correct[k];var isSelectedYes=selected.classList.contains('selected-yes');if((correctAns==='yes'&&isSelectedYes)||(correctAns==='no'&&!isSelectedYes)){ok++;selected.classList.add('correct')}else{selected.classList.add('incorrect')}}}}}if(answered<expected){f.className="feedback feedback-warning";f.innerHTML="⚠️ Дай відповідь на всі "+expected+" твердження. Зараз: "+answered+"/"+expected+".";return}if(ok===expected){f.className="feedback feedback-success";f.innerHTML="<strong>✅ Чудово!</strong> Усі відповіді правильні!";addC(tid);showToast("🎉 Завдання виконано!","")}else{f.className="feedback feedback-error";f.innerHTML="<strong>❌ Правильно:</strong> "+ok+"/"+expected+". Спробуй ще раз."}}
-function moveSort(btn,dir){var item=btn.closest('.sort-item');var parent=item.parentElement;var siblings=Array.from(parent.children);var idx=siblings.indexOf(item);if(dir===-1&&idx>0){parent.insertBefore(item,siblings[idx-1])}else if(dir===1&&idx<siblings.length-1){parent.insertBefore(siblings[idx+1],item)}updateSortNumbers()}
-function updateSortNumbers(){var items=document.querySelectorAll('#sortBank .sort-item');for(var i=0;i<items.length;i++){items[i].querySelector('.sort-item-number').textContent=i+1}}
-function chkSort(){var f=document.getElementById("s3t2f");if(!f)return;f.style.display="block";var items=document.querySelectorAll('#sortBank .sort-item');var correctOrder=['1','2','3','4','5'];var ok=0;for(var i=0;i<items.length;i++){var expected=correctOrder[i];var actual=items[i].dataset.correct;items[i].classList.remove('correct','incorrect');if(actual===expected){items[i].classList.add('correct');ok++}else{items[i].classList.add('incorrect')}}if(ok===5){f.className="feedback feedback-success";f.innerHTML="<strong>✅ Чудово!</strong> Ти правильно розташував(ла) всі кроки побудови освітньої траєкторії: 1) ціль → 2) пріоритети → 3) можливості → 4) план дій → 5) критерії результату.";addC("step3_task2");showToast("🗺️ Порядок правильний!","🗺️")}else{f.className="feedback feedback-error";f.innerHTML="<strong>❌ Правильно:</strong> "+ok+"/5. Червоним позначено помилки. Спробуй ще раз."}}
-updateSortNumbers();
-function catSel(el){if(el.classList.contains('disabled'))return;el.classList.toggle('selected')}
-function chkCat(gid,fid,need,tid){var cards=document.querySelectorAll('#'+gid+' .category-card');var f=document.getElementById(fid);if(!f)return;f.style.display="block";var selCards=[];for(var i=0;i<cards.length;i++)if(cards[i].classList.contains('selected'))selCards.push(cards[i]);if(selCards.length!==need){f.className="feedback feedback-warning";f.innerHTML="⚠️ Обери <strong>"+need+"</strong> способів навчання з іншими.";return}var ok=true;for(var j=0;j<cards.length;j++){var sb=cards[j].dataset.correct==="true";var is=cards[j].classList.contains("selected");if(sb&&is)cards[j].classList.add("correct");else if(!sb&&is){cards[j].classList.add("incorrect");ok=false}else if(sb&&!is)ok=false;cards[j].classList.add("disabled")}if(ok){f.className="feedback feedback-success";f.innerHTML="<strong>✅ Правильно!</strong> Ти визначив(ла) всі способи навчатися з іншими.";addC(tid);showToast("🗂️ Завдання виконано!","🗂️")}else{f.className="feedback feedback-error";f.innerHTML="<strong>❌ Не зовсім.</strong> Спробуй ще раз.";for(var k=0;k<cards.length;k++)cards[k].classList.remove("correct","incorrect","disabled","selected")}}
-function fillSel(blank,containerId){if(blank.classList.contains("correct"))return;var container=document.getElementById(containerId);var all=container.querySelectorAll(".fill-blank");for(var i=0;i<all.length;i++)all[i].style.background="";blank.style.background="#fef3c7";fillSelected={blank:blank,container:containerId}}
-function wordSel(word,containerId){if(word.classList.contains("used"))return;if(!fillSelected||fillSelected.container!==containerId){var bank=word.parentElement;var all=bank.querySelectorAll(".fill-word");for(var i=0;i<all.length;i++)all[i].classList.remove("active");word.classList.add("active");fillSelected={word:word,container:containerId};return}fillSelected.blank.textContent=word.textContent;fillSelected.blank.dataset.filled=word.textContent;fillSelected.blank.classList.add("filled");word.classList.add("used");word.classList.remove("active");fillSelected.blank.style.background="";fillSelected=null}
-function chkFill(containerId,expected,fId,tid){var f=document.getElementById(fId);if(!f)return;f.style.display="block";var container=document.getElementById(containerId);if(!container)return;var blanks=container.querySelectorAll(".fill-blank");var ok=0;for(var i=0;i<blanks.length;i++){var correct=blanks[i].dataset.correct;var filled=blanks[i].dataset.filled||"";blanks[i].classList.remove("correct","incorrect");if(filled===correct){blanks[i].classList.add("correct");ok++}else blanks[i].classList.add("incorrect")}if(ok===expected){f.className="feedback feedback-success";f.innerHTML="<strong>✅ Чудово!</strong> Усі пропуски заповнено правильно!";addC(tid);showToast("🎉 Завдання виконано!","🎉")}else{f.className="feedback feedback-error";f.innerHTML="<strong>❌</strong> Правильно: "+ok+"/"+expected+". Спробуй ще раз."}}
-var wheelSectors = [
-{name:"Шкільні предмети", icon:"📚", color:"#2563eb"},
-{name:"Навчання за інтересами", icon:"🎯", color:"#16a34a"},
-{name:"Самоосвіта", icon:"📖", color:"#7c3aed"},
-{name:"Творчість", icon:"🎨", color:"#ea580c"},
-{name:"Фізичний розвиток", icon:"🏃", color:"#db2777"},
-{name:"Спілкування", icon:"👥", color:"#0891b2"},
-{name:"Відпочинок і хобі", icon:"🎮", color:"#d97706"},
-{name:"Цілепокладання", icon:"🎯", color:"#4f46e5"}
+function chk(gid,tid){var s=document.querySelector("#"+gid+" .option.selected");var f=document.getElementById(gid+"f");if(!f)return;f.style.display="block";if(!s){f.className="feedback feedback-warning";f.innerHTML="⚠️ Обери варіант відповіді";return}if(s.dataset.correct==="true"){s.classList.add("correct");f.className="feedback feedback-success";f.innerHTML="<strong>✅ Правильно!</strong>";var opts=document.querySelectorAll("#"+gid+" .option");for(var i=0;i<opts.length;i++){opts[i].classList.add("disabled");if(opts[i].dataset.correct==="true")opts[i].classList.add("correct")}addC(tid);showToast("Завдання виконано!","✅")}else{s.classList.add("incorrect");f.className="feedback feedback-error";f.innerHTML="<strong>❌ Неправильно.</strong> Спробуй ще раз."}}
+function chkMulti(gid,fid,need,tid){var opts=document.querySelectorAll("#"+gid+" .option");var f=document.getElementById(fid);if(!f)return;f.style.display="block";var selOpts=[];for(var i=0;i<opts.length;i++)if(opts[i].classList.contains("selected"))selOpts.push(opts[i]);if(selOpts.length!==need){f.className="feedback feedback-warning";f.innerHTML="⚠️ Обери <strong>"+need+"</strong> правильні відповіді.";return}var ok=true;for(var j=0;j<opts.length;j++){var sb=opts[j].dataset.correct==="true";var is=opts[j].classList.contains("selected");if(sb&&is)opts[j].classList.add("correct");else if(!sb&&is){opts[j].classList.add("incorrect");ok=false}else if(sb&&!is)ok=false;opts[j].classList.add("disabled")}if(ok){f.className="feedback feedback-success";f.innerHTML="<strong>✅ Правильно!</strong>";addC(tid);showToast("Завдання виконано!","🎉")}else{f.className="feedback feedback-error";f.innerHTML="<strong>❌ Не зовсім.</strong> Спробуй ще раз.";for(var k=0;k<opts.length;k++)opts[k].classList.remove("correct","incorrect","disabled","selected")}}
+function chkResearch(){
+var f=document.getElementById("s2t2f");
+if(!f)return;
+f.style.display="block";
+var questions=[
+{gid:"rq1",correct:"true"},
+{gid:"rq2",correct:"true"},
+{gid:"rq3",correct:"true"}
 ];
-var wheelValues = [5,5,5,5,5,5,5,5];
-var wheelCanvas, wheelCtx, wheelTooltip;
-var wheelInitialized = false;
-function initWheel(){
-if(wheelInitialized) { drawWheel(); updateWheelStats(); return; }
-wheelCanvas = document.getElementById('wheelCanvas');
-if(!wheelCanvas) return;
-wheelCtx = wheelCanvas.getContext('2d');
-wheelTooltip = document.getElementById('wheelTooltip');
-buildWheelSliders();
-wheelCanvas.addEventListener('mousemove', onWheelHover);
-wheelCanvas.addEventListener('mouseleave', function(){ if(wheelTooltip) wheelTooltip.style.opacity = 0; });
-wheelInitialized = true;
-drawWheel();
-updateWheelStats();
+var ok=0;
+var allAnswered=true;
+for(var i=0;i<questions.length;i++){
+var q=questions[i];
+var selected=document.querySelector("#"+q.gid+" .option.selected");
+if(!selected){allAnswered=false;continue}
 }
-function buildWheelSliders(){
-var container = document.getElementById('wheelSliders');
-if(!container) return;
-container.innerHTML = '';
-wheelSectors.forEach(function(s, i){
-var row = document.createElement('div');
-row.className = 'wheel-slider-row';
-row.innerHTML = '<div class="wheel-slider-icon">'+s.icon+'</div>'+
-'<input type="range" class="wheel-slider-input" min="1" max="10" value="'+wheelValues[i]+'" oninput="updateWheelValue('+i+', this.value)" id="wheelSlider'+i+'">'+
-'<div class="wheel-slider-value" id="wheelVal'+i+'">'+wheelValues[i]+'</div>';
-container.appendChild(row);
-});
+if(!allAnswered){
+f.className="feedback feedback-warning";
+f.innerHTML="💡 Обери відповідь на кожне з трьох питань, щоб перевірити.";
+return;
 }
-function updateWheelValue(idx, val){
-wheelValues[idx] = parseInt(val);
-var valEl = document.getElementById('wheelVal'+idx);
-if(valEl) valEl.textContent = val;
-drawWheel();
-updateWheelStats();
-}
-function drawWheel(){
-if(!wheelCtx) return;
-var W = wheelCanvas.width;
-var H = wheelCanvas.height;
-var cx = W/2, cy = H/2;
-var maxR = W * 0.32;
-var n = wheelSectors.length;
-var angleStep = (Math.PI*2)/n;
-wheelCtx.clearRect(0,0,W,H);
-var bgGrad = wheelCtx.createRadialGradient(cx,cy,0,cx,cy,maxR*1.3);
-bgGrad.addColorStop(0,'rgba(254,243,199,0.3)');
-bgGrad.addColorStop(1,'rgba(219,234,254,0.1)');
-wheelCtx.fillStyle = bgGrad;
-wheelCtx.fillRect(0,0,W,H);
-for(var ring=1; ring<=10; ring++){
-var r = (ring/10)*maxR;
-wheelCtx.beginPath();
-wheelCtx.arc(cx,cy,r,0,Math.PI*2);
-wheelCtx.strokeStyle = (ring===5||ring===10) ? 'rgba(30,58,138,0.25)' : 'rgba(30,58,138,0.1)';
-wheelCtx.lineWidth = (ring===10) ? 2.5 : 1;
-wheelCtx.stroke();
-if(ring%2===0){
-wheelCtx.fillStyle = 'rgba(30,58,138,0.4)';
-wheelCtx.font = 'bold 18px system-ui';
-wheelCtx.textAlign = 'center';
-wheelCtx.fillText(ring, cx+12, cy-r+6);
+for(var j=0;j<questions.length;j++){
+var q=questions[j];
+var opts=document.querySelectorAll("#"+q.gid+" .option");
+for(var k=0;k<opts.length;k++){
+opts[k].classList.remove("correct","incorrect");
+opts[k].classList.add("disabled");
+var isCorrect=opts[k].dataset.correct==="true";
+var isSelected=opts[k].classList.contains("selected");
+if(isCorrect)opts[k].classList.add("correct");
+else if(isSelected)opts[k].classList.add("incorrect");
+if(isCorrect&&isSelected)ok++;
 }
 }
-for(var i=0;i<n;i++){
-var angle = -Math.PI/2 + i*angleStep;
-wheelCtx.beginPath();
-wheelCtx.moveTo(cx,cy);
-wheelCtx.lineTo(cx+Math.cos(angle)*maxR, cy+Math.sin(angle)*maxR);
-wheelCtx.strokeStyle = 'rgba(30,58,138,0.15)';
-wheelCtx.lineWidth = 1.5;
-wheelCtx.stroke();
-}
-wheelCtx.beginPath();
-for(var i=0;i<n;i++){
-var angle = -Math.PI/2 + i*angleStep;
-var r = (wheelValues[i]/10)*maxR;
-var x = cx + Math.cos(angle)*r;
-var y = cy + Math.sin(angle)*r;
-if(i===0) wheelCtx.moveTo(x,y);
-else {
-var prevAngle = -Math.PI/2 + (i-1)*angleStep;
-var midAngle = (prevAngle+angle)/2;
-var prevR = (wheelValues[i-1]/10)*maxR;
-var cpx = cx + Math.cos(midAngle)*Math.max(prevR,r)*1.03;
-var cpy = cy + Math.sin(midAngle)*Math.max(prevR,r)*1.03;
-wheelCtx.quadraticCurveTo(cpx,cpy,x,y);
+if(ok===questions.length){
+f.className="feedback feedback-success";
+f.innerHTML="<strong>✅ Чудово!</strong> Усі три питання проаналізовано правильно! Ти розумієш, як інтерпретувати дані дослідження добробуту.";
+addC("step2_task2");
+showToast("Завдання виконано!","🎉");
+}else{
+f.className="feedback feedback-error";
+f.innerHTML="<strong>❌ Правильно:</strong> "+ok+"/3. Переглянь правильні відповіді (підсвічено зеленим) і спробуй ще раз.";
+setTimeout(function(){
+for(var m=0;m<questions.length;m++){
+var opts=document.querySelectorAll("#"+questions[m].gid+" .option");
+for(var n=0;n<opts.length;n++){
+opts[n].classList.remove("correct","incorrect","disabled","selected");
 }
 }
-var lastAngle = -Math.PI/2 + (n-1)*angleStep;
-var firstAngle = -Math.PI/2;
-var midAngle = (lastAngle+firstAngle+Math.PI*2)/2;
-var lastR = (wheelValues[n-1]/10)*maxR;
-var firstR = (wheelValues[0]/10)*maxR;
-var cpx = cx + Math.cos(midAngle)*Math.max(lastR,firstR)*1.03;
-var cpy = cy + Math.sin(midAngle)*Math.max(lastR,firstR)*1.03;
-wheelCtx.quadraticCurveTo(cpx,cpy,cx+Math.cos(firstAngle)*firstR, cy+Math.sin(firstAngle)*firstR);
-wheelCtx.closePath();
-var grad = wheelCtx.createRadialGradient(cx,cy,0,cx,cy,maxR);
-grad.addColorStop(0,'rgba(254,243,199,0.6)');
-grad.addColorStop(0.5,'rgba(191,219,254,0.5)');
-grad.addColorStop(1,'rgba(147,197,253,0.3)');
-wheelCtx.fillStyle = grad;
-wheelCtx.fill();
-for(var i=0;i<n;i++){
-var a1 = -Math.PI/2 + i*angleStep;
-var a2 = -Math.PI/2 + (i+1)*angleStep;
-var mid = (a1+a2)/2;
-var r = (wheelValues[i]/10)*maxR;
-wheelCtx.beginPath();
-wheelCtx.moveTo(cx,cy);
-var x1 = cx+Math.cos(a1)*r;
-var y1 = cy+Math.sin(a1)*r;
-var x2 = cx+Math.cos(a2)*r;
-var y2 = cy+Math.sin(a2)*r;
-var cpx = cx+Math.cos(mid)*r*1.03;
-var cpy = cy+Math.sin(mid)*r*1.03;
-wheelCtx.lineTo(x1,y1);
-wheelCtx.quadraticCurveTo(cpx,cpy,x2,y2);
-wheelCtx.closePath();
-wheelCtx.fillStyle = wheelSectors[i].color + '35';
-wheelCtx.fill();
-wheelCtx.strokeStyle = wheelSectors[i].color + '90';
-wheelCtx.lineWidth = 2;
-wheelCtx.stroke();
-}
-wheelCtx.beginPath();
-for(var i=0;i<n;i++){
-var angle = -Math.PI/2 + i*angleStep;
-var r = (wheelValues[i]/10)*maxR;
-var x = cx + Math.cos(angle)*r;
-var y = cy + Math.sin(angle)*r;
-if(i===0) wheelCtx.moveTo(x,y);
-else {
-var prevAngle = -Math.PI/2 + (i-1)*angleStep;
-var midAngle = (prevAngle+angle)/2;
-var prevR = (wheelValues[i-1]/10)*maxR;
-var cpx = cx + Math.cos(midAngle)*Math.max(prevR,r)*1.03;
-var cpy = cy + Math.sin(midAngle)*Math.max(prevR,r)*1.03;
-wheelCtx.quadraticCurveTo(cpx,cpy,x,y);
+},4000);
 }
 }
-var lastAngle = -Math.PI/2 + (n-1)*angleStep;
-var firstAngle = -Math.PI/2;
-var midAngle = (lastAngle+firstAngle+Math.PI*2)/2;
-var lastR = (wheelValues[n-1]/10)*maxR;
-var firstR = (wheelValues[0]/10)*maxR;
-var cpx = cx + Math.cos(midAngle)*Math.max(lastR,firstR)*1.03;
-var cpy = cy + Math.sin(midAngle)*Math.max(lastR,firstR)*1.03;
-wheelCtx.quadraticCurveTo(cpx,cpy,cx+Math.cos(firstAngle)*firstR, cy+Math.sin(firstAngle)*firstR);
-wheelCtx.closePath();
-wheelCtx.strokeStyle = '#f59e0b';
-wheelCtx.lineWidth = 4;
-wheelCtx.stroke();
-for(var i=0;i<n;i++){
-var angle = -Math.PI/2 + i*angleStep + angleStep/2;
-var labelR = maxR + 70;
-var x = cx + Math.cos(angle)*labelR;
-var y = cy + Math.sin(angle)*labelR;
-wheelCtx.fillStyle = wheelSectors[i].color;
-wheelCtx.font = 'bold 22px system-ui';
-wheelCtx.textAlign = 'center';
-wheelCtx.textBaseline = 'middle';
-wheelCtx.fillText(wheelSectors[i].icon+' '+wheelSectors[i].name, x, y);
-var badgeR = maxR * 0.72;
-var bx = cx + Math.cos(angle)*badgeR;
-var by = cy + Math.sin(angle)*badgeR;
-wheelCtx.beginPath();
-wheelCtx.arc(bx,by,26,0,Math.PI*2);
-wheelCtx.fillStyle = '#fff';
-wheelCtx.fill();
-wheelCtx.strokeStyle = wheelSectors[i].color;
-wheelCtx.lineWidth = 3;
-wheelCtx.stroke();
-wheelCtx.fillStyle = wheelSectors[i].color;
-wheelCtx.font = 'bold 24px system-ui';
-wheelCtx.fillText(wheelValues[i], bx, by);
-}
-wheelCtx.beginPath();
-wheelCtx.arc(cx,cy,10,0,Math.PI*2);
-wheelCtx.fillStyle = '#f59e0b';
-wheelCtx.fill();
-wheelCtx.strokeStyle = '#fff';
-wheelCtx.lineWidth = 3;
-wheelCtx.stroke();
-}
-function updateWheelStats(){
-var sum = 0, min = 10, max = 0, minIdx = 0, maxIdx = 0;
-for(var i=0;i<wheelValues.length;i++){
-sum += wheelValues[i];
-if(wheelValues[i] < min){ min = wheelValues[i]; minIdx = i; }
-if(wheelValues[i] > max){ max = wheelValues[i]; maxIdx = i; }
-}
-var avg = (sum/wheelValues.length).toFixed(1);
-var variance = 0;
-for(var i=0;i<wheelValues.length;i++) variance += Math.pow(wheelValues[i]-avg,2);
-variance /= wheelValues.length;
-var stdDev = Math.sqrt(variance);
-var balanceScore = Math.max(0, Math.round(100 - stdDev*15));
-var grid = document.getElementById('wheelStatsGrid');
-if(grid){
-grid.innerHTML =
-'<div class="wheel-stat-item"><div class="wheel-stat-label">📈 Середнє</div><div class="wheel-stat-value">'+avg+' / 10</div></div>'+
-'<div class="wheel-stat-item"><div class="wheel-stat-label">🏆 Найсильніший</div><div class="wheel-stat-value" style="color:'+wheelSectors[maxIdx].color+'">'+wheelSectors[maxIdx].icon+' '+wheelSectors[maxIdx].name+'</div></div>'+
-'<div class="wheel-stat-item"><div class="wheel-stat-label">⚠️ Найслабший</div><div class="wheel-stat-value" style="color:'+wheelSectors[minIdx].color+'">'+wheelSectors[minIdx].icon+' '+wheelSectors[minIdx].name+'</div></div>'+
-'<div class="wheel-stat-item"><div class="wheel-stat-label">📊 Різниця</div><div class="wheel-stat-value">'+(max-min)+'</div></div>';
-}
-var fill = document.getElementById('wheelBalanceFill');
-if(fill){
-fill.style.width = balanceScore + '%';
-var color;
-if(balanceScore >= 80) color = 'linear-gradient(90deg,#16a34a,#22c55e)';
-else if(balanceScore >= 50) color = 'linear-gradient(90deg,#f59e0b,#fbbf24)';
-else color = 'linear-gradient(90deg,#dc2626,#ef4444)';
-fill.style.background = color;
-}
-var lbl = document.getElementById('wheelBalanceLabel');
-if(lbl) lbl.textContent = 'Баланс: '+balanceScore+'% | Середнє: '+avg;
-}
-function onWheelHover(e){
-if(!wheelCanvas || !wheelTooltip) return;
-var rect = wheelCanvas.getBoundingClientRect();
-var scaleX = wheelCanvas.width / rect.width;
-var scaleY = wheelCanvas.height / rect.height;
-var mx = (e.clientX - rect.left)*scaleX;
-var my = (e.clientY - rect.top)*scaleY;
-var cx = wheelCanvas.width/2, cy = wheelCanvas.height/2;
-var maxR = wheelCanvas.width*0.32;
-var n = wheelSectors.length;
-var angleStep = (Math.PI*2)/n;
-var dx = mx-cx, dy = my-cy;
-var dist = Math.sqrt(dx*dx+dy*dy);
-var angle = Math.atan2(dy,dx) + Math.PI/2;
-if(angle < 0) angle += Math.PI*2;
-var sectorIdx = Math.floor(angle/angleStep) % n;
-var sectorR = (wheelValues[sectorIdx]/10)*maxR;
-if(dist <= sectorR + 20 && dist > 10){
-wheelTooltip.style.opacity = 1;
-wheelTooltip.style.left = (e.clientX - rect.left + 15) + 'px';
-wheelTooltip.style.top = (e.clientY - rect.top - 10) + 'px';
-wheelTooltip.innerHTML = wheelSectors[sectorIdx].icon+' '+wheelSectors[sectorIdx].name+'<br><strong>'+wheelValues[sectorIdx]+'/10</strong>';
-} else {
-wheelTooltip.style.opacity = 0;
-}
-}
-function wheelRandom(){
-for(var i=0;i<wheelValues.length;i++){
-wheelValues[i] = Math.floor(Math.random()*10)+1;
-var sl = document.getElementById('wheelSlider'+i);
-var vl = document.getElementById('wheelVal'+i);
-if(sl) sl.value = wheelValues[i];
-if(vl) vl.textContent = wheelValues[i];
-}
-drawWheel();
-updateWheelStats();
-}
-function wheelIdeal(){
-for(var i=0;i<wheelValues.length;i++){
-wheelValues[i] = 8;
-var sl = document.getElementById('wheelSlider'+i);
-var vl = document.getElementById('wheelVal'+i);
-if(sl) sl.value = 8;
-if(vl) vl.textContent = 8;
-}
-drawWheel();
-updateWheelStats();
-}
-function wheelReset(){
-for(var i=0;i<wheelValues.length;i++){
-wheelValues[i] = 5;
-var sl = document.getElementById('wheelSlider'+i);
-var vl = document.getElementById('wheelVal'+i);
-if(sl) sl.value = 5;
-if(vl) vl.textContent = 5;
-}
-drawWheel();
-updateWheelStats();
-}
-function chkWheel(){
-var f = document.getElementById("s5t1f");
-if(!f) return;
-f.style.display = "block";
-var weak = [], strong = [];
-for(var i=0;i<wheelValues.length;i++){
-if(wheelValues[i] <= 3) weak.push(wheelSectors[i].icon+' '+wheelSectors[i].name);
-else if(wheelValues[i] >= 7) strong.push(wheelSectors[i].icon+' '+wheelSectors[i].name);
-}
-var msg = "<strong>✅ Аналіз завершено!</strong><br>";
-if(strong.length > 0) msg += "<br>💪 <strong>Сильні сектори:</strong> "+strong.join(", ")+". Тут ти приділяєш достатньо уваги.";
-if(weak.length > 0) msg += "<br>⚠️ <strong>Просідають:</strong> "+weak.join(", ")+". Подумай, як підтягнути ці сфери.";
-if(strong.length===0 && weak.length===0) msg += "<br>💡 У тебе досить рівномірний баланс. Продовжуй у тому ж дусі!";
-msg += "<br><br>💡 Перейди до наступного завдання, щоб закріпити знання про баланс.";
-f.className = "feedback feedback-success";
-f.innerHTML = msg;
-addC("step5_task1");
-showToast("⚖️ Баланс проаналізовано!","⚖️");
-}
+var sortData={s2t1:[{id:"s1",t:"Фізичне здоров'я людини",icon:"🏥",z:"pers"},{id:"s2",t:"Рівень злочинності в країні",icon:"🚔",z:"soc"},{id:"s3",t:"Власний дохід",icon:"💰",z:"pers"},{id:"s4",t:"Стан природного середовища",icon:"🌳",z:"soc"},{id:"s5",t:"Самоосвіта",icon:"🎓",z:"pers"},{id:"s6",t:"Довіра в суспільстві",icon:"🤝",z:"soc"}]};
+function initSort(key){var bankId="sortBank2";var bank=document.getElementById(bankId);if(!bank)return;bank.innerHTML="";var persZone=document.getElementById("sortPers");var socZone=document.getElementById("sortSoc");if(persZone)persZone.innerHTML="";if(socZone)socZone.innerHTML="";var items=sortData[key];var shuffled=items.slice().sort(function(){return Math.random()-0.5});for(var i=0;i<shuffled.length;i++){var it=shuffled[i];var d=document.createElement("div");d.className="sorting-item";d.dataset.id=it.id;d.dataset.correct=it.z;d.innerHTML='<span class="sorting-icon">'+it.icon+'</span><span>'+it.t+'</span>';d.onclick=function(){if(this.classList.contains("placed"))return;var all=bank.querySelectorAll(".sorting-item");for(var j=0;j<all.length;j++)all[j].classList.remove("selected");this.classList.add("selected");this.style.borderColor="var(--warning)";this.style.background="#fef3c7";sortSelected=this};bank.appendChild(d)}}
+function placeSort(zone,key){if(!sortSelected)return;var clone=document.createElement("div");clone.className="sorting-item placed";clone.dataset.id=sortSelected.dataset.id;clone.dataset.correct=sortSelected.dataset.correct;clone.dataset.zone=zone.dataset.zone;clone.innerHTML=sortSelected.innerHTML;zone.querySelector(".sorting-zone-items").appendChild(clone);sortSelected.classList.add("placed");sortSelected.style.opacity=".4";sortSelected.style.cursor="default";sortSelected=null}
+function resetSort(key){sortSelected=null;initSort(key)}
+function chkSort(key,answers,tid){var f=document.getElementById(key+"f");if(!f)return;f.style.display="block";var zones=document.querySelectorAll(".sorting-zone");var placed=[];for(var i=0;i<zones.length;i++){var items=zones[i].querySelectorAll(".sorting-item.placed");for(var j=0;j<items.length;j++)placed.push(items[j])}
+var total=Object.keys(answers).length;if(placed.length<total){f.className="feedback feedback-warning";f.innerHTML="💡 Розподіли всі елементи ("+placed.length+"/"+total+").";return}
+var ok=0;for(var k=0;k<placed.length;k++){var id=placed[k].dataset.id;var zone=placed[k].dataset.zone;placed[k].classList.remove("correct","incorrect");if(answers[id]===zone){placed[k].classList.add("correct");ok++}else placed[k].classList.add("incorrect")}
+if(ok===total){f.className="feedback feedback-success";f.innerHTML="<strong>✅ Чудово!</strong> Усі елементи розподілені правильно!";addC(tid);showToast("Завдання виконано!","🎉")}else{f.className="feedback feedback-error";f.innerHTML="<strong>❌</strong> Правильно: "+ok+"/"+total+". Червоним — помилки. Спробуй ще раз."}}
+var tzData={s5t1:[{id:"d1",t:"❤️ Любов до України, гордість за країну",z:"national"},{id:"d2",t:"🗳️ Участь у виборах",z:"civic"},{id:"d3",t:"🎖️ Підтримка Сил оборони України",z:"defense"},{id:"d4",t:"🤲 Волонтерство та благодійність",z:"civic"},{id:"d5",t:"📵 Протидія дезінформації",z:"defense"},{id:"d6",t:"🤝 Єдність і взаємодопомога",z:"national"}]};
+function initTZ(key){var bankId="tzBank5";var bank=document.getElementById(bankId);if(!bank)return;bank.innerHTML="";var items=tzData[key];var shuffled=items.slice().sort(function(){return Math.random()-0.5});for(var i=0;i<shuffled.length;i++){var it=shuffled[i];var d=document.createElement("div");d.className="tz-item";d.textContent=it.t;d.dataset.id=it.id;d.dataset.correct=it.z;d.onclick=function(){if(this.classList.contains("placed"))return;var all=bank.querySelectorAll(".tz-item");for(var j=0;j<all.length;j++)all[j].classList.remove("selected");this.classList.add("selected");tzSelected[key]=this};bank.appendChild(d)}
+var container=bank.closest(".three-zone-container");var targets=container.querySelectorAll(".tz-target");for(var k=0;k<targets.length;k++)targets[k].querySelector(".tz-target-items").innerHTML=""}
+function placeTZ(target,key){if(!tzSelected[key])return;var item=tzSelected[key];var clone=document.createElement("div");clone.className="tz-placed";clone.innerHTML='<span>'+item.textContent+'</span><button class="tz-remove" onclick="removeTZ(this,\''+key+'\')">✕</button>';clone.dataset.id=item.dataset.id;clone.dataset.correct=item.dataset.correct;clone.dataset.zone=target.dataset.zone;target.querySelector(".tz-target-items").appendChild(clone);item.classList.add("placed");item.classList.remove("selected");tzSelected[key]=null}
+function removeTZ(btn,key){var placed=btn.parentElement;var id=placed.dataset.id;placed.remove();var bank=document.getElementById("tzBank5");if(bank){var items=bank.querySelectorAll(".tz-item");for(var i=0;i<items.length;i++)if(items[i].dataset.id===id){items[i].classList.remove("placed");break}}}
+function resetTZ(key){tzSelected[key]=null;initTZ(key)}
+function chkTZ(key,answers,tid){var f=document.getElementById(key+"f");if(!f)return;f.style.display="block";var container=f.parentElement;var targets=container.querySelectorAll(".tz-target");var placed=[];for(var i=0;i<targets.length;i++){var items=targets[i].querySelectorAll(".tz-placed");for(var j=0;j<items.length;j++)placed.push(items[j])}
+var total=Object.keys(answers).length;if(placed.length<total){f.className="feedback feedback-warning";f.innerHTML="💡 Розмісти всі картки ("+placed.length+"/"+total+").";return}
+var ok=0;for(var k=0;k<placed.length;k++){var id=placed[k].dataset.id;var zone=placed[k].dataset.zone;if(answers[id]===zone){placed[k].style.background="#dcfce7";placed[k].style.borderColor="#16a34a";ok++}else{placed[k].style.background="#fee2e2";placed[k].style.borderColor="#dc2626"}}
+if(ok===total){f.className="feedback feedback-success";f.innerHTML="<strong>✅ Чудово!</strong> Усі картки розміщені правильно!";addC(tid);showToast("Завдання виконано!","🎉")}else{f.className="feedback feedback-error";f.innerHTML="<strong>❌</strong> Правильно: "+ok+"/"+total+". Червоним позначено помилки. Спробуй ще раз."}}
+function ynSel(btn){var row=btn.parentElement;var btns=row.querySelectorAll(".yn-btn");for(var i=0;i<btns.length;i++)btns[i].classList.remove("selected-yes","selected-no");if(btn.dataset.correct==="yes")btn.classList.add("selected-yes");else btn.classList.add("selected-no")}
+function chkYN(gridId,expected,fId,tid){var f=document.getElementById(fId);if(!f)return;f.style.display="block";var grid=document.getElementById(gridId);if(!grid)return;var rows=grid.querySelectorAll(".yn-row");var ok=0;for(var i=0;i<rows.length;i++){var btns=rows[i].querySelectorAll(".yn-btn");var selected=null;for(var j=0;j<btns.length;j++){btns[j].classList.remove("correct","incorrect");if(btns[j].classList.contains("selected-yes")||btns[j].classList.contains("selected-no"))selected=btns[j]}
+if(selected){var correct=selected.dataset.correct==="yes";if(correct){selected.classList.add("correct");ok++}else selected.classList.add("incorrect")}}
+if(ok===expected){f.className="feedback feedback-success";f.innerHTML="<strong>✅ Чудово!</strong> Усі відповіді правильні!";addC(tid);showToast("Завдання виконано!","🎉")}else{f.className="feedback feedback-error";f.innerHTML="<strong>❌</strong> Правильно: "+ok+"/"+expected+". Спробуй ще раз."}}
+function chkMatching(prefix,answers,tid){var f=document.getElementById(prefix+"f");if(!f)return;f.style.display="block";var ok=0;var total=Object.keys(answers).length;for(var id in answers){var s=document.getElementById(id);s.classList.remove("correct","incorrect");if(s.value===answers[id]){s.classList.add("correct");ok++}else if(s.value)s.classList.add("incorrect")}
+if(ok===total){f.className="feedback feedback-success";f.innerHTML="<strong>✅ Чудово!</strong> Усі відповіді правильні!";addC(tid);showToast("Завдання виконано!","🎉")}else{f.className="feedback feedback-error";f.innerHTML="<strong>❌ " + ok + "/" + total + " правильно.</strong> Спробуй ще раз.";setTimeout(function(){var ss=document.querySelectorAll("#" + prefix + " .matching-select");for(var i=0;i<ss.length;i++)ss[i].classList.remove("correct","incorrect")},2000)}}
+function updSlider(sid,vid){var v=document.getElementById(sid).value;document.getElementById(vid).textContent=v}
+function chkSlider3(){var f=document.getElementById("s3t3f");if(!f)return;f.style.display="block";var v1=parseInt(document.getElementById("slider31").value);var v2=parseInt(document.getElementById("slider32").value);var v3=parseInt(document.getElementById("slider33").value);var ok=0;
+var a1=document.getElementById("sa31");var a2=document.getElementById("sa32");var a3=document.getElementById("sa33");
+if(v1>=75){ok++;a1.className="slider-answer feedback-success visible";a1.innerHTML="✅ <strong>Правильно!</strong> Твій вибір: <strong>"+v1+"</strong>. Ухилення від обов'язків сильно підриває суспільний добробут."}else{a1.className="slider-answer feedback-error visible";a1.innerHTML="❌ <strong>Не зовсім.</strong> Твій вибір: <strong>"+v1+"</strong>. Правильна відповідь: <strong>75–100</strong> (сильний вплив)."}
+if(v2>=80){ok++;a2.className="slider-answer feedback-success visible";a2.innerHTML="✅ <strong>Правильно!</strong> Твій вибір: <strong>"+v2+"</strong>. Волонтерство дуже сильно зміцнює суспільство."}else{a2.className="slider-answer feedback-error visible";a2.innerHTML="❌ <strong>Не зовсім.</strong> Твій вибір: <strong>"+v2+"</strong>. Правильна відповідь: <strong>80–100</strong> (дуже сильний вплив)."}
+if(v3>=60&&v3<=85){ok++;a3.className="slider-answer feedback-success visible";a3.innerHTML="✅ <strong>Правильно!</strong> Твій вибір: <strong>"+v3+"</strong>. Відповідальна поведінка помірно-сильно впливає на безпеку суспільства."}else{a3.className="slider-answer feedback-error visible";a3.innerHTML="❌ <strong>Не зовсім.</strong> Твій вибір: <strong>"+v3+"</strong>. Правильна відповідь: <strong>60–85</strong> (помірний вплив)."}
+if(ok===3){f.className="feedback feedback-success";f.innerHTML="<strong>✅ Чудово!</strong> Ти правильно оцінив(ла) вплив дій!";addC("step3_task3");showToast("Завдання виконано!","🎉")}else{f.className="feedback feedback-warning";f.innerHTML="💡 Правильно: "+ok+"/3. Переглянь правильні відповіді поруч зі слайдерами."}}
+function mythSel(btn,qid){if(btn.classList.contains("correct")||btn.classList.contains("incorrect"))return;var parent=btn.parentElement;var btns=parent.querySelectorAll(".myth-btn");for(var i=0;i<btns.length;i++)btns[i].classList.remove("myth-selected","truth-selected");if(btn.dataset.val==="myth")btn.classList.add("myth-selected");else btn.classList.add("truth-selected");mythCompleted[qid]=btn.dataset.val;var f=document.getElementById(qid+"f");if(f){f.classList.add("visible");f.className="myth-feedback feedback-info visible";f.innerHTML="💡 Натисни «Завершити», щоб перевірити всі відповіді."}}
+function chkMyth(prefix,answers,tid){var f=document.getElementById(prefix+"f");if(!f)return;f.style.display="block";var ok=0;var total=Object.keys(answers).length;for(var qid in answers){var correct=answers[qid];var user=mythCompleted[qid];var btn=document.querySelector('button[onclick*="'+qid+'"]');var row=btn?btn.parentElement:null;var btns=row?row.querySelectorAll(".myth-btn"):[];for(var i=0;i<btns.length;i++){btns[i].classList.remove("correct","incorrect");if(btns[i].dataset.val===correct)btns[i].classList.add("correct");else if(btns[i].classList.contains("myth-selected")||btns[i].classList.contains("truth-selected"))btns[i].classList.add("incorrect")}
+var fb=document.getElementById(qid+"f");if(fb){fb.classList.add("visible");if(user===correct){fb.className="myth-feedback feedback-success visible";fb.innerHTML="✅ <strong>Правильно!</strong> "+getMythExplanation22(qid,correct)}else{fb.className="myth-feedback feedback-error visible";fb.innerHTML="❌ <strong>Неправильно.</strong> Правильна відповідь: "+(correct==="myth"?"МІФ":"ПРАВДА")+". "+getMythExplanation22(qid,correct)}}
+if(user===correct)ok++}
+if(ok===total){f.className="feedback feedback-success";f.innerHTML="<strong>✅ Чудово!</strong> Усі відповіді правильні!";addC(tid);showToast("Завдання виконано!","🎉")}else{f.className="feedback feedback-error";f.innerHTML="<strong>❌</strong> Правильно: "+ok+"/"+total+". Переглянь пояснення до кожного твердження."}}
+function getMythExplanation22(qid,correct){var explanations={s4t3q1:"Цінності проявляються у щоденних рішеннях і вчинках, тому впливають на реальне життя.",s4t3q2:"Особисті цінності впливають і на добробут людини, і на добробут суспільства.",s4t3q3:"Цінності стають основою добробуту лише тоді, коли проявляються у щоденних рішеннях і вчинках.",s4t3q4:"Добробут починається з особистих цінностей і щоденних учинків."};return explanations[qid]||""}
+function fillSel(blank){if(blank.classList.contains("correct"))return;var container=blank.closest(".fill-blanks-text");var all=container.querySelectorAll(".fill-blank");for(var i=0;i<all.length;i++)all[i].style.background="";blank.style.background="#fef3c7";fillSelected={blank:blank}}
+function wordSel(word){if(word.classList.contains("used"))return;if(!fillSelected){var bank=word.parentElement;var all=bank.querySelectorAll(".fill-word");for(var i=0;i<all.length;i++)all[i].classList.remove("active");word.classList.add("active");fillSelected={word:word};return}
+fillSelected.blank.textContent=word.textContent;fillSelected.blank.dataset.filled=word.textContent;fillSelected.blank.classList.add("filled");word.classList.add("used");word.classList.remove("active");fillSelected.blank.style.background="";fillSelected=null}
+function chkFill(containerId,expected,fId,tid){var f=document.getElementById(fId);if(!f)return;f.style.display="block";var container=document.getElementById(containerId);if(!container)return;var blanks=container.querySelectorAll(".fill-blank");var ok=0;for(var i=0;i<blanks.length;i++){var correct=blanks[i].dataset.correct;var filled=blanks[i].dataset.filled||"";blanks[i].classList.remove("correct","incorrect");if(filled===correct){blanks[i].classList.add("correct");ok++}else blanks[i].classList.add("incorrect")}
+if(ok===expected){f.className="feedback feedback-success";f.innerHTML="<strong>✅ Чудово!</strong> Усі пропуски заповнено правильно!";addC(tid);showToast("Завдання виконано!","🎉")}else{f.className="feedback feedback-error";f.innerHTML="<strong>❌</strong> Правильно: "+ok+"/"+expected+". Спробуй ще раз."}}
 function rate(si,r){state.sr[si-1]=r;saveP();var c=document.querySelector('.star-rating[data-skill="'+si+'"]');if(!c)return;var stars=c.querySelectorAll(".star");for(var i=0;i<stars.length;i++)if(i<r)stars[i].classList.add("active");else stars[i].classList.remove("active")}
-function resetProgress(){if(confirm(" Почати спочатку?")){localStorage.removeItem("s24v3");location.reload()}}
-function showToast(msg,icon){icon=icon||"✅";var c=document.getElementById("toastContainer");if(!c)return;var t=document.createElement("div");t.className="toast";t.innerHTML='<span class="toast-icon">'+icon+'</span><span class="toast-message">'+msg+'</span>';c.appendChild(t);setTimeout(function(){t.classList.add("hiding");setTimeout(function(){t.remove()},4000)},4000)}
-function showProgressModal(){updS6();document.getElementById("progressModal").classList.add("active");var c=0;for(var i=1;i<=5;i++)c+=ST["step"+i].c;var p=Math.min(100,Math.round(c/TOTAL_TASKS*100));var ac=PT.t>0?Math.round(PT.c/PT.t*100):0;var cs=0;for(var j=1;j<=5;j++)if(SC[j])cs++;var e=function(id,v){var el=document.getElementById(id);if(el)el.textContent=v};e("mT",c+"/"+TOTAL_TASKS);e("mC",PT.c);e("mS",cs+"/5");e("mA",ac+"%");e("mP",p+"%");var b=document.getElementById("mBar");if(b)b.style.width=p+"%";var l="Початківець",em="⭐☆☆☆☆";if(p>=76){l="🏆 Майстер траєкторії";em="⭐⭐⭐⭐⭐"}else if(p>=51){l="🥈 Досвідчений";em="⭐⭐⭐☆☆"}else if(p>=26){l="🥉 Учень";em="⭐⭐☆☆☆"}e("mName",l);e("mEmoji",em)}
+function resetProgress(){if(confirm("Почати спочатку?")){localStorage.removeItem("s22v3");location.reload()}}
+function showToast(msg,icon){icon=icon||"✅";var c=document.getElementById("toastContainer");if(!c)return;var t=document.createElement("div");t.className="toast";t.innerHTML='<span class="toast-icon">'+icon+'</span><span class="toast-message">'+msg+'</span>';c.appendChild(t);setTimeout(function(){t.classList.add("hiding");setTimeout(function(){t.remove()},400)},4000)}
+function showProgressModal(){updS6();document.getElementById("progressModal").classList.add("active");var c=0;for(var i=1;i<=5;i++)c+=ST["step"+i].c;var p=Math.min(100,Math.round(c/TOTAL_TASKS*100));var ac=PT.t>0?Math.round(PT.c/PT.t*100):0;var cs=0;for(var j=1;j<=5;j++)if(SC[j])cs++;var e=function(id,v){var el=document.getElementById(id);if(el)el.textContent=v};e("mT",c+"/"+TOTAL_TASKS);e("mC",PT.c);e("mS",cs+"/5");e("mA",ac+"%");e("mP",p+"%");var b=document.getElementById("mBar");if(b)b.style.width=p+"%";var l="Початківець",em="⭐☆☆☆☆";if(p>=76){l="Експерт";em="⭐⭐⭐⭐⭐"}else if(p>=51){l="Досвідчений";em="⭐⭐⭐☆☆"}else if(p>=26){l="Учень";em="⭐⭐☆☆☆"}e("mName",l);e("mEmoji",em)}
 function showHelpModal(){document.getElementById("helpModal").classList.add("active")}
 function closeModal(id){document.getElementById(id).classList.remove("active")}
 var overlays=document.querySelectorAll(".modal-overlay");for(var oi=0;oi<overlays.length;oi++)overlays[oi].addEventListener("click",function(e){if(e.target===this)this.classList.remove("active")});
